@@ -1,0 +1,38 @@
+{
+    "title": "Frequently asked questions",
+    "rows": [
+        {
+            "title": "Are there shops for daily necessities available?",
+            "content": "Yes, there are supermarkets within a 5-minute walking distance, and there are also many shops in the city center, which is a 10-minute walk away."
+        },
+        {
+            "title": "How about nearby medical services and pharmacies?",
+            "content":
+                "We have a small hospital in Cupramontana that also offers medical services during nights and weekends. There are two pharmacies in the city center, which are just a 10-minute walk away."
+        },
+        {
+            "title": "We are traveling with babies. Do you provide child seats and baby cots?",
+            "content": "Yes, we have three child seats and one baby cot available."
+        },
+        {
+            "title": "Do we need to bring our own towels and linens?",
+            "content": "No, we provide sufficient towels and bed linens."
+        },
+        {
+            "title": "Do you have a washing machine available?",
+            "content": "Yes, we have a washing machine."
+        },
+        {
+            "title": "What measures are you taking for environmental protection?",
+            "content": "In 2023, we installed a photovoltaic system. We have also adjusted our pool pumps to primarily run during the day and kindly request our guests to use the dishwasher and washing machine during daytime hours. Additionally, our heating system is sustainable, operating with wood pellets."
+        },
+        {
+            "title": "How far is it to the nearest beach or sea?",
+            "content": "Within a 35-minute drive, you can reach Senigallia, known for its beautiful sandy beaches (shallow waters ideal for kids), or Sirolo/Numana, famous for their stunning rocky beaches."
+        },
+        {
+            "title": "What type of disinfection do you use for your pool?",
+            "content": "We use a salt system for disinfection."
+        }
+    ]
+}
