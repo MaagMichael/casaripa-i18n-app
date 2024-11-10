@@ -6,15 +6,10 @@ import { Link } from "@/i18n/routing";
 export default function HomePage() {
   const t = useTranslations("HomePage");
 
-  
-
   return (
     <div>
-      <h1 className="text-red-500">{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
-
-      
-
+      {/* use css color variables */}
+      <h1 className="text-primary">{t("title")}</h1>
     </div>
   );
 }

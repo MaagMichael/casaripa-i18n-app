@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    // add paths to the files that will use Tailwind class names:
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // https://tailwindcss.com/docs/customizing-colors#using-css-variables
+        primary: "rgb(var(--color-primary))",
         // background: "var(--background)",
         // foreground: "var(--foreground)",
         // 'my-bg-color': '#1d232a',

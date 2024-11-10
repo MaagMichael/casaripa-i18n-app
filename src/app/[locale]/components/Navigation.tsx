@@ -3,7 +3,9 @@
 
 "use client";
 import React, { useState, ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import Image from 'next/image'
 
 interface NavigationItem {
   name: string;
@@ -20,13 +22,23 @@ const Links: NavigationItem[] = [
 ];
 
 export default function Navigation() {
+  // const t = useTranslations("Navigation");
+
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full sticky top-0 z-10 bg-my-bg-color">
+    <div className="shadow-md w-full sticky top-0 z-10 bg-primary">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* Logo always visible on left side */}
-        <img src={"/assets/casa-ripa-logo.png"} alt="Casa ripa logo" />
+        <Link href="/">
+          <Image
+            src="/assets/casa-ripa-logo.png"
+            width={151}
+            height={109}
+            alt="Picture of the author"
+          />
+        </Link>
+        
         {/* <img src="/assets/react.svg" alt=""  /> */}
         {/* Hidden links on medium and large screen */}
         <ul
@@ -49,11 +61,12 @@ export default function Navigation() {
 
         {/* Reserve button and language always visible on right side */}
         <div>
-          <Button>Reserve Now</Button>
+          <Link href="/reserve">
+            <Button>Reserve Now</Button>
+          </Link>
+          {/* <Link href="/">{t("title")}</Link> */}
           <button className="text-my-text-bright">DE/EN</button>
         </div>
-
-        
       </div>
     </div>
   );

@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Dongle&family=Satisfy&display=swap');
+ 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+
+@layer base {
+  :root {
+    /* Define your CSS variables as channels with no color space function */
+    --color-primary: 255 0 0;
+    
+    /* ... */
+  }
+}

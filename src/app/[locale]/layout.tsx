@@ -1,5 +1,6 @@
 import '@/app/globals.css'
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 import type { Metadata } from "next";
 
@@ -20,9 +21,7 @@ export default function RootLayout({
           <Navigation />
         </header>
         {children}
-        {/* <footer className="bg-slate-900 text-white p-4 text-center">
-            Codevolution
-          </footer> */}
+        <Footer />
       </body>
     </html>
   );

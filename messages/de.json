@@ -1,10 +1,37 @@
 {
-    "HomePage": {
-      "title": "Hello Welt!",
-      "about": "Gehe zur Über Uns Seite"
-    },
-    "AboutPage": {
-      "title": "Über uns Seite",
-      "about": "Gehe zur Home Seite"
-    }
+  "Navigation": {
+    "title": "Hello Welt!",
+    "reserve": "Jetzt reservieren"
+  },
+  "HomePage": {
+    "title": "Hello Welt!",
+    "about": "Gehe zur Über Uns Seite"
+  },
+  "AboutPage": {
+    "title": "Über uns Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "ActivityPage": {
+    "title": "Aktivitäten Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "GalleryPage": {
+    "title": "Galerie Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "ContactPage": {
+    "title": "Kontakt Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "FAQPage": {
+    "title": "FAQ Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "ReservePage": {
+    "title": "Reservieren Seite",
+    "about": "Gehe zur Home Seite"
+  },
+  "Footer": {
+    "title": "Fusszeile"
   }
+}
