@@ -28,7 +28,7 @@ export default function Navigation() {
 
   return (
     <div className="shadow-md w-full sticky top-0 z-10 bg-primary">
-      <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between  ">
         {/* Logo always visible on left side */}
         <Link href="/">
           <Image
