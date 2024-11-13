@@ -1,6 +1,8 @@
 // import { useTranslations } from "next-intl"; //client side
 import { getTranslations } from "next-intl/server"; // server side
 import { Link } from "@/i18n/routing";
+import Welcome from "./components/Welcome";
+import HeroImage from "./components/HeroImage";
 
 // import '@/app/globals.css'
 
@@ -9,9 +11,13 @@ export default async function HomePage() {
 
   return (
     <div>
-      {/* use css color variables */}
+      <HeroImage />
+      
       <h1>Home</h1>
       <h1 className="text-primary">{t("title")}</h1>
+
+
+      <Welcome />
 
       <div className="flex flex-wrap justify-center gap-4 p-4 text-secondary">
         <div className="w-[100px] h-[300px] bg-primary">#1d232a</div>

@@ -33,5 +33,11 @@
   },
   "Footer": {
     "title": "Fusszeile"
+  },
+  "WelcomePage": {
+    "title": "Willkommen bei Casa Ripa",
+    "subtitle": "Ferienhaus @ Cupramontana, Le Marche, Italien.",
+    "text": "Im Herzen der Region Le Marche liegt unser kürzlich renoviertes und restauriertes Bauernhaus direkt unterhalb des Hügels von Cupramontana. Von hier aus können Sie sich entspannen und den atemberaubenden Panoramablick auf die umliegende Landschaft genießen. Die Region Le Marche ist eine wunderschöne hügelige und bergige Region, die von Touristen noch relativ unentdeckt ist, aber dennoch nur 30 Minuten vom Flughafen Ancona entfernt ist. Hier können Sie Ihren Urlaub ohne Stress verbringen und alles genießen, was die Region zu bieten hat: das wunderbare Essen und den berühmten Verdicchio-Wein, die Herzlichkeit und Freundlichkeit der Menschen, die Kultur, die Natur und die fabelhaften Strände mit der blauen Flagge entlang der Adriaküste. Wir hoffen, Sie in diesem Paradies begrüßen zu dürfen!"
   }
+
 }
