@@ -1,4 +1,4 @@
-import '@/app/globals.css'
+import "@/app/globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
@@ -17,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="bg-slate-900 text-white p-4 text-center">
-          <Navigation />
-        </header>
+        <Navigation />
         {children}
         <Footer />
       </body>

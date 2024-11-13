@@ -12,6 +12,10 @@ const config: Config = {
       colors: {
         // https://tailwindcss.com/docs/customizing-colors#using-css-variables
         primary: "rgb(var(--color-primary))",
+        primary_light: "rgb(var(--color-primary-light))",
+        secondary: "rgb(var(--color-secondary))",
+        green: "rgb(var(--color-green))",
+        orange: "rgb(var(--color-orange))",
         // background: "var(--background)",
         // foreground: "var(--foreground)",
         // 'my-bg-color': '#1d232a',

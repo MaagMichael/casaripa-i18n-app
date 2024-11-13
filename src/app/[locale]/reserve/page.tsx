@@ -7,7 +7,7 @@ export default function Reserve() {
   return (
     <div>
       <h1 className="">{t("title")}</h1>
-      <Link href="/">{t("about")}</Link>
+      <Link href="/">{t("about")}</Link>      
     </div>
   );
 }

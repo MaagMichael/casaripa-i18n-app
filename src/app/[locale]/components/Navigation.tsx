@@ -1,87 +1,73 @@
 // https://www.youtube.com/watch?v=74ys-dT94mA
 // https://github.com/Sridhar-C-25/ReactTailwind_nav/tree/main
 
-"use client";
-import React, { useState, ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import Image from 'next/image'
+import Image from "next/image";
+import menuData from "@/data/menu.json";
+// import { usePathname } from 'next/navigation';
 
-interface NavigationItem {
-  name: string;
-  path: string;
+// In this case, TypeScript is able to infer the type of menuData automatically through type inference
+// from the JSON file. When you import a JSON file in TypeScript, it automatically creates an
+// implicit type based on the structure of the JSON. So even though there's no explicit interface
+// defined, TypeScript understands the shape of menuData as:
+{
+  MenuItems: Array<{
+    label: string;
+    route: string;
+  }>;
 }
-
-const Links: NavigationItem[] = [
-  { name: "HOME", path: "/" },
-  { name: "About us", path: "/about" },
-  { name: "Activities", path: "/activity" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "Contact", path: "/contact" },
-  { name: "FAQ", path: "/faq" },
-];
+// or
+interface MenuItem {
+  label: string;
+  route: string;
+}
+interface MenuData {
+  MenuItems: MenuItem[];
+}
 
 export default function Navigation() {
   // const t = useTranslations("Navigation");
-
-  const [open, setOpen] = useState(false);
+  // const pathname = usePathname();
+  // Extract the locale from the pathname (assumes format like /en or /de)
+  // const locale = pathname.split('/')[1] || 'en';
+  // const menuItems = menuData;
 
   return (
-    <div className="shadow-md w-full sticky top-0 z-10 bg-primary">
-      <div className="md:flex items-center justify-between  ">
-        {/* Logo always visible on left side */}
-        <Link href="/">
-          <Image
-            src="/assets/casa-ripa-logo.png"
-            width={151}
-            height={109}
-            alt="Picture of the author"
-          />
-        </Link>
-        
-        {/* <img src="/assets/react.svg" alt=""  /> */}
-        {/* Hidden links on medium and large screen */}
-        <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20 " : "top-[-490px]"
-          }`}
-        >
-          {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <Link
-                href={link.path}
-                target="_top"
-                className="text-my-text-bright hover:text-my-text-hover duration-500"
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10">
+      {/* Logo always visible on left side */}
+      <Link href="/">
+        <Image
+          src="/assets/casa-ripa-logo.png"
+          width={151}
+          height={109}
+          alt="Picture of the author"
+        />
+      </Link>
 
-        {/* Reserve button and language always visible on right side */}
-        <div>
-          <Link href="/reserve">
-            <Button>Reserve Now</Button>
+      {/* Navigation Menu */}
+      <div className="">
+        {menuData.MenuItems.map((item, index) => (
+          <Link
+            key={index}
+            href={item.route}
+            className="text-secondary mx-2 font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
+          >
+            {item.label}
           </Link>
-          {/* <Link href="/">{t("title")}</Link> */}
-          <button className="text-my-text-bright">DE/EN</button>
-        </div>
+        ))}
       </div>
+
+      {/* button to make as client component */}
+      <Link href="/reserve">
+        <button
+          className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500"
+        >
+          Reserve now
+        </button>
+      </Link>
+
+      <button className="text-secondary mx-4">DE/EN</button>
     </div>
   );
 }
-
-interface ButtonProps {
-  children: ReactNode;
-}
-const Button: React.FC<ButtonProps> = ({ children }) => {
-  return (
-    <button
-      className="bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400 
-      duration-500"
-    >
-      {children}
-    </button>
-  );
-};

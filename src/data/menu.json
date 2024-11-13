@@ -1,0 +1,29 @@
+{
+    "MenuItems": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "About",
+        "route": "/about"
+      },
+      {
+        "label": "Activities",
+        "route": "/activity"
+      },
+      {
+        "label": "Gallery",
+        "route": "/gallery"
+      },
+      {
+        "label": "Contact",
+        "route": "/contact"
+      },
+      {
+        "label": "FAQ",
+        "route": "/faq"
+      }
+    ]
+  }
+  
