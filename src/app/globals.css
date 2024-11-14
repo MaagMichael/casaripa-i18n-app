@@ -16,7 +16,7 @@ body {
     /* Define your CSS variables as channels with no color space function */
     --color-primary: 29, 35, 42;     /* #1d232a */
     --color-primary-light:  42, 50, 60  ;          /* #2a323c */
-    --color-secondary: 162, 169, 182;      /* #a2a9b6 */
+    --color-secondary: 167, 173, 186;      /* #a7adba */
     --color-green: 96, 138, 40; /* green ca. #7cb233 */
     --color-orange: 213, 156, 42; /* orange ca. #d9a740 */
     /* ... */
