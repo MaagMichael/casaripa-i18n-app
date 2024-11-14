@@ -1,35 +1,25 @@
 {
-
-  "reviews":
-  [
+  "reviews": [
     {
       "id": 1,
-        "name": "Eyadism - July 2021",
-        "job": "web developer",
-        "image":
-        "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-        "text":
-        "The gorgeous Casa Ripa gives you a glimpse of a wonderful Italian quaint village of Cupra Montana. This is our second visit and we enjoyed it very much. Watching the sunset with clear view over hills around the area is fascinating. After sunset and watching the stars and falling stars is one of the highlights every evening. We highly recommend it for multiple families that enjoy the time together. We captured unforgettable moments we and definitely won’t be the last time to come back and explore what the neighborhood of Cupra Montana has to offer."
-      },
-      {
-        "id": 2,
-        "name": "Ibrahim Ghubbar - August 2021",
-        "job": "web developer",
-        "image":
-          "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-        "text":
-          "What a beautiful old farm house in the Italian Marche region. We had a family birthday and rented all three units. Only a 30 minutes drive away from the beach are in Senigallia and 3,5hrs from Rome by train (closest station: Castelplanio-Cupramontana). The outdoor pool was one of the top highlight for the kids same as for the adults next to the beautiful mountain view with amazing sunsets. All the rooms were spacious, well equipped and clean! Grazie mille e Ciao ciao 👋🏻"
-      },
-      {
-        "id": 3,
-        "name": "Claudia Guggenberger - September 2023",
-        "job": "web developer",
-        "image":
-          "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-        "text":
-          "We were able to spend two very nice weeks of vacation here. A wonderful place to unwind. Whether it's the view over the wide, soft hilly landscape that always appears in a different light, the friendliness of the villagers or the good regional food, you feel at home here. We lived in the guest house of the beautiful old, lovingly restored farmhouse and found everything clean and stocked with everything you needed. Checking in and out, as well as contacting us beforehand and here on site, was very friendly and unproblematic. The new swimming pool is still under construction, but you can already imagine the fantastic atmosphere with a view of the sunset. For us, the location of the accommodation was perfect for exploring the Marche region, whether hiking, cycling or by car. We also used the nearby train station. From here we visited many beaches, picturesque villages but also cities like Loreto, Assisi and Perugia were easy to reach. We can only recommend the accommodation and would be happy to come back with our family to use the large campfire pit and pizza oven. arrivederci Casa Ripa"
-      }
+      "name": "Eyadism - July 2021",
+      "job": "web developer",
+      "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+      "text": "The gorgeous Casa Ripa gives you a glimpse of a wonderful Italian quaint village of Cupra Montana. This is our second visit and we enjoyed it very much. Watching the sunset with clear view over hills around the area is fascinating. After sunset and watching the stars and falling stars is one of the highlights every evening. We highly recommend it for multiple families that enjoy the time together. We captured unforgettable moments we and definitely won’t be the last time to come back and explore what the neighborhood of Cupra Montana has to offer."
+    },
+    {
+      "id": 2,
+      "name": "Ibrahim Ghubbar - August 2021",
+      "job": "web developer",
+      "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+      "text": "What a beautiful old farm house in the Italian Marche region. We had a family birthday and rented all three units. Only a 30 minutes drive away from the beach are in Senigallia and 3,5hrs from Rome by train (closest station: Castelplanio-Cupramontana). The outdoor pool was one of the top highlight for the kids same as for the adults next to the beautiful mountain view with amazing sunsets. All the rooms were spacious, well equipped and clean! Grazie mille e Ciao ciao 👋🏻"
+    },
+    {
+      "id": 3,
+      "name": "Claudia Guggenberger - September 2023",
+      "job": "web developer",
+      "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+      "text": "We were able to spend two very nice weeks of vacation here. A wonderful place to unwind. Whether it's the view over the wide, soft hilly landscape that always appears in a different light, the friendliness of the villagers or the good regional food, you feel at home here. We lived in the guest house of the beautiful old, lovingly restored farmhouse and found everything clean and stocked with everything you needed. Checking in and out, as well as contacting us beforehand and here on site, was very friendly and unproblematic. The new swimming pool is still under construction, but you can already imagine the fantastic atmosphere with a view of the sunset. For us, the location of the accommodation was perfect for exploring the Marche region, whether hiking, cycling or by car. We also used the nearby train station. From here we visited many beaches, picturesque villages but also cities like Loreto, Assisi and Perugia were easy to reach. We can only recommend the accommodation and would be happy to come back with our family to use the large campfire pit and pizza oven. arrivederci Casa Ripa"
+    }
   ]
 }
-
-    
