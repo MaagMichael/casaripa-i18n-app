@@ -25,7 +25,7 @@ export default function HeroImage() {
 
   return (
     <div className="w-full h-[40vh] md:h-[60vh] lg:h-[80vh] relative">
-      {/* {heroImages.HeroImage.map((image, index) => ( */}
+      
       <Image
         className="animate-fadeIn bg-primary"
         key={currentImageIndex}
