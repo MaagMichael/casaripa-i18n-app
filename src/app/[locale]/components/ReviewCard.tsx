@@ -2,7 +2,17 @@ import { useTranslations } from "next-intl"; //client side
 // import { getTranslations } from "next-intl/server"; // server side with async and await
 import Image from "next/image";
 
-export default function ReviewCard() {
+interface ReviewCardProps {
+  reviewData: {
+    id: number;
+    name: string;
+    job?: string;
+    image?: string;
+    text: string;
+  };
+}
+
+export default function ReviewCard({ reviewData }: ReviewCardProps) {
   const t = useTranslations("Review");
 
   return (
@@ -44,8 +54,11 @@ export default function ReviewCard() {
         </div>
 
         {/* text container */}
-
-        
+        <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide ring-2 ring-orange">
+          <p>{reviewData.name}</p>
+          <p>{reviewData.text}</p>
+          <p>{reviewData.job}</p>
+        </div>
       </div>
     </>
   );

@@ -18,14 +18,12 @@ export default function Review() {
 
   return (
     <div className="w-full h-full p-4 bg-primary">
-      
-        <ReviewCard />
-        {reviewData.reviews.map((reviewItem: ReviewData) => (
-          <div key={reviewItem.id}>
-            <p>{reviewItem.name}</p>
-          </div>
-        ))}
-
+      {reviewData.reviews.map((reviewItem: ReviewData) => (
+        <div key={reviewItem.id}>
+          {/* pass the review data as objects to the ReviewCard component */}
+          <ReviewCard reviewData={reviewItem}/>
+        </div>
+      ))}
     </div>
   );
 }
