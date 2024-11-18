@@ -1,6 +1,6 @@
 // "use client";
 
-import { useTranslations } from "next-intl"; //client side
+// import { useTranslations } from "next-intl"; //client side
 // import { getTranslations } from "next-intl/server"; // server side with async and await
 // import { useState } from "react";
 
@@ -16,7 +16,7 @@ interface ReviewData {
 }
 
 export default function Review() {
-  const t = useTranslations("Review");
+//   const t = useTranslations("Review");
   // const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
   // const currentReview = reviewData.reviews[currentReviewIndex];
   const currentReview = reviewData.reviews[0];

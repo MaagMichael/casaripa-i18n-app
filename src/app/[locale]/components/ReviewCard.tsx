@@ -1,6 +1,6 @@
 // "use client";
-import { useTranslations } from "next-intl"; //client side
-// import { getTranslations } from "next-intl/server"; // server side with async and await
+// import { useTranslations } from "next-intl"; //client side
+import { getTranslations } from "next-intl/server"; // server side with async and await
 import Image from "next/image";
 
 interface ReviewCardProps {
@@ -13,8 +13,9 @@ interface ReviewCardProps {
   };
 }
 
-export default function ReviewCard({ reviewData }: ReviewCardProps) {
-  const t = useTranslations("Review");
+export default async function ReviewCard({ reviewData }: ReviewCardProps) {
+  const t = await getTranslations("Review");
+//   const t = useTranslations("Review");
 
   return (
     <>
