@@ -1,4 +1,5 @@
 "use client";
+
 import heroImages from "@/data/hero.json";
 import Image from "next/image";
 import { useState, useEffect } from "react";

@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 
 import Welcome from "./components/Welcome";
 import HeroImage from "./components/HeroImage";
+import ActivityExtract from "./components/ActivityExtract";
 import Review from "./components/Review";
 import GoogleMap from "./components/GoogleMap";
 
@@ -21,6 +22,8 @@ export default async function HomePage() {
 
 
       <Welcome />
+
+      <ActivityExtract />
 
       <Review />
 

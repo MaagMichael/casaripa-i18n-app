@@ -1,3 +1,4 @@
+// "use client";
 import { useTranslations } from "next-intl"; //client side
 // import { getTranslations } from "next-intl/server"; // server side with async and await
 import Image from "next/image";
@@ -7,7 +8,7 @@ interface ReviewCardProps {
     id: number;
     name: string;
     job?: string;
-    image?: string;
+    image: string;
     text: string;
   };
 }
@@ -18,15 +19,16 @@ export default function ReviewCard({ reviewData }: ReviewCardProps) {
   return (
     <>
       {/* card container */}
-      <div className="w-2/3 h-[60vh] mx-auto rounded-lg bg-secondary p-4">
+      <div className="w-2/3 h-[60vh] mx-auto rounded-lg bg-secondary p-4 my-2">
         <div className="relative flex items-center">
           {/* picture container */}
           <div className="relative">
             {/* Image */}
             <div className="w-40 h-40 rounded-full overflow-hidden ring-4 ring-orange">
               <Image
-                src="/assets/person.jpg"
-                alt="Person"
+                // src="/assets/person.jpg"
+                src={reviewData.image}
+                alt={reviewData.name}
                 width={80}
                 height={80}
                 className="object-cover w-full h-full rounded-full"
@@ -54,7 +56,7 @@ export default function ReviewCard({ reviewData }: ReviewCardProps) {
         </div>
 
         {/* text container */}
-        <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide ring-2 ring-orange">
+        <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide">
           <p>{reviewData.name}</p>
           <p>{reviewData.text}</p>
           <p>{reviewData.job}</p>
