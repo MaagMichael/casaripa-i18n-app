@@ -1,6 +1,6 @@
 // import { useTranslations } from "next-intl"; //client side
 import { getTranslations } from "next-intl/server"; // server side with async and await
-import { Link } from "@/i18n/routing";
+// import { Link } from "@/i18n/routing";
 
 import Welcome from "./components/Welcome";
 import HeroImage from "./components/HeroImage";

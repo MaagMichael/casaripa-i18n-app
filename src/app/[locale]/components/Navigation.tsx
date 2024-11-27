@@ -1,7 +1,7 @@
 // https://www.youtube.com/watch?v=74ys-dT94mA
 // https://github.com/Sridhar-C-25/ReactTailwind_nav/tree/main
 
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
@@ -11,20 +11,20 @@ import menuData from "@/data/menu.json";
 // from the JSON file. When you import a JSON file in TypeScript, it automatically creates an
 // implicit type based on the structure of the JSON. So even though there's no explicit interface
 // defined, TypeScript understands the shape of menuData as:
-{
-  MenuItems: Array<{
-    label: string;
-    route: string;
-  }>;
-}
+// {
+//   MenuItems: Array<{
+//     label: string;
+//     route: string;
+//   }>;
+// }
 // or
-interface MenuItem {
-  label: string;
-  route: string;
-}
-interface MenuData {
-  MenuItems: MenuItem[];
-}
+// interface MenuItem {
+//   label: string;
+//   route: string;
+// }
+// interface MenuData {
+//   MenuItems: MenuItem[];
+// }
 
 export default function Navigation() {
   // const t = useTranslations("Navigation");

@@ -3,7 +3,7 @@
 
 "use client";
 import React, { useState, ReactNode } from "react";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from 'next/image'
 
@@ -24,7 +24,8 @@ const Links: NavigationItem[] = [
 export default function Navigation2() {
   // const t = useTranslations("Navigation");
 
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
+  const [open] = useState(false);
 
   return (
     <div className="shadow-md w-full sticky top-0 z-10 bg-primary">

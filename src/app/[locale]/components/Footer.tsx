@@ -14,7 +14,7 @@ export default function Footer() {
 
           <Link href="/about">About CASA RIPA</Link>
           <Link href="/about">Route to Us</Link>
-          <Link href="/faq">FAQ's</Link>
+          <Link href="/faq">FAQs</Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/">Admin</Link>
         </div>
