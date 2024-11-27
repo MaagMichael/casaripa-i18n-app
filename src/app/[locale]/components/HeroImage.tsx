@@ -36,6 +36,7 @@ export default function HeroImage() {
         //   height={3042}
         fill
         style={{ objectFit: "cover", transition: "opacity 0.5s ease-in-out" }}
+        priority
       />
       {/* ))} */}
       {/* Optional: Add navigation dots */}
