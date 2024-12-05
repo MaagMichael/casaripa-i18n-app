@@ -58,7 +58,7 @@ export default async function Navigation() {
           <Link
             key={index}
             href={item.route}
-            className="text-secondary mx-2 font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
+            className="text-secondary  font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
           >
             {/* item.label from menu.json is as well the key for the translation */}
             {t(item.label)}
@@ -73,7 +73,7 @@ export default async function Navigation() {
         </button>
       </Link>
 
-      
+
       {/* Language switch button extra */}
       <button className="text-secondary mx-4">DE/EN</button>
     </div>
