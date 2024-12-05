@@ -1,7 +1,9 @@
 // https://www.youtube.com/watch?v=74ys-dT94mA
 // https://github.com/Sridhar-C-25/ReactTailwind_nav/tree/main
 
-// import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl"; //client side
+import { getTranslations } from "next-intl/server"; // server side with async and await
+
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
@@ -26,8 +28,8 @@ import menuData from "@/data/menu.json";
 //   MenuItems: MenuItem[];
 // }
 
-export default function Navigation() {
-  // const t = useTranslations("Navigation");
+export default async function Navigation() {
+  const t = await getTranslations("Navigation");
   // const pathname = usePathname();
   // Extract the locale from the pathname (assumes format like /en or /de)
   // const locale = pathname.split('/')[1] || 'en';
@@ -45,7 +47,12 @@ export default function Navigation() {
         />
       </Link>
 
-      {/* Navigation Menu */}
+      {/* Navigation Menu mobile*/}
+      {/* toggle by tailwind */}
+      {/* make as client component when use UseState ?*/}
+
+      {/* Navigation Menu tablet/desktop*/}
+      {/* toggle by tailwind */}
       <div className="">
         {menuData.MenuItems.map((item, index) => (
           <Link
@@ -53,20 +60,21 @@ export default function Navigation() {
             href={item.route}
             className="text-secondary mx-2 font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
           >
-            {item.label}
+            {/* item.label from menu.json is as well the key for the translation */}
+            {t(item.label)}
           </Link>
         ))}
       </div>
 
-      {/* button to make as client component */}
+      {/* Reserve button extra */}
       <Link href="/reserve">
-        <button
-          className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500"
-        >
-          Reserve now
+        <button className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500">
+          {t("reserve")}
         </button>
       </Link>
 
+      
+      {/* Language switch button extra */}
       <button className="text-secondary mx-4">DE/EN</button>
     </div>
   );

@@ -17,8 +17,7 @@ export default async function HomePage() {
     <div>
       <HeroImage />
       
-      <h1>Home</h1>
-      <h1 className="text-primary">{t("title")}</h1>
+      {/* <h1 className="text-primary">{t("title")}</h1> */}
 
 
       <Welcome />

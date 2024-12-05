@@ -1,27 +1,27 @@
 {
     "MenuItems": [
       {
-        "label": "Home",
+        "label": "home",
         "route": "/"
       },
       {
-        "label": "About",
+        "label": "about",
         "route": "/about"
       },
       {
-        "label": "Activities",
+        "label": "activity",
         "route": "/activity"
       },
       {
-        "label": "Gallery",
+        "label": "gallery",
         "route": "/gallery"
       },
       {
-        "label": "Contact",
+        "label": "contact",
         "route": "/contact"
       },
       {
-        "label": "FAQ",
+        "label": "faq",
         "route": "/faq"
       }
     ]

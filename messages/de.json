@@ -1,6 +1,12 @@
 {
   "Navigation": {
-    "title": "Hello Welt!",
+    "title": "Hello Welt! Navigieren",
+    "home": "Home",
+    "about": "Über uns",
+    "activity": "Aktivitäten",
+    "gallery": "Gallerie",
+    "contact": "Kontakt",
+    "faq": "FAQ",
     "reserve": "Jetzt reservieren"
   },
   "HomePage": {
