@@ -4,7 +4,7 @@
     "home": "Home",
     "about": "Über uns",
     "activity": "Aktivitäten",
-    "gallery": "Gallerie",
+    "gallery": "Galerie",
     "contact": "Kontakt",
     "faq": "FAQ",
     "reserve": "Jetzt reservieren"
@@ -14,8 +14,9 @@
     "about": "Gehe zur Über Uns Seite"
   },
   "AboutPage": {
-    "title": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
-    "about": "Gehe zur Home Seite"
+    "title":"Über uns",
+    "text": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
+    "text2":"Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung"
   },
   "ActivityPage": {
     "title": "Aktivitäten Seite",
@@ -43,7 +44,7 @@
   "WelcomePage": {
     "title": "Willkommen auf dem Anwesen Casa Ripa",
     "subtitle": "Ferienhaus in Cupramontana, Marken, Italien",
-    "text": "Im Herzen der Region Marken (Le Marche) befindet sich unser liebevoll renoviertes Gutshaus aus dem Jahre 1850 direkt auf dem Hügel von Cupramontana. Es liegt inmitten des gepflegten 5.000 qm großen Garten mit Olivenbäumen, Feigen und vielen weiteren Früchten und Kräutern. Wir haben wert darauf gelegt soweit wie möglich alte Materialien zu erhalten, ohne jedoch auf moderne Annehmlichkeiten zu verzichten - eintreten und wohlfühlen. Dabei genießen Sie den atemberaubenden Panoramablick über die umliegende Landschaft. Der neu gestaltete Außenbereich mit Infinity-Pool (5x10m) einer überdachten Loungeecke, Außendusche, Kicker und ausreichend Sonnenliegen rundet das Angebot ab. Hier können Sie die Seele baumeln lassen und entspannen. Die Region Marken (Le Marche) ist eine wunderschöne hügelige und bergige Region, die von Touristen noch relativ unentdeckt ist. Dennoch ist das Anwesen nur 30 Minuten vom Flughafen Ancona entfernt. Hier können Sie Ihren Urlaub stressfrei verbringen und alles genießen, was die Region zu bieten hat, vom wunderbaren Essen und dem berühmten Verdicchio Wein über die Wärme und Freundlichkeit der Menschen, die Kultur, die Natur und die fabelhaften Strände mit der 'blauen Flagge' entlang der Adriaküste. Wir hoffen Sie in diesem Paradies begrüßen zu dürfen."
+    "text": "Im Herzen der Region Marken (Le Marche) befindet sich unser liebevoll renoviertes Gutshaus aus dem Jahre 1850 direkt auf dem Hügel von Cupramontana. Es liegt inmitten des gepflegten 5.000 qm großen Garten mit Olivenbäumen, Feigen und vielen weiteren Früchten und Kräutern.\n Wir haben wert darauf gelegt soweit wie möglich alte Materialien zu erhalten, ohne jedoch auf moderne Annehmlichkeiten zu verzichten - eintreten und wohlfühlen. Dabei genießen Sie den atemberaubenden Panoramablick über die umliegende Landschaft. Der neu gestaltete Außenbereich mit Infinity-Pool (5x10m) einer überdachten Loungeecke, Außendusche, Kicker und ausreichend Sonnenliegen rundet das Angebot ab.\n Hier können Sie die Seele baumeln lassen und entspannen.\n Die Region Marken (Le Marche) ist eine wunderschöne hügelige und bergige Region, die von Touristen noch relativ unentdeckt ist. Dennoch ist das Anwesen nur 30 Minuten vom Flughafen Ancona entfernt. Hier können Sie Ihren Urlaub stressfrei verbringen und alles genießen, was die Region zu bieten hat, vom wunderbaren Essen und dem berühmten Verdicchio Wein über die Wärme und Freundlichkeit der Menschen, die Kultur, die Natur und die fabelhaften Strände mit der 'blauen Flagge' entlang der Adriaküste.\n Wir hoffen Sie in diesem Paradies begrüßen zu dürfen."
   },
   "ActivityExtract": {
     "title": "Geniessen Sie unser Paradies",

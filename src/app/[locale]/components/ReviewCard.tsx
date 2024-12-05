@@ -65,7 +65,7 @@ export default function ReviewCard({ data, title }: ReviewCardProps) {
       </div>
 
       {/* text container */}
-      <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide">
+      <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide text-justify">
         <p>{currentReview.name}</p>
         <p>{currentReview.text}</p>
         {/* <p>{currentReview.job}</p> */}

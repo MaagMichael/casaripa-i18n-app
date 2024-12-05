@@ -1,9 +1,9 @@
 // import { useTranslations } from "next-intl"; //client side
-import { getTranslations } from "next-intl/server"; // server side with async and await
+// import { getTranslations } from "next-intl/server"; // server side with async and await
 import { Link } from "@/i18n/routing";
 
 export default async function Footer() {
-  const t = await getTranslations("Footer");
+  // const t = await getTranslations("Footer");
 
   return (
     <div className="bg-primary_light text-secondary py-4">

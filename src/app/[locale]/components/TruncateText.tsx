@@ -19,7 +19,7 @@ export default function TruncateText({ text, maxLength }: TruncateTextProps) {
 
   return (
     <div>
-      <p>
+      <p className="whitespace-pre-line text-justify">
         {/* text to show */}
         {isTruncated ? truncatedText : text}
         {/* button to show more/less */}
