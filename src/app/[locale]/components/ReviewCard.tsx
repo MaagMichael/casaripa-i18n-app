@@ -16,7 +16,6 @@ interface ReviewCardProps {
   title: string;
 }
 
-// export default async function ReviewCard({ reviewData }: ReviewCardProps, title) {
 export default function ReviewCard({ data, title }: ReviewCardProps) {
   // console.log("reviewData", data);
 

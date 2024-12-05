@@ -1,8 +1,9 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl"; //client side
+import { getTranslations } from "next-intl/server"; // server side with async and await
 import { Link } from "@/i18n/routing";
 
-export default function Activity() {
-  const t = useTranslations("ActivityPage");
+export default async function Activity() {
+  const t = await getTranslations("ActivityPage");
 
   return (
     <div>

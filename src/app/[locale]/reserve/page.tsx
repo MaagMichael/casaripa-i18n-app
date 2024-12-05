@@ -1,8 +1,9 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl"; //client side
+import { getTranslations } from "next-intl/server"; // server side with async and await
 import { Link } from "@/i18n/routing";
 
-export default function Reserve() {
-  const t = useTranslations("ReservePage");
+export default async function Reserve() {
+  const t = await getTranslations("ReservePage");
 
   return (
     <div>
