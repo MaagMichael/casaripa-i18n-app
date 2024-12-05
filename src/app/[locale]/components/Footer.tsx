@@ -1,12 +1,13 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl"; //client side
+import { getTranslations } from "next-intl/server"; // server side with async and await
 import { Link } from "@/i18n/routing";
 
-export default function Footer() {
-  const t = useTranslations("Footer");
+export default async function Footer() {
+  const t = await getTranslations("Footer");
 
   return (
     <div className="bg-primary_light text-secondary py-4">
-      <h1 className="text-center">{t("title")}</h1>
+      {/* <h1 className="text-center">{t("title")}</h1> */}
 
       <div className="flex flex-col lg:flex-row justify-around ">
         <div className="flex flex-col space-y-4 p-4">
