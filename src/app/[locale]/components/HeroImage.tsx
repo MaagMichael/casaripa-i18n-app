@@ -38,7 +38,7 @@ export default function HeroImage() {
         style={{ objectFit: "cover", transition: "opacity 0.5s ease-in-out" }}
         priority
       />
-      {/* ))} */}
+      
       {/* Optional: Add navigation dots */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {heroImages.HeroImage.map((_, index) => (

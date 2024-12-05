@@ -14,7 +14,7 @@
     "about": "Go to the about page"
   },
   "AboutPage": {
-    "title": "About us Page",
+    "title": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
     "about": "back to Home Page"
   },
   "ActivityPage": {
@@ -43,7 +43,7 @@
   "WelcomePage": {
     "title": "Welcome to Casa Ripa",
     "subtitle": "Holiday Home @ Cupramontana, Le Marche, Italy.",
-    "text": "In the heart of Le Marche region our recently renovated and restored farmhouse sits just below the Hilltop of Cupramontana. From here you can relax and take in the breathtaking and panoramic views over the surrounding countryside. The region of Le Marche is a beautiful hilly and mountainous region and still relatively undiscovered by tourists, but yet it is only 30 minutes away from Ancona Airport. Here you can spend your holiday without stress and enjoy everything the region has to offer, from the wonderful food and famous Verdicchio wine, the warmth and friendliness of the people, the culture, nature and fabulous blue-flag beaches along the Adriatic Coast. We hope to welcome you to this paradise!"
+    "text": "In the heart of the Marche region (Le Marche), our lovingly renovated manor house dating back to 1850 is located directly on the hill of Cupramontana. It is surrounded by a well-tended 5,000 square meter garden with olive trees, figs and many other fruits and herbs. We have made a point of preserving old materials as far as possible, but without sacrificing modern amenities - come in and feel at home. Enjoy the breathtaking panoramic view of the surrounding countryside. The newly designed outdoor area with infinity pool (5x10m), a covered lounge area, outdoor shower, table football and plenty of sun loungers round off the offer. Here you can relax and unwind. The Marche region (Le Marche) is a beautiful hilly and mountainous region that is still relatively undiscovered by tourists. Nevertheless, the property is only 30 minutes from Ancona airport. Here you can spend your vacation stress-free and enjoy everything the region has to offer, from the wonderful food and the famous Verdicchio wine to the warmth and friendliness of the people, the culture, the nature and the fabulous 'blue flag' beaches along the Adriatic coast. We hope to welcome you to this paradise."
   },
   "ActivityExtract": {
     "title": "Enjoy our paradise",
@@ -59,6 +59,6 @@
     "pictures": ["/assets/beach.jpg", "/assets/places.jpg", "/assets/nature.jpg", "/assets/winery.jpg", "/assets/nearby.jpg", "/assets/restaurants.jpg"]
   },
   "Review": {
-    "title": "Guest Review"
+    "title": "Guest Reviews"
   }
 }
