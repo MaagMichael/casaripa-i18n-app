@@ -59,7 +59,7 @@ export default async function Footer() {
       </div>
 
       <p className="text-center">
-        Copy right @ CASA RIPA, Italy - Created with ReDI Lab, 2024
+        Copy right @ CASA RIPA, Italy - Created with ReDI School Munich, 2024
       </p>
     </div>
   );

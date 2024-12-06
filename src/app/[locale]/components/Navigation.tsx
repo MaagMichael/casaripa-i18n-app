@@ -7,6 +7,7 @@ import { getTranslations } from "next-intl/server"; // server side with async an
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
+import LocaleSwitcher from "./LocaleSwitcher";
 // import { usePathname } from 'next/navigation';
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
@@ -76,6 +77,7 @@ export default async function Navigation() {
 
       {/* Language switch button extra */}
       <button className="text-secondary mx-4">DE/EN</button>
+      {/* <LocaleSwitcher />   */}
     </div>
   );
 }

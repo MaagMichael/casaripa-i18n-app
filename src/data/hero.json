@@ -2,19 +2,19 @@
     "HeroImage": [
       {
         "label": "Picture Heroimage 01",
-        "url": "/assets/hero01.webp"
+        "url": "/assets/hero/hero01.webp"
       },
       {
         "label": "Picture Heroimage 02",
-        "url": "/assets/hero02.webp"
+        "url": "/assets/hero/hero02.webp"
       },
       {
         "label": "Picture Heroimage 03",
-        "url": "/assets/hero03.webp"
+        "url": "/assets/hero/hero03.webp"
       },
       {
         "label": "Picture Heroimage 04",
-        "url": "/assets/hero04.webp"
+        "url": "/assets/hero/hero04.webp"
       }
       
     ]

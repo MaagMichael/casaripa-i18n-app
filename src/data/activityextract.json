@@ -1,0 +1,34 @@
+{
+  "activityImage": [
+    {
+      "id": 1,
+      "image": "/assets/activity/beach.webp",
+      "description": "categories1"
+    },
+    {
+      "id": 2,
+      "image": "/assets/activity/visit.webp",
+      "description": "categories2"
+    },
+    {
+      "id": 3,
+      "image": "/assets/activity/nature2.webp",
+      "description": "categories3"
+    },
+    {
+      "id": 4,
+      "image": "/assets/activity/winery.webp",
+      "description": "categories4"
+    },
+    {
+      "id": 5,
+      "image": "/assets/activity/nearby.webp",
+      "description": "categories5"
+    },
+    {
+      "id": 6,
+      "image": "/assets/activity/shops.webp",
+      "description": "categories6"
+    }
+  ]
+}

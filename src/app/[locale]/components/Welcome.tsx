@@ -12,7 +12,7 @@ export default async function About() {
 
       <TruncateText
         text={t("text")}
-        maxLength={200}
+        maxLength={300}
       />
     </div>
   );
