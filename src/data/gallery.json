@@ -27,6 +27,34 @@
       {
         "id": 7,
         "image": "/assets/gallery/gallery07.webp"
+      },
+      {
+        "id": 8,
+        "image": "/assets/gallery/gallery01.webp"
+      },
+      {
+        "id": 9,
+        "image": "/assets/gallery/gallery02.webp"
+      },
+      {
+        "id": 10,
+        "image": "/assets/gallery/gallery03.webp"
+      },
+      {
+        "id": 11,
+        "image": "/assets/gallery/gallery04.webp"
+      },
+      {
+        "id": 12,
+        "image": "/assets/gallery/gallery05.webp"
+      },
+      {
+        "id": 13,
+        "image": "/assets/gallery/gallery06.webp"
+      },
+      {
+        "id": 14,
+        "image": "/assets/gallery/gallery07.webp"
       }
     ]
   }

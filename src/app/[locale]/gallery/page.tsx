@@ -13,29 +13,33 @@ interface GalleryImage {
 export default async function Gallery() {
   const t = await getTranslations("GalleryPage");
 
+  // create a clinet component to render images and open them in a new tab on double click
+  // const handleDoubleClick = (imageUrl: string) => {
+  //   window.open(imageUrl, '_blank');
+  // };
+
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
       <h1 className="text-xl text-center">{t("title")}</h1>
       <p className="text-center">{t("subtitle")}</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-4">
-
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
         {galleryImage.galleryImage.map((item: GalleryImage) => (
-          <div key={item.id} className="flex flex-col">
+          <div
+            key={item.id}
+            className="break-inside-avoid"
+            // onDoubleClick={() => handleDoubleClick(item.image)}
+          >
             <Image
               src={item.image}
               alt={item.image}
               width={900}
-              height={500}
-              className="rounded-lg object-cover"
+              height={900}
+              className="rounded-lg w-full h-auto"
             />
-            
           </div>
         ))}
       </div>
-
-
-
     </div>
   );
 }
