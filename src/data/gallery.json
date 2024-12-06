@@ -1,0 +1,33 @@
+{
+    "galleryImage": [
+      {
+        "id": 1,
+        "image": "/assets/gallery/gallery01.webp"
+      },
+      {
+        "id": 2,
+        "image": "/assets/gallery/gallery02.webp"
+      },
+      {
+        "id": 3,
+        "image": "/assets/gallery/gallery03.webp"
+      },
+      {
+        "id": 4,
+        "image": "/assets/gallery/gallery04.webp"
+      },
+      {
+        "id": 5,
+        "image": "/assets/gallery/gallery05.webp"
+      },
+      {
+        "id": 6,
+        "image": "/assets/gallery/gallery06.webp"
+      },
+      {
+        "id": 7,
+        "image": "/assets/gallery/gallery07.webp"
+      }
+    ]
+  }
+  
