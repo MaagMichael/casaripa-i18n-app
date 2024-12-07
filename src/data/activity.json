@@ -8,15 +8,21 @@
     },
     {
       "id": 2,
-      "image": "/assets/activity/beach.webp",
+      "image": "/assets/activity/nature2.webp",
       "title": "activity1",
       "description":"description1"
     },
     {
       "id": 3,
-      "image": "/assets/activity/beach.webp",
-      "title": "activity1",
-      "description":"description1"
+      "image": "/assets/activity/nature.webp",
+      "title": "activity5",
+      "description":"description5"
+    },
+    {
+      "id": 4,
+      "image": "/assets/activity/house.webp",
+      "title": "activity6",
+      "description":"description6"
     }
   ]
 }

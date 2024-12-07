@@ -32,8 +32,11 @@
     "description3":"ddddd",
     "activity4": "xxx",
     "description4":"ddddd",
-    "activity5": "xxx",
-    "description5":"ddddd"
+    "activity5": "Nature and hiking",
+    "description5":"Only 15 minutes away by car is the regional park 'Gola della Rossa and Frasassi'. This is the green heart of Le Marche and the largest nature reserve in this region. Here you can explore the Frasassi Caves, a remarkable karst cave system considered by many to be the most beautiful stalactite caves in Europe. Accompanied by a guide (in various languages), you can visit these magnificent caves. \n There are also several hiking trails in the regional park that take you along the park's sights.",
+    "activity6": "National Park Monti Sibillini",
+    "description6":"The Monti Sibillini National Park, part of the Apenines, lies around 50 km to the south. Nature, history and culture make this park a unique area. Species such as the wolf, golden eagle, peregrine falcon and other indigenous species live here. In combination with historic villages and abbeys that lie at the foot of the mountains, time seems to have stood still. \n For those feeling more energetic, there are many hiking and cycling trails and a little further south there are also skiing opportunities."
+  
   },
   "GalleryPage": {
     "title": "Gallery Page",
@@ -41,7 +44,7 @@
   },
   "ContactPage": {
     "title": "Contact Page",
-    "about": "back to Home Page"
+    "send": "Send"
   },
   "FAQPage": {
     "title": "FAQ Page",
