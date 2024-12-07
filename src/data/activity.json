@@ -1,0 +1,22 @@
+{
+  "activityBlog": [
+    {
+      "id": 1,
+      "image": "/assets/activity/beach.webp",
+      "title": "activity1",
+      "description":"description1"
+    },
+    {
+      "id": 2,
+      "image": "/assets/activity/beach.webp",
+      "title": "activity1",
+      "description":"description1"
+    },
+    {
+      "id": 3,
+      "image": "/assets/activity/beach.webp",
+      "title": "activity1",
+      "description":"description1"
+    }
+  ]
+}

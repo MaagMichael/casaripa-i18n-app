@@ -18,13 +18,22 @@
     "about": "Gehe zur Über Uns Seite"
   },
   "AboutPage": {
-    "title":"Über uns",
+    "title": "Über uns",
     "text": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
-    "text2":"Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung"
+    "text2": "Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung"
   },
   "ActivityPage": {
-    "title": "Aktivitäten Seite",
-    "about": "Gehe zur Home Seite"
+    "title": "Aktivitäten für Sie...",
+    "activity1": "Strände und Schwimmen",
+    "description1": "Die Adriaküste ist ca. 35 km entfernt und es gibt mehrere Strände mit Sonnenschirmen und Sonnenliegen. Im Süden, etwas außerhalb von Ancona, befindet sich der  Nationalpark Monte Conero . Dieser Park liegt in der Nähe einer der schönsten Küsten der Adria. Über 20 km finden Sie Buchten mit Kieselstränden wie Porto Novo, Sirolo und Numana, in denen Sie schwimmen, sich sonnen und die köstlichen frischen Meeresfrüchte probieren können. Senigallia nördlich von Ancona ist bekannt für seine langen Sandstrände. \n Etwa 10 km von Cupramontana entfernt liegt der Castreccioni-See, auch als Cingoli-See bekannt. Hier können Sie schwimmen, ein Tretboot oder ein Kanu mieten. In Apiro, einem Dorf etwa 8 km von Cupramontana entfernt, befindet sich der  Eldorado-Wasserpark. Nur im Sommer geöffnet, aber jeden Tag gibt es viel Unterhaltung mit Musik und Tanz und der Park hat mehrere Wasserrutschen, darunter die höchsten in Europa.",
+    "activity2": "xxx",
+    "description2":"ddddd",
+    "activity3": "xxx",
+    "description3":"ddddd",
+    "activity4": "xxx",
+    "description4":"ddddd",
+    "activity5": "xxx",
+    "description5":"ddddd"
   },
   "GalleryPage": {
     "title": "Galerie Seite",
@@ -52,20 +61,14 @@
   },
   "ActivityExtract": {
     "title": "Geniessen Sie unser Paradies",
-    "categories1":"Strand",
-    "categories2":"Sehenswürdigkeiten",
-    "categories3":"Natur und Aktivitäten",
-    "categories4":"Weingüter",
-    "categories5":"In der Nähe von Cupramontana",
-    "categories6":"Restaurants und Einkaufsmöglichkeiten",
-
-    "categories" : [
-      "Strand", "Sehenswürdigkeiten", "Natur und Aktivitäten", "Weingüter", "In der Nähe von Cupramontana" ,"Restaurants und Einkaufsmöglichkeiten"],
-    "pictures": ["/assets/beach.jpg", "/assets/places.jpg", "/assets/nature.jpg", "/assets/winery.jpg", "/assets/nearby.jpg", "/assets/restaurants.jpg"]
-
+    "categories1": "Strand",
+    "categories2": "Sehenswürdigkeiten",
+    "categories3": "Natur und Aktivitäten",
+    "categories4": "Weingüter",
+    "categories5": "In der Nähe von Cupramontana",
+    "categories6": "Restaurants und Einkaufsmöglichkeiten"
   },
   "Review": {
     "title": "Gästebewertungen"
   }
-
 }

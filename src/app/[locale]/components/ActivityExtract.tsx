@@ -1,7 +1,7 @@
 // import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server"; // server side with async and await
 import activityImage from "@/data/activityextract.json";
-// import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 interface ActivityImage {
@@ -20,13 +20,15 @@ export default async function ActivityExtract() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-4">
         {activityImage.activityImage.map((item: ActivityImage) => (
           <div key={item.id} className="flex flex-col">
-            <Image
-              src={item.image}
-              alt={t(item.description)}
-              width={900}
-              height={500}
-              className="rounded-lg object-cover"
-            />
+            <Link href="/activity">
+              <Image
+                src={item.image}
+                alt={t(item.description)}
+                width={900}
+                height={500}
+                className="rounded-lg object-cover"
+              />
+            </Link>
             <p className="mt-2">{t(item.description)}</p>
           </div>
         ))}

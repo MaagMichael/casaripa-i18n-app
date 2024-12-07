@@ -23,8 +23,17 @@
     "text2":"Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning"
   },
   "ActivityPage": {
-    "title": "Activity Page",
-    "about": "back to Home Page"
+    "title": "Activities for you ...",
+    "activity1": "Beaches and Swimming",
+    "description1": "The Adriatic coast is approx. 35 km away and there are several beaches with parasols and sun loungers. To the south, just outside Ancona, is the Monte Conero National Park. This park is close to one of the most beautiful coasts of the Adriatic. Over 20 km you will find bays with pebble beaches such as Porto Novo, Sirolo and Numana, where you can swim, sunbathe and taste the delicious fresh seafood. Senigallia, north of Ancona, is known for its long sandy beaches. \n About 10 km from Cupramontana is Lake Castreccioni, also known as Lake Cingoli. Here you can swim, rent a pedal boat or a canoe. In Apiro, a village about 8 km from Cupramontana, you will find the Eldorado water park. Only open in summer, but there is plenty of entertainment with music and dancing every day and the park has several water slides, including the highest in Europe.",
+    "activity2": "xxx",
+    "description2":"ddddd",
+    "activity3": "xxx",
+    "description3":"ddddd",
+    "activity4": "xxx",
+    "description4":"ddddd",
+    "activity5": "xxx",
+    "description5":"ddddd"
   },
   "GalleryPage": {
     "title": "Gallery Page",
@@ -57,11 +66,7 @@
     "categories3":"Nature and Activities",
     "categories4":"Winery",
     "categories5":"Near by Cupramontana",
-    "categories6":"Restaurants and Shops",
-
-    "categories" : [
-      "Beach", "Places to visit", "Nature and Activities", "Winery", "Near by Cupramontana" ,"Restaurants and Shops"],
-    "pictures": ["/assets/beach.jpg", "/assets/places.jpg", "/assets/nature.jpg", "/assets/winery.jpg", "/assets/nearby.jpg", "/assets/restaurants.jpg"]
+    "categories6":"Restaurants and Shops"
   },
   "Review": {
     "title": "Guest Reviews"

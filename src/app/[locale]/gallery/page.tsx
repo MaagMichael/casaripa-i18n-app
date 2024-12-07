@@ -1,6 +1,6 @@
 // import { useTranslations } from "next-intl"; //client side
 import { getTranslations } from "next-intl/server"; // server side with async and await
-import { Link } from "@/i18n/routing";
+// import { Link } from "@/i18n/routing";
 
 import galleryImage from "@/data/gallery.json";
 import Image from "next/image";
@@ -33,6 +33,7 @@ export default async function Gallery() {
             <Image
               src={item.image}
               alt={item.image}
+              // maybe add resolution width height into json file and usse it here
               width={900}
               height={900}
               className="rounded-lg w-full h-auto"

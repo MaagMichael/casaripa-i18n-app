@@ -10,7 +10,7 @@ export default async function About() {
       <h1 className="text-xl text-center">{t("title")}</h1>
 
       <p className="text-justify">{t("text")}</p>
-      <p className="whitespace-pre-line">{t("text2")}</p>
+      <p className="text-justify whitespace-pre-line">{t("text2")}</p>
 
       <GoogleMap />
     </div>
