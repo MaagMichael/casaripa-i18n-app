@@ -15,6 +15,7 @@
   },
   "HomePage": {
     "title": "Hello world!",
+    "subtitle": {"sub1":"sub 1", "sub2":"sub 2"},
     "about": "Go to the about page"
   },
   "AboutPage": {
