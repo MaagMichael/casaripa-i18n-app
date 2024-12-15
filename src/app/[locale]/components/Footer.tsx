@@ -1,9 +1,9 @@
 // import { useTranslations } from "next-intl"; //client side
-// import { getTranslations } from "next-intl/server"; // server side with async and await
+import { getTranslations } from "next-intl/server"; // server side with async and await
 import { Link } from "@/i18n/routing";
 
 export default async function Footer() {
-  // const t = await getTranslations("Footer");
+  const t = await getTranslations("Footer");
 
   return (
     <div className="bg-primary_light text-secondary py-4">
@@ -11,17 +11,17 @@ export default async function Footer() {
 
       <div className="flex flex-col lg:flex-row justify-around ">
         <div className="flex flex-col space-y-4 p-4">
-          <p className="text-xl">Find out more</p>
+          <p className="text-xl">{t("title")}</p>
 
-          <Link href="/about">About CASA RIPA</Link>
-          <Link href="/about">Route to Us</Link>
-          <Link href="/faq">FAQs</Link>
-          <Link href="/gallery">Gallery</Link>
+          <Link href="/about">{t("aboutcasaripa")}</Link>
+          <Link href="/about">{t("route")}</Link>
+          <Link href="/faq">{t("faq")}</Link>
+          <Link href="/gallery">{t("gallery")}</Link>
           <Link href="/">Admin</Link>
         </div>
 
         <div className="flex flex-col space-y-4 p-4">
-          <p className="text-xl">Contacts</p>
+          <p className="text-xl">{t("contact")}</p>
 
           <p>Ferienhaus Casa Ripa</p>
           <p>Jasmin Ghubbar</p>

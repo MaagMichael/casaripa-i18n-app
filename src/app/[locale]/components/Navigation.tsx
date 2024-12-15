@@ -41,6 +41,7 @@ export default async function Navigation() {
           width={151}
           height={109}
           alt="Picture of the author"
+          priority
         />
       </Link>
 

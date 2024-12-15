@@ -51,7 +51,12 @@
     "about": "Gehe zur Home Seite"
   },
   "Footer": {
-    "title": "Fusszeile"
+    "title": "Finde mehr heraus",
+    "aboutcasaripa": "Über Casa Ripa",
+    "route": "Der Weg zu uns",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "faq": "FAQ"
   },
   "WelcomePage": {
     "title": "Willkommen auf dem Anwesen Casa Ripa",
