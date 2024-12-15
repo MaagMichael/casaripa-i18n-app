@@ -1,13 +1,19 @@
-import {notFound} from 'next/navigation';
-import {getRequestConfig} from 'next-intl/server';
-import {routing} from './routing';
- 
-export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
-  // if (!routing.locales.includes(locale as any)) notFound();
-  if (!routing.locales.includes(locale as "en" | "de")) notFound();
- 
+// https://dev.to/adrianbailador/guide-to-internationalisation-i18n-in-nextjs-with-routing-3kje
+
+import { getRequestConfig } from "next-intl/server";
+import { Locale, routing } from "./routing";
+
+export default getRequestConfig(async ({ requestLocale }) => {
+  // This typically corresponds to the `[locale]` segment
+  let locale = await requestLocale;
+
+  // Ensure that a valid locale is used
+  if (!locale || !routing.locales.includes(locale as Locale)) {
+    locale = routing.defaultLocale;
+  }
+
   return {
-    messages: (await import(`../../messages/${locale}.json`)).default
+    locale,
+    messages: (await import(`../../messages/${locale}.json`)).default,
   };
 });

@@ -1,3 +1,10 @@
+https://www.youtube.com/watch?v=8F_rGy_ys4s
+
+https://github.com/Clactar/multiple-languages-next-js
+
+https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

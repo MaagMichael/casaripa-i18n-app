@@ -1,12 +1,11 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   content: [
     // add paths to the files that will use Tailwind class names:
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",  ],
   theme: {
     extend: {
       colors: {
@@ -36,5 +35,4 @@ const config: Config = {
     },
   },
   plugins: [],
-};
-export default config;
+} satisfies Config;

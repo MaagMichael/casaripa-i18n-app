@@ -7,7 +7,7 @@ import { getTranslations } from "next-intl/server"; // server side with async an
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
-import LocaleSwitcher from "./LocaleSwitcher";
+import Switcher from "./Switcher";
 // import { usePathname } from 'next/navigation';
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
@@ -31,10 +31,6 @@ import LocaleSwitcher from "./LocaleSwitcher";
 
 export default async function Navigation() {
   const t = await getTranslations("Navigation");
-  // const pathname = usePathname();
-  // Extract the locale from the pathname (assumes format like /en or /de)
-  // const locale = pathname.split('/')[1] || 'en';
-  // const menuItems = menuData;
 
   return (
     <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10">
@@ -67,17 +63,17 @@ export default async function Navigation() {
         ))}
       </div>
 
-      {/* Reserve button extra */}
-      <Link href="/reserve">
-        <button className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500">
-          {t("reserve")}
-        </button>
-      </Link>
+      <div className="flex space-x-12 mx-8">
+        {/* Reserve button extra */}
+        <Link href="/reserve">
+          <button className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500">
+            {t("reserve")}
+          </button>
+        </Link>
 
-
-      {/* Language switch button extra */}
-      <button className="text-secondary mx-4">DE/EN</button>
-      {/* <LocaleSwitcher />   */}
+        {/* Language Switcher as a clinet component */}
+        <Switcher />
+      </div>
     </div>
   );
 }
