@@ -9,7 +9,7 @@ export default async function Footer() {
     <div className="bg-primary_light text-secondary py-4">
       {/* <h1 className="text-center">{t("title")}</h1> */}
 
-      <div className="flex flex-col lg:flex-row justify-around ">
+      <div className="flex flex-col md:flex-row justify-around ">
         <div className="flex flex-col space-y-4 p-4">
           <p className="text-xl">{t("title")}</p>
 

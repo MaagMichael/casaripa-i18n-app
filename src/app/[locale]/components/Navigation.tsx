@@ -8,6 +8,7 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import menuData from "@/data/menu.json";
 import Switcher from "./Switcher";
+import ButtonToTop from "./ButtonToTop";
 // import { usePathname } from 'next/navigation';
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
@@ -47,11 +48,14 @@ export default async function Navigation() {
 
       {/* Navigation Menu mobile*/}
       {/* toggle by tailwind */}
+      <div className="flex xl:hidden text-secondary">mobile Menu with hamburger icon
+
+      </div>
       {/* make as client component when use UseState ?*/}
 
       {/* Navigation Menu tablet/desktop*/}
       {/* toggle by tailwind */}
-      <div className="">
+      <div className="hidden xl:flex">
         {menuData.MenuItems.map((item, index) => (
           <Link
             key={index}
@@ -75,6 +79,9 @@ export default async function Navigation() {
         {/* Language Switcher as a clinet component */}
         <Switcher />
       </div>
+
+      {/* gototop button */}
+      <ButtonToTop />
     </div>
   );
 }
