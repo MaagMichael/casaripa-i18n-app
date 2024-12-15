@@ -9,10 +9,6 @@
     "faq": "FAQ",
     "reserve": "Jetzt reservieren"
   },
-  "LocaleSwitcher": {
-    "label": "Sprache ändern",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} other {Unbekannt}}"
-  },
   "HomePage": {
     "title": "Hello Welt!",
     "subtitle": {"sub1":"sub 1", "sub2":"sub 2"},
