@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, FormEvent } from "react";
+import Image from "next/image";
 
 // import { sendEmail } from '@/app/api/send-email/route';
 type textProps = {
@@ -20,7 +21,7 @@ export default function ContactForm(data: textProps) {
     }
 
     const formData = new FormData(formRef.current);
-    console.log("formData:",formData);
+    console.log("formData:", formData);
     const formProps = Object.fromEntries(formData);
     console.log("formProps:", formProps);
 
@@ -41,74 +42,84 @@ export default function ContactForm(data: textProps) {
   };
 
   return (
-    <form
-      ref={formRef}
-      onSubmit={handleSubmit}
-      className="space-y-4 max-w-md mx-auto"
-    >
-      <div>
-        <label htmlFor="name" className="block mb-2">
-          Name *
-        </label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          placeholder="Name ..."
-          className="w-full p-2 border rounded"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block mb-2">
-          Email *
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Email ..."
-          className="w-full p-2 border rounded"
-        />
-      </div>
-      <div>
-        <label htmlFor="phone" className="block mb-2">
-          Phone
-        </label>
-        <input
-          type="phone"
-          id="phone"
-          name="phone"
-          //   required
-          placeholder="Phone ..."
-          className="w-full p-2 border rounded"
-        />
-      </div>
-      <div>
-        <label htmlFor="message" className="block mb-2">
-          Text *
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          required
-          placeholder="Text ..."
-          className="w-full p-2 border rounded"
-        />
-      </div>
-      {/* from date */}
-      {/* to date */}
-      {/* room */}
+    <>
+      <Image
+        className="max-w-md mx-auto"
+        src="/dummycalendar.png"
+        alt="/dummycalendar.png"
+        width={4032}
+        height={3042}
+      />
 
-      <button
-        type="submit"
-        className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="space-y-4 max-w-md mx-auto"
       >
-        {data.send}
-      </button>
-    </form>
+        <div>
+          <label htmlFor="name" className="block mb-2">
+            Name *
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name ..."
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        <div>
+          <label htmlFor="email" className="block mb-2">
+            Email *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email ..."
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        <div>
+          <label htmlFor="phone" className="block mb-2">
+            Phone
+          </label>
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            //   required
+            placeholder="Phone ..."
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        <div>
+          <label htmlFor="message" className="block mb-2">
+            Text *
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            required
+            placeholder="Text ..."
+            className="w-full p-2 border rounded"
+          />
+        </div>
+        {/* from date */}
+        {/* to date */}
+        {/* room */}
+
+        <button
+          type="submit"
+          className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
+        >
+          {data.send}
+        </button>
+      </form>
+    </>
   );
 }
 
@@ -116,10 +127,10 @@ export default function ContactForm(data: textProps) {
 
 // You got a new message from {{user_name}}:
 
-// {{message}} 
+// {{message}}
 
 // {{user_name}} contact details :
-// Phone number : {{user_phone_number}} 
+// Phone number : {{user_phone_number}}
 // Email Id : {{user_email}}
 
 // ############################################

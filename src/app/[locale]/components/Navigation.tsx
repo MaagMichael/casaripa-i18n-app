@@ -34,7 +34,7 @@ export default async function Navigation() {
   const t = await getTranslations("Navigation");
 
   return (
-    <div className="bg-primary flex justify-end xl:justify-between items-center w-full sticky top-0 z-10 ring-2 ring-blue-500">
+    <div className="bg-primary flex justify-end xl:justify-between items-center w-full sticky top-0 z-10">
       {/* Logo always visible on left side */}
       <Link href="/" className="">
         <Image
@@ -61,7 +61,7 @@ export default async function Navigation() {
         ))}
       </div>
 
-      <div className="flex items-center space-x-12 mx-8 ring-2 ring-red-500">
+      <div className="flex items-center space-x-12 mx-8">
         {/* Reserve button extra */}
         <Link href="/reserve">
           <button className="bg-green text-white  py-2 px-6 rounded hover:bg-primary_light duration-500">
