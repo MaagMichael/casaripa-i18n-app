@@ -32,12 +32,11 @@ import NavigationMobil from "./NavigationMobil";
 
 export default async function Navigation() {
   const t = await getTranslations("Navigation");
-  
 
   return (
-    <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10">
+    <div className="bg-primary flex justify-end xl:justify-between items-center w-full sticky top-0 z-10 ring-2 ring-blue-500">
       {/* Logo always visible on left side */}
-      <Link href="/">
+      <Link href="/" className="">
         <Image
           src="/assets/casa-ripa-logo.png"
           width={151}
@@ -62,7 +61,7 @@ export default async function Navigation() {
         ))}
       </div>
 
-      <div className="flex space-x-12 mx-8">
+      <div className="flex items-center space-x-12 mx-8 ring-2 ring-red-500">
         {/* Reserve button extra */}
         <Link href="/reserve">
           <button className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500">
@@ -72,17 +71,17 @@ export default async function Navigation() {
 
         {/* Language Switcher as a clinet component */}
         <Switcher />
-      </div>
 
-      {/* Navigation Menu mobile as client component */}
-      {/* toggle by tailwind */}
-      <div className="flex xl:hidden text-secondary">
-        <NavigationMobil
-          data={menuData.MenuItems.map((item) => ({
-            label: t(item.label),
-            route: item.route,
-          }))}
-        />
+        {/* Navigation Menu mobile as client component */}
+        {/* toggle by tailwind */}
+        <div className="flex xl:hidden text-secondary">
+          <NavigationMobil
+            data={menuData.MenuItems.map((item) => ({
+              label: t(item.label),
+              route: item.route,
+            }))}
+          />
+        </div>
       </div>
 
       {/* gototop button */}
