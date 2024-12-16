@@ -9,7 +9,7 @@ import Image from "next/image";
 import menuData from "@/data/menu.json";
 import Switcher from "./Switcher";
 import ButtonToTop from "./ButtonToTop";
-// import { usePathname } from 'next/navigation';
+import NavigationMobil from "./NavigationMobil";
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
 // from the JSON file. When you import a JSON file in TypeScript, it automatically creates an
@@ -48,8 +48,19 @@ export default async function Navigation() {
 
       {/* Navigation Menu mobile*/}
       {/* toggle by tailwind */}
-      <div className="flex xl:hidden text-secondary">mobile Menu with hamburger icon
-
+      <div className="flex xl:hidden text-secondary">
+        {/* {menuData.MenuItems.map((item) => (
+          <p key={item.label}>{t(item.label)}</p>
+        ))} */}
+        <NavigationMobil
+          data={menuData}
+          home={t("Home")}
+          about={t("About us")}
+          activity={t("Activities")}
+          gallery={t("Gallery")}
+          contact={t("Contact")}
+          faq={t("FAQ")}
+        />
       </div>
       {/* make as client component when use UseState ?*/}
 
