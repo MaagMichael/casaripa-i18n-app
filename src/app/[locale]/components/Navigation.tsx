@@ -32,6 +32,7 @@ import NavigationMobil from "./NavigationMobil";
 
 export default async function Navigation() {
   const t = await getTranslations("Navigation");
+  
 
   return (
     <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10">
@@ -45,24 +46,6 @@ export default async function Navigation() {
           priority
         />
       </Link>
-
-      {/* Navigation Menu mobile*/}
-      {/* toggle by tailwind */}
-      <div className="flex xl:hidden text-secondary">
-        {/* {menuData.MenuItems.map((item) => (
-          <p key={item.label}>{t(item.label)}</p>
-        ))} */}
-        <NavigationMobil
-          data={menuData}
-          home={t("Home")}
-          about={t("About us")}
-          activity={t("Activities")}
-          gallery={t("Gallery")}
-          contact={t("Contact")}
-          faq={t("FAQ")}
-        />
-      </div>
-      {/* make as client component when use UseState ?*/}
 
       {/* Navigation Menu tablet/desktop*/}
       {/* toggle by tailwind */}
@@ -89,6 +72,17 @@ export default async function Navigation() {
 
         {/* Language Switcher as a clinet component */}
         <Switcher />
+      </div>
+
+      {/* Navigation Menu mobile as client component */}
+      {/* toggle by tailwind */}
+      <div className="flex xl:hidden text-secondary">
+        <NavigationMobil
+          data={menuData.MenuItems.map((item) => ({
+            label: t(item.label),
+            route: item.route,
+          }))}
+        />
       </div>
 
       {/* gototop button */}

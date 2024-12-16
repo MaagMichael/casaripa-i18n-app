@@ -1,35 +1,54 @@
 "use client";
 
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
+
+// useParams gives you access to dynamic route parameters from the URL. like /en
+import { useParams } from "next/navigation";
 
 interface NavMobilProps {
   data: {
-    MenuItems: {
-      label: string;
-      route: string;
-    }[];
-  };
-  home: string;
-  about: string;
-  activity: string;
-  gallery: string;
-  contact: string;  
-  faq: string;
+    label: string;
+    route: string;
+  }[];
 }
 
-function NavigationMobil({ data, home, about, activity, gallery , contact, faq}: NavMobilProps) {
-  console.log("data", data);
-  console.log("home", home);
-  console.log("about", about);
+function NavigationMobil({ data }: NavMobilProps) {
+  //   console.log("data", data);
+  const params = useParams();
 
-  return <div>
-    <p>{home}</p>
-    <p>{about}</p>
-    <p>{activity}</p>
-    <p>{gallery}</p>
-    <p>{contact}</p>
-    <p>{faq}</p>
-  </div>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div>
+      <button
+        onClick={toggleMenu}
+        className="relative w-10 h-8 flex flex-col justify-between items-center group focus:outline-none"
+      >
+        <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
+        <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
+        <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
+      </button>
+
+      {isOpen && (
+        <div className="">
+          {data.map((item, index) => (
+            <Link
+              key={index}
+              href={`/${params.locale}${item.route}`}
+              className="flex flex-col text-secondary  font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default NavigationMobil;
