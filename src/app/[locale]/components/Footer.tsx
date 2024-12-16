@@ -24,8 +24,8 @@ export default async function Footer() {
           <p className="text-xl">{t("contact")}</p>
 
           <p>Ferienhaus Casa Ripa</p>
-          <p>Jasmin Ghubbar</p>
-          <p>Tannenweg 46</p>
+          <p>Alexander Mohamed</p>
+          {/* <p>Tannenweg 46</p> */}
           <p>85399 Hallbergmoos</p>
           <p>casaripa.cupra(at)gmail.com</p>
           <p>(0049) 179 294 64 32</p>

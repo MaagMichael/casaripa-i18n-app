@@ -15,6 +15,26 @@
       {
         "label": "Picture Heroimage 04",
         "url": "/assets/hero/hero04.webp"
+      },
+      {
+        "label": "Picture Heroimage 05",
+        "url": "/assets/hero/hero05.webp"
+      },
+      {
+        "label": "Picture Heroimage 06",
+        "url": "/assets/hero/hero06.webp"
+      },
+      {
+        "label": "Picture Heroimage 07",
+        "url": "/assets/hero/hero07.webp"
+      },
+      {
+        "label": "Picture Heroimage 08",
+        "url": "/assets/hero/hero08.webp"
+      },
+      {
+        "label": "Picture Heroimage 09",
+        "url": "/assets/hero/hero09.webp"
       }
       
     ]
