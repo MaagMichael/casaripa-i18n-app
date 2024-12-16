@@ -8,8 +8,8 @@ interface ReviewCardProps {
     reviews: {
       id: number;
       name: string;
-      job: string;
-      image: string;
+      date: string;
+      rating: string;
       text: string;
     }[];
   };
@@ -66,9 +66,12 @@ export default function ReviewCard({ data, title }: ReviewCardProps) {
 
       {/* text container */}
       <div className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide text-justify">
-        <p>{currentReview.name}</p>
-        <p>{currentReview.text}</p>
-        {/* <p>{currentReview.job}</p> */}
+        <div className="flex justify-between">
+          <p>{currentReview.name} - {currentReview.date}</p>
+          <p>{currentReview.rating}</p>
+        </div>
+
+        <p className="whitespace-pre-line">{currentReview.text}</p>
       </div>
 
       {/* Optional: Add navigation dots */}

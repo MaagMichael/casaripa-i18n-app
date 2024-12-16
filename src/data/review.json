@@ -2,24 +2,45 @@
   "reviews": [
     {
       "id": 1,
-      "name": "Eyadism - July 2021",
-      "job": "web developer",
-      "image": "/assets/review/person1.jpg",
-      "text": "The gorgeous Casa Ripa gives you a glimpse of a wonderful Italian quaint village of Cupra Montana. This is our second visit and we enjoyed it very much. Watching the sunset with clear view over hills around the area is fascinating. After sunset and watching the stars and falling stars is one of the highlights every evening. We highly recommend it for multiple families that enjoy the time together. We captured unforgettable moments we and definitely won’t be the last time to come back and explore what the neighborhood of Cupra Montana has to offer."
+      "name": "Michael Eder",
+      "date": "Okt 2024",
+      "rating": "5/5",
+      "text": "Was für ein Wundervoller Ort um sich zu erholen. Mitten in den Marken auf einer Anhöhe mit Weitblick. Das Meer ist wirklich schnell über die Strada Statale 76 zu erreichen und viele Sehenswürdigkeiten der Marken sind im Umkreis von circa 50 km zu finden. Das Haus ist sehr professionell renoviert. \nUnd der Pool zusammen mit der Lounge ein Traum. Gerne nächstes Jahr wieder!!!👍"
     },
     {
       "id": 2,
-      "name": "Ibrahim Ghubbar - August 2021",
-      "job": "web developer",
-      "image": "/assets/review/person2.jpg",
-      "text": "What a beautiful old farm house in the Italian Marche region. We had a family birthday and rented all three units. Only a 30 minutes drive away from the beach are in Senigallia and 3,5hrs from Rome by train (closest station: Castelplanio-Cupramontana). The outdoor pool was one of the top highlight for the kids same as for the adults next to the beautiful mountain view with amazing sunsets. All the rooms were spacious, well equipped and clean! Grazie mille e Ciao ciao 👋🏻"
+      "name": "Udo Warnecke",
+      "date": "Okt 2024",
+      "rating": "5/5",
+      "text": "Wir haben unseren Urlaub zu zweit mit Hund einfach nur genossen. Traumhafte Lage mit einem unbeschreiblichen Ausblick über den Infinity-Pool. Absolute Ruhe und Erholung pur. Das Appartement (Nord EG) ist übrigens vollkommen ausreichend ausgestattet, zumal vorwiegend die Aussenküche (mit Spülmaschine) genutzt wurde. Alex als Gastgeber steht telefonisch immer hilfreich zur Verfügung. Und vor Ort kümmert sich Rosa als Verwalterin (spricht Englisch) um alles Weitere.\nDank dafür, dass wir diese einzigartige Oase kennenlernen durften."
     },
     {
       "id": 3,
-      "name": "Claudia Guggenberger - September 2023",
-      "job": "web developer",
-      "image": "/assets/review/person3.jpg",
-      "text": "We were able to spend two very nice weeks of vacation here. A wonderful place to unwind. Whether it's the view over the wide, soft hilly landscape that always appears in a different light, the friendliness of the villagers or the good regional food, you feel at home here. We lived in the guest house of the beautiful old, lovingly restored farmhouse and found everything clean and stocked with everything you needed. Checking in and out, as well as contacting us beforehand and here on site, was very friendly and unproblematic. The new swimming pool is still under construction, but you can already imagine the fantastic atmosphere with a view of the sunset. For us, the location of the accommodation was perfect for exploring the Marche region, whether hiking, cycling or by car. We also used the nearby train station. From here we visited many beaches, picturesque villages but also cities like Loreto, Assisi and Perugia were easy to reach. We can only recommend the accommodation and would be happy to come back with our family to use the large campfire pit and pizza oven. arrivederci Casa Ripa"
+      "name": "Alexander Punzelt",
+      "date": "Okt 2024",
+      "rating": "5/5",
+      "text": "Wir durften in diesem wunderschönen Ferienhaus zwei Wochen verbringen. Wir haben uns sehr wohl gefühlt und schon bei der Ankunft waren wir von der Aussicht und der Anlage überwältigt. Der Pool einfach ein Traum. Ausstattung, Pizzaofen, Outdoorküche etc. alles super. Die Vermieter und die Hausverwalterin vor Ort waren einfach großartig und nicht mit Geld zu bezahlen. Wir kommen gerne wieder. Vielen Dank für alles."
+    },
+    {
+      "id": 4,
+      "name": "Sybille Stelzmann",
+      "date": "Sep 2024",
+      "rating": "5/5",
+      "text": "Ein wundervoller Ort um einen entspannten Urlaub in ursprünglicher Umgebung zu erleben. Sehr nette Gastgeber. Alles gepflegt, geschmackvoll und sauber. \nJede Wohnung hat seinen eigenen Außenbereich. Der Pool ist ein Traum. Wir haben uns rundum wohl gefühlt!"
+    },
+    {
+      "id": 5,
+      "name": "Sally Stahlfast",
+      "date": "Sep 2024",
+      "rating": "5/5",
+      "text": "Unser Urlaub in diesem Ferienhaus war einfach unvergesslich! Der Infinity-Pool war der absolute Höhepunkt – mit einem atemberaubenden Blick über die Landschaft. Unsere Kinder hatten im Pool jede Menge Spaß, während wir uns auf der großzügigen Terrasse entspannten und die herrlichen Sonnenuntergänge genossen haben. Die Kombination aus dem Panoramablick und der Ruhe hat uns jeden Abend verzaubert. \nBesonders gefallen hat uns auch die Outdoor-Dusche – ein tolles Extra, um sich nach dem Schwimmen im Freien abzukühlen. Das Haus selbst ist modern und gemütlich eingerichtet, und die Terrasse bot den perfekten Ort, um gemeinsam zu essen und den Tag ausklingen zu lassen. Die Nähe zu ausgezeichneten Restaurants war ein weiterer Pluspunkt – wir haben die lokale Küche sehr genossen und konnten tolle Lokale in wenigen Minuten erreichen. Trotz der ruhigen Lage war alles Wichtige schnell erreichbar. \nDer Gastgeber war herzlich und hilfsbereit und hat uns tolle Tipps für die Umgebung gegeben. Alles in allem war es ein perfekter Urlaub für die ganze Familie – wir kommen ganz sicher wieder!"
+    },
+    {
+      "id": 6,
+      "name": "Selene Calzavara",
+      "date": "Aug 2024",
+      "rating": "5/5",
+      "text": "Wunderschönes Haus mit atemberaubender Aussicht. Sehr geräumig und mit allen Dienstleistungen ausgestattet. Es liegt 20 Minuten von den Frasassi-Höhlen und eine halbe Stunde vom Meer entfernt. Sehr nette und hilfsbereite Besitzer. Bester Aufenthalt meines Lebens! \n (Original Text) Casa bellissima con vista mozzafiato. Molto spaziosa e con tutti i servizi. Si trova a 20 min dalle grotte di Frasassi e mezz’oretta dal mare. Proprietari molto gentili e disponibili. Miglior soggiorno della mia vita!"
     }
   ]
 }
