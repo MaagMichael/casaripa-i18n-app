@@ -20,7 +20,9 @@ export default function ContactForm(data: textProps) {
     }
 
     const formData = new FormData(formRef.current);
+    console.log("formData:",formData);
     const formProps = Object.fromEntries(formData);
+    console.log("formProps:", formProps);
 
     try {
       const response = await sendEmail(formProps);
@@ -102,7 +104,7 @@ export default function ContactForm(data: textProps) {
 
       <button
         type="submit"
-        className="w-full p-2 bg-blue-500 text-white rounded"
+        className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
       >
         {data.send}
       </button>

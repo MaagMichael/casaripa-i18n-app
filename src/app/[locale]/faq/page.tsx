@@ -6,7 +6,7 @@ export default async function FAQ() {
   const t = await getTranslations("FAQPage");
 
   return (
-    <div>
+    <div className="bg-primary text-secondary p-4 space-y-4">
       <h1 className="">{t("title")}</h1>
       <Link href="/">{t("about")}</Link>
     </div>

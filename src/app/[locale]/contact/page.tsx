@@ -7,9 +7,9 @@ export default async function Contact() {
   const t = await getTranslations("ContactPage");
 
   return (
-    <div>
-      <h1 className="">{t("title")}</h1>
-      <h1 className="">{t("send")}</h1>
+    <div className="bg-primary text-secondary p-4 space-y-4">
+      {/* <h1 className="">{t("title")}</h1>
+      <h1 className="">{t("send")}</h1> */}
       <ContactForm send={t("send")}/> 
     </div>
   );

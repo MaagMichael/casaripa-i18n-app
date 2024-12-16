@@ -64,7 +64,7 @@ export default async function Navigation() {
       <div className="flex items-center space-x-12 mx-8 ring-2 ring-red-500">
         {/* Reserve button extra */}
         <Link href="/reserve">
-          <button className="bg-green text-white font-[Poppins] py-2 px-6 rounded hover:bg-primary_light duration-500">
+          <button className="bg-green text-white  py-2 px-6 rounded hover:bg-primary_light duration-500">
             {t("reserve")}
           </button>
         </Link>
