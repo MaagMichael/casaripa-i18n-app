@@ -3,10 +3,10 @@
 "use client";
 // usePathname returns the full current path including the locale prefix. For example:
 // If you're on the homepage in English: /en/home
-import { Locale, routing, usePathname } from "@/i18n/routing";
+import {routing, usePathname } from "@/i18n/routing";
 
 // useParams gives you access to dynamic route parameters from the URL. like /en
-import { useRouter, useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 // useLocale returns only the current active language
 // code the page you are on:
