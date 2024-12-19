@@ -6,7 +6,6 @@ import React, { useState } from "react";
 
 // useParams gives you access to dynamic route parameters from the URL. like /en
 import { useParams } from "next/navigation";
-import Switcher from "./Switcher";
 
 interface NavMobilProps {
   data: {
@@ -48,13 +47,14 @@ function NavigationMobil({ data }: NavMobilProps) {
             <span className="block w-8 h-0.5 bg-secondary transform -rotate-45 absolute"></span>
           </button>
 
-          <Link href="/" className="">
+          <Link href="/" >
             <Image
               src="/assets/casa-ripa-logo.png"
               width={151}
               height={109}
               alt="Picture of the author"
               priority
+              
             />
           </Link>
 

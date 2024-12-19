@@ -37,7 +37,7 @@ export default async function Navigation() {
     <>
       <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10 pr-4">
         {/* Logo always visible on left side */}
-        <Link href="/" className="">
+        <Link href="/" className="max-w-20 sm:max-w-28">
           <Image
             src="/assets/casa-ripa-logo.png"
             width={151}
