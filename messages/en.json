@@ -16,8 +16,12 @@
   },
   "AboutPage": {
     "title": "About us",
-    "text": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
-    "text2": "Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning"
+    "text-order": {
+      "subtext01": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
+      "subtext02": "Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning",
+      "subtext03": "We offer the following suites: \n * Suite North: A spacious suite on the first floor.\n * Suite South: A detached cottage (guest house).\n * Penthouse: A maisonette suite with three bedrooms which extends over 2 floors.",
+      "subtext04": "You are also welcome to rent the entire property exclusively for yourself."
+    }
   },
   "ActivityPage": {
     "title": "Activities for you ...",

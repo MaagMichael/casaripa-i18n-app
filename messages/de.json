@@ -16,8 +16,12 @@
   },
   "AboutPage": {
     "title": "Über uns",
-    "text": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
-    "text2": "Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung"
+    "text-order": {
+      "subtext01": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
+      "subtext02": "Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung",
+      "subtext03": "Wir bieten folgende Suiten an: \n * Suite Nord: Eine geräumige Suite im Erdgeschoss.\n * Suite Süd: Ein freistehendes Cottage (Gästehaus).\n * Penthouse: Eine Maisonette-Suite mit drei Schlafzimmern welche sich über 2 Stockwerke erstreckt.",
+      "subtext04": "Sehr gerne können Sie auch das ganze Anwesen exklusiv für sich anmieten."
+    }
   },
   "ActivityPage": {
     "title": "Aktivitäten für Sie...",
