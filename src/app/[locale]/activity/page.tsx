@@ -26,44 +26,48 @@ export default async function Activity() {
         {activityBlog.activityBlog.map((item: ActivityBlog) => (
           <div
             key={item.id}
-            className="max-h-96 grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-primary_light rounded-lg "
+            className="flex flex-col md:flex-row md:max-h-1/3 justify-between bg-primary_light rounded-lg"
           >
             {/* Image placement based on ID */}
             {item.id % 2 === 0 ? (
               // Even ID: Image on the left
               <>
-                <div className="order-1 max-h-96">
+                <div className="relative md:w-1/2 flex items-center justify-center order-2 md:order-1">
                   <Image
                     src={item.image}
                     alt={t(item.description)}
                     width={900}
                     height={500}
-                    
-                    className=" object-contain w-full max-h-96"
+                    className="h-full w-full object-cover"
                   />
                 </div>
 
-                {/* className="p-4 space-y-4 overflow-y-auto max-h-[35vh] scrollbar-hide text-justify"> */}
-                <div className="order-2 space-y-4 p-4 overflow-y-auto scrollbar-hide max-h-96">
+                <div className="md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
-                  <TruncateText text={t(item.description)} maxLength={MaxChar} />
+                  <TruncateText
+                    text={t(item.description)}
+                    maxLength={MaxChar}
+                  />
                 </div>
               </>
             ) : (
               // Odd ID: Image on the right
               <>
-                <div className="order-2 md:order-1 space-y-4 p-4 overflow-y-auto scrollbar-hide max-h-96">
+                <div className="md:w-1/2 p-4 flex flex-col justify-center md:order-1">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
-                  <TruncateText text={t(item.description)} maxLength={MaxChar} />
+                  <TruncateText
+                    text={t(item.description)}
+                    maxLength={MaxChar}
+                  />
                 </div>
 
-                <div className="order-1 md:order-2 max-h-96">
+                <div className="relative md:w-1/2 flex items-center justify-center md:order-2">
                   <Image
                     src={item.image}
                     alt={t(item.description)}
                     width={900}
                     height={500}
-                    className="object-contain w-full max-h-96"
+                    className="h-full w-full object-cover"
                   />
                 </div>
               </>
