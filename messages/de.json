@@ -44,7 +44,8 @@
   },
   "ContactPage": {
     "title": "Kontakt Seite",
-    "send": "Senden"
+    "send": "Senden",
+    "rooms": {"type1":"Suite Nord", "type2":"Suite Süd (Gästehaus)","type3":"Penthouse", "type4":"Gesamtes Haus","type5":"Anderes Thema"} 
   },
   "FAQPage": {
     "title": "FAQ Seite",

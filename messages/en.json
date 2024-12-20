@@ -44,7 +44,8 @@
   },
   "ContactPage": {
     "title": "Contact Page",
-    "send": "Send"
+    "send": "Send",
+    "rooms": {"type1":"Suite North", "type2":"Suite South (Cottage)","type3":"Penthouse", "type4":"Entire property","type5":"Other topic"} 
   },
   "FAQPage": {
     "title": "FAQ Page",

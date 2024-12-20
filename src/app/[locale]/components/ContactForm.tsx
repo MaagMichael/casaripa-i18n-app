@@ -4,12 +4,20 @@ import { useRef, FormEvent } from "react";
 import Image from "next/image";
 
 // import { sendEmail } from '@/app/api/send-email/route';
-type textProps = {
+interface ContactFormProps {
   send: string;
-};
+  rooms: {
+    type1: string;
+    type2: string;
+    type3: string;
+    type4: string;
+    type5: string;
+  };
+}
 
-export default function ContactForm(data: textProps) {
-  console.log(data.send);
+export default function ContactForm({ send, rooms }: ContactFormProps) {
+  console.log(send);
+  console.log(rooms);
 
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -56,6 +64,25 @@ export default function ContactForm(data: textProps) {
         onSubmit={handleSubmit}
         className="space-y-4 max-w-md mx-auto"
       >
+        <div>
+          <label htmlFor="room" className="block mb-2">
+            Select Room *
+          </label>
+          <select
+            id="room"
+            name="room"
+            required
+            className="w-full p-2 border rounded"
+          >
+            <option value="">- Select a Room -</option>
+            {Object.entries(rooms).map(([key, value]) => (
+              <option key={key} value={value} className="text-black">
+                {value}
+              </option>
+            ))}
+          </select>
+        </div>
+
         <div>
           <label htmlFor="name" className="block mb-2">
             Name *
@@ -116,7 +143,7 @@ export default function ContactForm(data: textProps) {
           type="submit"
           className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
         >
-          {data.send}
+          {send}
         </button>
       </form>
     </>
