@@ -24,8 +24,8 @@ export default async function ActivityExtract() {
               <Image
                 src={item.image}
                 alt={t(item.description)}
-                width={900}
-                height={500}
+                width={1200}
+                height={900}
                 className="rounded-lg object-cover"
               />
             </Link>

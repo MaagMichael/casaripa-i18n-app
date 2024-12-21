@@ -2,13 +2,13 @@
   "activityBlog": [
     {
       "id": 1,
-      "image": "/assets/activity/beach.webp",
+      "image": "/assets/activity/beach2.webp",
       "title": "activity1",
       "description":"description1"
     },
     {
       "id": 2,
-      "image": "/assets/activity/nature2.webp",
+      "image": "/assets/activity/beach2.webp",
       "title": "activity1",
       "description":"description1"
     },

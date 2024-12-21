@@ -1,0 +1,5 @@
+Hero Image für Karussell: B x H - 4000 pixel x 3000 pixel, Format jpg oder webp
+
+mind. 6 Bilder für Aktivitäten (Landing Page und separate Seite): B x H - 1200 pixel x 900 pixel, Format jpg oder webp
+
+Gallerie: B x H - 1200 pixel x 900 pixel oder H x B 900 pixel x 1200 pixel, Format jpg oder webp
