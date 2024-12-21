@@ -32,17 +32,18 @@ export default async function Activity() {
             {item.id % 2 === 0 ? (
               // Even ID: Image on the left
               <>
+                {/* Image box */}
                 <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
                   <Image
                     src={item.image}
                     alt={t(item.title)}
                     width={1200}
                     height={900}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover rounded-b-lg md:rounded-l-lg md:rounded-br-none"
                   />
                 </div>
-
-                <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2 md:overflow-y-auto scrollbar-hide">
+                {/* Text box */}
+                <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <TruncateText
                     text={t(item.description)}
@@ -53,6 +54,7 @@ export default async function Activity() {
             ) : (
               // Odd ID: Image on the right
               <>
+                {/* Text box */}
                 <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <TruncateText
@@ -60,14 +62,14 @@ export default async function Activity() {
                     maxLength={MaxChar}
                   />
                 </div>
-
+                {/* Image box */}
                 <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center md:order-2">
                   <Image
                     src={item.image}
                     alt={t(item.title)}
                     width={1200}
                     height={900}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover rounded-b-lg md:rounded-r-lg md:rounded-bl-none"
                   />
                 </div>
               </>
@@ -75,7 +77,6 @@ export default async function Activity() {
           </div>
         ))}
       </div>
-
     </div>
   );
 }

@@ -47,7 +47,7 @@ function NavigationMobil({ data }: NavMobilProps) {
             <span className="block w-8 h-0.5 bg-secondary transform -rotate-45 absolute"></span>
           </button>
 
-          <Link href="/" >
+          <Link href={`/${params.locale}`} onClick={toggleMenu}>
             <Image
               src="/assets/casa-ripa-logo.png"
               width={151}

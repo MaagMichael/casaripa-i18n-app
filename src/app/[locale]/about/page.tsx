@@ -12,31 +12,30 @@ export default async function About() {
 
       <p className="text-justify">{t("text-order.subtext01")}</p>
       {/* <p className="text-justify whitespace-pre-line">{t("text2")}</p> */}
-
-      <div className="flex flex-col md:flex-row gap-6 items-center bg-primary_light rounded-lg">
+      
+      <div className="flex flex-col md:flex-row md:max-h-[45vh] justify-between bg-primary_light rounded-lg">
         {/* Image box */}
-        <div className="order-1 ">
+        <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
           <Image
             src="/assets/about/about01.webp"
             alt="Bild"
             width={960}
             height={1280}
             // fill
-            className=" object-contain w-full h-full max-h-96"
+            className="h-full w-full object-cover rounded-b-lg md:rounded-l-lg md:rounded-br-none"
           />
         </div>
 
         {/* Text box */}
-        <div className="order-2 space-y-4 p-4">
-          {/* <h1 className="text-xl font-bold">xxxx</h1> */}
+        <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
           <p className="text-justify whitespace-pre-line">
             {t("text-order.subtext02")}
           </p>
         </div>
       </div>
 
-      <div className="order-2 space-y-4 p-4">
-        <p className="text-justify whitespace-pre-line">
+      <div className="space-y-4">
+        <p className="text-left whitespace-pre-line">
           {t("text-order.subtext03")}
         </p>
         <p className="text-center font-bold">{t("text-order.subtext04")}</p>

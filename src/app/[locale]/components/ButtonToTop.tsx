@@ -47,7 +47,7 @@ function ButtonToTop() {
       <button
         onClick={scrollToTop}
         // control the visibility of the button by ternary operator
-        className={`fixed bottom-4 right-4 bg-green text-white  p-2 rounded ${
+        className={`fixed z-20 bottom-4 right-4 bg-green text-white  p-2 rounded ${
           visible ? "opacity-100" : "opacity-0"
         } transition-opacity duration-300`}
       >
