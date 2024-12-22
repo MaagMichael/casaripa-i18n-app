@@ -35,6 +35,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
     const formProps = Object.fromEntries(formData);
     console.log("formProps:", formProps);
 
+
     emailjs.init({
       // publicKey: "nHlSdNaHTrzGYLWC0",
       publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
@@ -64,7 +65,6 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
 
     // try {
     //   // const response = await sendEmail(formProps);
-
     //   if (response.success) {
     //     // Reset form
     //     formRef.current?.reset();
@@ -178,31 +178,3 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
     </>
   );
 }
-
-// Hello {{from_name}},
-
-// You got a new message from {{user_name}}:
-
-// {{message}}
-
-// {{user_name}} contact details :
-// Phone number : {{user_phone_number}}
-// Email Id : {{user_email}}
-
-// ############################################
-// Hello {{from_name}},
-
-// You got a new message from {{user_name}}
-
-// {{user_name}} contact details :
-// Room name : {{room_name}}
-// Phone number : {{user_phone_number}}
-// Email Id : {{user_email}}
-// From date:{{fromDate}}
-// To date:{{toDate}}
-// Extra_adult_bed:{{Extra_adult_bed}}
-// Extra_kids_bed:{{Extra_Kids_Bed}}
-// Message:{{message}}
-
-// Best wishes,
-// EmailJS team
