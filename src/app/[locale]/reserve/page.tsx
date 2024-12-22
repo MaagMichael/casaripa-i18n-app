@@ -32,10 +32,10 @@ export default async function Reserve() {
               <>
                 {/* Image box slider*/}
                 <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
-                  {item.images.map((image:string) => (
+                  {item.images.map((image:string,index:number) => (
                     <Image
                       src={image}
-                      alt={image}
+                      alt={item.id+index.toString()}
                       width={1200}
                       height={900}
                       className="h-full w-full object-cover rounded-b-lg md:rounded-l-lg md:rounded-br-none"
