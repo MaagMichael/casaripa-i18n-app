@@ -17,7 +17,7 @@ import { ChangeEvent, useTransition } from "react";
 
 export default function Switcher() {
   const pathname = usePathname();
-//   const params = useParams();
+  //   const params = useParams();
 
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
@@ -34,17 +34,17 @@ export default function Switcher() {
   };
 
   return (
-      <select
-        defaultValue={localActive}
-        className="bg-transparent p-1 text-secondary border-2 rounded"
-        onChange={onSelectChange}
-        disabled={isPending}
-      >
-        {routing.locales.map((locale) => (
-          <option key={locale} value={locale}>
-            {locale.toUpperCase()}
-          </option>
-        ))}
-      </select>
+    <select
+      defaultValue={localActive}
+      className="bg-transparent p-1 text-secondary border-2 rounded"
+      onChange={onSelectChange}
+      disabled={isPending}
+    >
+      {routing.locales.map((locale) => (
+        <option key={locale} value={locale}>
+          {locale.toUpperCase()}
+        </option>
+      ))}
+    </select>
   );
 }

@@ -3,7 +3,11 @@ import { getTranslations } from "next-intl/server"; // server side with async an
 import TruncateText from "./TruncateText";
 
 export default async function About() {
+
   const t = await getTranslations("WelcomePage");
+
+  const MaxChar = 300;
+
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
       <h1 className="text-xl">{t("title")}</h1>
@@ -12,7 +16,7 @@ export default async function About() {
 
       <TruncateText
         text={t("text")}
-        maxLength={300}
+        maxLength={MaxChar}
       />
     </div>
   );

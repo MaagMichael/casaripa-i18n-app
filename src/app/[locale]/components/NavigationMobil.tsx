@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState } from "react";
 
 // useParams gives you access to dynamic route parameters from the URL. like /en
@@ -24,7 +25,7 @@ function NavigationMobil({ data }: NavMobilProps) {
   };
 
   return (
-    <div>
+    <div >
       {!isOpen && (
         <button
           onClick={toggleMenu}
@@ -37,14 +38,25 @@ function NavigationMobil({ data }: NavMobilProps) {
       )}
 
       {isOpen && (
-        <div className="">
+        <div className="fixed inset-0 z-50 bg-primary w-full h-full overflow-hidden flex flex-col items-center">
           <button
             onClick={toggleMenu}
-            className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center"
+            className="absolute top-8 right-8 w-8 h-8 flex items-center justify-center"
           >
             <span className="block w-8 h-0.5 bg-secondary transform rotate-45 absolute"></span>
             <span className="block w-8 h-0.5 bg-secondary transform -rotate-45 absolute"></span>
           </button>
+
+          <Link href={`/${params.locale}`} onClick={toggleMenu}>
+            <Image
+              src="/assets/casa-ripa-logo.png"
+              width={151}
+              height={109}
+              alt="Picture of the author"
+              priority
+              
+            />
+          </Link>
 
           <div onClick={toggleMenu}>
             {data.map((item, index) => (

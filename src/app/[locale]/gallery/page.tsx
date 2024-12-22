@@ -1,5 +1,6 @@
-// import { useTranslations } from "next-intl"; //client side
-import { getTranslations } from "next-intl/server"; // server side with async and await
+"use client";
+import { useTranslations } from "next-intl"; //client side
+// import { getTranslations } from "next-intl/server"; // server side with async and await
 // import { Link } from "@/i18n/routing";
 
 import galleryImage from "@/data/gallery.json";
@@ -10,13 +11,15 @@ interface GalleryImage {
   image: string;
 }
 
-export default async function Gallery() {
-  const t = await getTranslations("GalleryPage");
+// export default async function Gallery() {
+export default function Gallery() {
+  // const t = await getTranslations("GalleryPage");
+  const t = useTranslations("GalleryPage");
 
   // create a clinet component to render images and open them in a new tab on double click
-  // const handleDoubleClick = (imageUrl: string) => {
-  //   window.open(imageUrl, '_blank');
-  // };
+  const handleDoubleClick = (imageUrl: string) => {
+    window.open(imageUrl, "_blank");
+  };
 
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
@@ -28,7 +31,7 @@ export default async function Gallery() {
           <div
             key={item.id}
             className="break-inside-avoid"
-            // onDoubleClick={() => handleDoubleClick(item.image)}
+            onDoubleClick={() => handleDoubleClick(item.image)}
           >
             <Image
               src={item.image}
@@ -37,6 +40,7 @@ export default async function Gallery() {
               width={900}
               height={900}
               className="rounded-lg w-full h-auto"
+              priority
             />
           </div>
         ))}

@@ -16,23 +16,33 @@
   },
   "AboutPage": {
     "title": "About us",
-    "text": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
-    "text2": "Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning"
+    "text-order": {
+      "subtext01": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
+      "subtext02": "Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning",
+      "subtext03": "We offer the following suites: \n * Suite North: A spacious suite on the first floor.\n * Suite South: A detached cottage (guest house).\n * Penthouse: A maisonette suite with three bedrooms which extends over 2 floors.",
+      "subtext04": "You are also welcome to rent the entire property exclusively for yourself."
+    }
   },
   "ActivityPage": {
     "title": "Activities for you ...",
     "activity1": "Beaches and Swimming",
     "description1": "The Adriatic coast is approx. 35 km away and there are several beaches with parasols and sun loungers. To the south, just outside Ancona, is the Monte Conero National Park. This park is close to one of the most beautiful coasts of the Adriatic. Over 20 km you will find bays with pebble beaches such as Porto Novo, Sirolo and Numana, where you can swim, sunbathe and taste the delicious fresh seafood. Senigallia, north of Ancona, is known for its long sandy beaches. \n About 10 km from Cupramontana is Lake Castreccioni, also known as Lake Cingoli. Here you can swim, rent a pedal boat or a canoe. In Apiro, a village about 8 km from Cupramontana, you will find the Eldorado water park. Only open in summer, but there is plenty of entertainment with music and dancing every day and the park has several water slides, including the highest in Europe.",
-    "activity2": "xxx",
-    "description2": "ddddd",
-    "activity3": "xxx",
-    "description3": "ddddd",
-    "activity4": "xxx",
-    "description4": "ddddd",
-    "activity5": "Nature and hiking",
+    "activity2": "Sightseeing - Eremo dei Frati Bianchi",
+    "description2": "Some historical sites are worth a visit, for example the former monastery Eremo dei Frati Bianchi (white brothers) from the 12th century, the church of San Giacomo della Romita built before the 13th century, which was rebuilt in its current form in the 18th century. The restored Abbey of Beato Angelo was built in the 12th century. \nAnother historic villages in the area are Staffolo and Cingoli. Cingoli is also known as the 'Balcony of the Marche' due to its panoramic view over the Marche region to the coast. In Jesi, a medieval walled town just 15 km away, you can go shopping and visit the world-famous Pergolesi Theater. Here you can enjoy opera, ballet and classical music in an Italian atmosphere.",
+    "activity3": "Sightseeing - Valadier-Tempel & Madonna von Frasassi",
+    "description3": "Near the Frasassi caves, there is a 700-metre footpath along a well-maintained road to the Temple of Valadier and the shrine of the Madonna of Frasassi. \nThe octagonal church with a dome dates back to 1828 and was commissioned by Giuseppe Valadier on behalf of Pope Leone XII. who himself came from a small town near the caves. In the cave next to it is the Church of Our Lady of Frasassi, which was built centuries ago under the overhanging rock.",
+    "activity4": "Sightseeing - Loreto",
+    "description4": "The village and pilgrimage site of Loreto is known for its pilgrimage church Basilica della Casa Santa, where, according to legend, Mary's house was relocated. Loreto is about an hour's drive from Cupramontana. \nWithin an hour's drive, you can reach the cities of Spoleto, Gubbio and Perugia directly opposite the Apennines. Not forgetting the famous religious city of Assisi. Walks through these towns are certainly worth the effort.",
+    "activity5": "Nature and hiking - Caves of Frasassi",
     "description5": "Only 15 minutes away by car is the regional park 'Gola della Rossa and Frasassi'. This is the green heart of Le Marche and the largest nature reserve in this region. Here you can explore the Frasassi Caves, a remarkable karst cave system considered by many to be the most beautiful stalactite caves in Europe. Accompanied by a guide (in various languages), you can visit these magnificent caves. \n There are also several hiking trails in the regional park that take you along the park's sights.",
-    "activity6": "National Park Monti Sibillini",
-    "description6": "The Monti Sibillini National Park, part of the Apenines, lies around 50 km to the south. Nature, history and culture make this park a unique area. Species such as the wolf, golden eagle, peregrine falcon and other indigenous species live here. In combination with historic villages and abbeys that lie at the foot of the mountains, time seems to have stood still. \n For those feeling more energetic, there are many hiking and cycling trails and a little further south there are also skiing opportunities."
+    "activity6": "Nature and hiking - National Park Monti Sibillini",
+    "description6": "The Monti Sibillini National Park, part of the Apenines, lies around 50 km to the south. Nature, history and culture make this park a unique area. Species such as the wolf, golden eagle, peregrine falcon and other indigenous species live here. In combination with historic villages and abbeys that lie at the foot of the mountains, time seems to have stood still. \n For those feeling more energetic, there are many hiking and cycling trails and a little further south there are also skiing opportunities.",
+    "activity7": "Weingüter",
+    "description7": "Text",
+    "activity8": "In der Nähe von Cupramontana",
+    "description8": "Text",
+    "activity9": "Restaurants und Einkaufsmöglichkeiten",
+    "description9": "Text"
   },
   "GalleryPage": {
     "title": "Gallery Page",
@@ -40,7 +50,14 @@
   },
   "ContactPage": {
     "title": "Contact Page",
-    "send": "Send"
+    "send": "Send",
+    "rooms": {
+      "type1": "Suite North",
+      "type2": "Suite South (Cottage)",
+      "type3": "Penthouse",
+      "type4": "Entire property",
+      "type5": "Other topic"
+    }
   },
   "FAQPage": {
     "title": "FAQ Page",
@@ -48,7 +65,12 @@
   },
   "ReservePage": {
     "title": "Reserve Page",
-    "about": "back to Home Page"
+    "activity1": "Suite North (2-4 people)",
+    "description1": "Spacious apartment (approx. 70 m²) on the first floor of Casa Ripa. The apartment has an open-plan living room (with a comfortable double sofa bed), kitchen, bedroom with double bed and bathroom.\nThe kitchen is equipped with a large fridge, a gas stove with 4 burners, a coffee machine, a kettle and a small oven.\nDirect access to the garden with a large, partially covered terrace with sun loungers, table and chairs.",
+    "activity2": "Suite South (Cottage) (2 people)",
+    "description2": "A detached vacation home (approx. 40 sqm) for two people. Bright living room (with a comfortable sofa bed), well-equipped kitchen (fridge, 4-burner gas hob, American coffee machine, kettle). \nBedroom with double bed (1.60x2.00 m) and private bathroom.\nPrivate terrace with sun loungers, table and chairs.",
+    "activity3": "Penthouse (2-8 people)",
+    "description3": "Very spacious apartment with over 120 square meters, which extends over 2 floors. On the 1st floor of the main house you will find a large living room, a spacious dining area and a very well-equipped kitchen (gas hob with oven, fridge/freezer, dishwasher, Kitchen Aid, Nespresso machine, etc.). \nYou reach the three bedrooms and the large bathroom on the 2nd floor via the impressive staircase. One of the bedrooms (the children's room) is equipped with two pull-out beds which can be converted into two 160x200cm beds. \nPrivate terrace with sun loungers, table and chairs."
   },
   "Footer": {
     "title": "Find out more",

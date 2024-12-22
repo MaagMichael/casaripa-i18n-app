@@ -11,28 +11,38 @@
   },
   "HomePage": {
     "title": "Hello Welt!",
-    "subtitle": {"sub1":"sub 1", "sub2":"sub 2"},
+    "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
     "about": "Gehe zur Über Uns Seite"
   },
   "AboutPage": {
     "title": "Über uns",
-    "text": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
-    "text2": "Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung"
+    "text-order": {
+      "subtext01": "Wir -eine fünfköpfige Familie- fühlen uns dort so wohl, weil es ein ruhiger friedlicher Ort ist. Egal ob mit Familie oder auch Freunden bietet das Haus genug Platz um fernab vom Alltagsstress Zeit genießen zu können. Durch die vollständig unabhängigen 3 Terrassen kann man Urlaub gemeinsam verbringen, ohne auf Privatsphäre verzichten zu müssen.",
+      "subtext02": "Casa Ripa bietet folgende folgende Annehmlichkeiten: \n - Klimatisierte Schlafzimmer (AC) \n - Bettwäsche und Handtücher \n - WLAN \n - TV in jeder Einheit \n - Gut augestattete Küchen \n - Welcome Package \n - Auf Anfrage: Zwischenreinigung",
+      "subtext03": "Wir bieten folgende Suiten an: \n * Suite Nord: Eine geräumige Suite im Erdgeschoss.\n * Suite Süd: Ein freistehendes Cottage (Gästehaus).\n * Penthouse: Eine Maisonette-Suite mit drei Schlafzimmern welche sich über 2 Stockwerke erstreckt.",
+      "subtext04": "Sehr gerne können Sie auch das ganze Anwesen exklusiv für sich anmieten."
+    }
   },
   "ActivityPage": {
     "title": "Aktivitäten für Sie...",
     "activity1": "Strände und Schwimmen",
     "description1": "Die Adriaküste ist ca. 35 km entfernt und es gibt mehrere Strände mit Sonnenschirmen und Sonnenliegen. Im Süden, etwas außerhalb von Ancona, befindet sich der  Nationalpark Monte Conero . Dieser Park liegt in der Nähe einer der schönsten Küsten der Adria. Über 20 km finden Sie Buchten mit Kieselstränden wie Porto Novo, Sirolo und Numana, in denen Sie schwimmen, sich sonnen und die köstlichen frischen Meeresfrüchte probieren können. Senigallia nördlich von Ancona ist bekannt für seine langen Sandstrände. \n Etwa 10 km von Cupramontana entfernt liegt der Castreccioni-See, auch als Cingoli-See bekannt. Hier können Sie schwimmen, ein Tretboot oder ein Kanu mieten. In Apiro, einem Dorf etwa 8 km von Cupramontana entfernt, befindet sich der  Eldorado-Wasserpark. Nur im Sommer geöffnet, aber jeden Tag gibt es viel Unterhaltung mit Musik und Tanz und der Park hat mehrere Wasserrutschen, darunter die höchsten in Europa.",
-    "activity2": "xxx",
-    "description2": "ddddd",
-    "activity3": "xxx",
-    "description3": "ddddd",
-    "activity4": "xxx",
-    "description4": "ddddd",
-    "activity5": "Natur und Wandern",
+    "activity2": "Sehenswürdigkeiten - Eremo dei Frati Bianchi",
+    "description2": "Einige historische Stätten sind einen Besuch wert, zum Beispiel das ehemalige Kloster  Eremo dei Frati Bianchi  (weiße Brüder) aus dem 12. Jahrhundert, die vor dem 13. Jahrhundert erbaute Kirche San Giacomo della Romita, die im 18. Jahrhundert in ihrer heutigen Form wieder aufgebaut wurde. Die restaurierte  Abtei von Beato Angelo  wurde im 12. Jahrhundert erbaut. \nAndere historische Dörfer in der Umgebung sind Staffolo und Cingoli. Cingoli ist wegen des Panoramablicks über die Marken bis zur Küste auch als 'Balkon der Marken' bekannt. In Jesi, einer mittelalterlichen Stadtmauer, nur 15 km entfernt, können Sie einkaufen und das weltberühmte Pergolesi-Theater besuchen. Hier können Sie Oper, Ballett und klassische Musik in italienischer Atmosphäre genießen.",
+    "activity3": "Sehenswürdigkeiten - Valadier-Tempel & Madonna von Frasassi",
+    "description3": "In der Nähe der Höhlen von Frasassi befindet sich der 700 m lange Fußweg entlang einer gut befahrbaren Straße zum Tempel des Valadier und zum Schrein der Madonna von Frasassi. \nDie achteckige Kirche mit einer Kuppel stammt aus dem Jahr 1828 und wurde von Giuseppe Valadier im Auftrag von Papst Leone XII. Geschaffen, der selbst aus einer kleinen Stadt in der Nähe der Höhlen stammte. In der Höhle daneben befindet sich die Kirche der Madonna von Frasassi, die vor Jahrhunderten unter dem überhängenden Felsen erbaut wurde.",
+    "activity4": "Sehenswürdigkeiten - Loreto",
+    "description4": "Das Dorf und der Wallfahrtsort Loreto ist bekannt für seine Pilgerkirche Basilica della Casa Santa, in die der Legende nach das Haus Mariens verlegt wurde. Loreto liegt etwa eine Autostunde von Cupramontana entfernt. \nInnerhalb einer Autostunde erreichen Sie direkt gegenüber dem Apennin die Städte Spoleto, Gubbio und Perugia. Nicht zu vergessen die berühmte religiöse Stadt Assisi. Spaziergänge durch diese Städte sind sicherlich die Mühe wert.",
+    "activity5": "Natur und Wandern - Höhlen von Frasassi",
     "description5": "Nur 15 Autominuten entfernt ist das Regionalpark 'Gola della Rossa und Frasassi' . Dies ist das grüne Herz von Le Marche und das größte Naturschutzgebiet in dieser Region. Hier können Sie die Höhlen von Frasassi erkunden, einem bemerkenswerten Karsthöhlensystem, das von vielen als die schönsten Tropfsteinhöhlen Europas angesehen wird. In Begleitung eines Führers (in verschiedenen Sprachen) können Sie diese prächtigen Höhlen besichtigen. \n Ebenfalls im Regionalpark befinden sich mehrere Wanderwege, die Sie entlang der Sehenswürdigkeiten des Parks führen.",
-    "activity6": "Nationalpark Monti Sibillini",
-    "description6": "Der  Nationalpark Monti Sibillini, ein Teil der Apeninen, liegt etwa 50 km südlich. Natur, Geschichte und Kultur machen diesen Park zu einem einzigartigen Gebiet. Hier leben auch Arten wie der Wolf, der Steinadler, der Wanderfalke und andere einheimische Arten. In Kombination mit historischen Dörfern und Abteien, die am Fuße der Berge liegen, scheint die Zeit stehen geblieben zu sein. \n Für diejenigen, die sich energischer fühlen, gibt es viele Wander- und Radwege und etwas weiter südlich gibt es auch Skimöglichkeiten."
+    "activity6": "Natur und Wandern - Nationalpark Monti Sibillini",
+    "description6": "Der  Nationalpark Monti Sibillini, ein Teil der Apeninen, liegt etwa 50 km südlich. Natur, Geschichte und Kultur machen diesen Park zu einem einzigartigen Gebiet. Hier leben auch Arten wie der Wolf, der Steinadler, der Wanderfalke und andere einheimische Arten. In Kombination mit historischen Dörfern und Abteien, die am Fuße der Berge liegen, scheint die Zeit stehen geblieben zu sein. \n Für diejenigen, die sich energischer fühlen, gibt es viele Wander- und Radwege und etwas weiter südlich gibt es auch Skimöglichkeiten.",
+    "activity7": "Weingüter",
+    "description7": "Text",
+    "activity8": "In der Nähe von Cupramontana",
+    "description8": "Text",
+    "activity9": "Restaurants und Einkaufsmöglichkeiten",
+    "description9": "Text"
   },
   "GalleryPage": {
     "title": "Galerie Seite",
@@ -40,7 +50,14 @@
   },
   "ContactPage": {
     "title": "Kontakt Seite",
-    "send": "Senden"
+    "send": "Senden",
+    "rooms": {
+      "type1": "Suite Nord",
+      "type2": "Suite Süd (Gästehaus)",
+      "type3": "Penthouse",
+      "type4": "Gesamtes Haus",
+      "type5": "Anderes Thema"
+    }
   },
   "FAQPage": {
     "title": "FAQ Seite",
@@ -48,7 +65,12 @@
   },
   "ReservePage": {
     "title": "Reservieren Seite",
-    "about": "Gehe zur Home Seite"
+    "activity1": "Suite Nord (2-4 Personen)",
+    "description1": "Geräumige Wohnung (ca. 70 m²) im Erdgeschoss der Casa Ripa. Die Wohnung verfügt über ein offenes Wohnzimmer (mit einer bequemen Doppelbett Schlafcouch), Küche, Schlafzimmer mit Doppelbett und Bad.\nDie Küche ist mit einem großen Kühlschrank, einem Gasherd mit 4 Brennern, einer Kaffeemaschine, einem Wasserkocher und einem kleinen Backofen ausgestattet.\nDirekter Zugang zum Garten mit einer großen, teilweise überdachten Terrasse mit Sonnenliegen, Tisch und Stühlen.",
+    "activity2": "Suite Süd - Gästehaus (2 Personen)",
+    "description2": "Ein freistehendes Ferienhaus (ca. 40 qm) für zwei Personen. Helles Wohnzimmer (mit einer bequemen Schlafcouch), gut ausgestattete Küche (Kühlschrank, Gasherd 4 Brenner, amerikanische Kaffeemaschine, Wasserkocher). \nSchlafzimmer mit Doppelbett (1,60x2,00 m) und eigenem Bad.\nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen.",
+    "activity3": "Penthouse (2-8 Personen)",
+    "description3": "Sehr geräumige Wohnung mit über 120qm, welche sich über 2 Stockwerke erstreckt. Im 1. OG des Haupthauses finden sie ein großes Wohnzimmer, einen großzügigen Essbereich und eine sehr gut ausgestattete Küche (Gasherd mit Backofen, Kühl-/Gefrierschrank, Geschirrspülmaschine, Kitchen Aid, Nespresso-Maschine usw.). \nÜber das beeindruckende Treppenhaus erreichen sie im 2. Stock die drei Schlafräume und das große Bad. Eines der Schlafzimmer (das Kinderzimmer) ist mit zwei Ausziehbetten ausgestattet welche sich in zwei 160x200cm große Betten verwandeln lassen. \nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen."
   },
   "Footer": {
     "title": "Finde mehr heraus",

@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "image": "/assets/activity/nature2.webp",
+      "image": "/assets/activity/nature.webp",
       "description": "categories3"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "id": 6,
-      "image": "/assets/activity/shops.webp",
+      "image": "/assets/activity/restaurant.webp",
       "description": "categories6"
     }
   ]

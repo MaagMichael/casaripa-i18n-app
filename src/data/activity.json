@@ -2,27 +2,57 @@
   "activityBlog": [
     {
       "id": 1,
-      "image": "/assets/activity/beach.webp",
+      "image": "/assets/activity/beach2.webp",
       "title": "activity1",
-      "description":"description1"
+      "description": "description1"
     },
     {
       "id": 2,
-      "image": "/assets/activity/nature2.webp",
-      "title": "activity1",
-      "description":"description1"
+      "image": "/assets/activity/klosterBianchi.webp",
+      "title": "activity2",
+      "description": "description2"
     },
     {
       "id": 3,
-      "image": "/assets/activity/nature.webp",
-      "title": "activity5",
-      "description":"description5"
+      "image": "/assets/activity/madonnaFrasassi.webp",
+      "title": "activity3",
+      "description": "description3"
     },
     {
       "id": 4,
-      "image": "/assets/activity/house.webp",
+      "image": "/assets/activity/kircheLoreto.webp",
+      "title": "activity4",
+      "description": "description4"
+    },
+    {
+      "id": 5,
+      "image": "/assets/activity/visit.webp",
+      "title": "activity5",
+      "description": "description5"
+    },
+    {
+      "id": 6,
+      "image": "/assets/activity/parkMonti-Sibillini.webp",
       "title": "activity6",
-      "description":"description6"
+      "description": "description6"
+    },
+    {
+      "id": 7,
+      "image": "/assets/activity/winery.webp",
+      "title": "activity7",
+      "description": "description7"
+    },
+    {
+      "id": 8,
+      "image": "/assets/activity/nearby.webp",
+      "title": "activity8",
+      "description": "description8"
+    },
+    {
+      "id": 9,
+      "image": "/assets/activity/restaurant2.webp",
+      "title": "activity9",
+      "description": "description9"
     }
   ]
 }
