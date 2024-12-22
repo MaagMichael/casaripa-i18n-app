@@ -30,7 +30,7 @@ export default async function Reserve() {
             {item.id % 2 === 0 ? (
               // Even ID: Image on the left
               <>
-                {/* Image box */}
+                {/* Image box slider*/}
                 <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
                   {item.images.map((image:string) => (
                     <Image
@@ -62,7 +62,7 @@ export default async function Reserve() {
                     maxLength={MaxChar}
                   />
                 </div>
-                {/* Image box */}
+                {/* Image box slider*/}
                 <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center md:order-2">
                   {/* <Image
                     src={item.image}
