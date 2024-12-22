@@ -18,8 +18,8 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ send, rooms }: ContactFormProps) {
-  console.log(send);
-  console.log(rooms);
+  // console.log(send);
+  // console.log(rooms);
 
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -31,30 +31,34 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
     }
 
     const formData = new FormData(formRef.current);
-    console.log("formData:", formData);
+    // console.log("formData:", formData);
     const formProps = Object.fromEntries(formData);
     console.log("formProps:", formProps);
 
     emailjs.init({
-      publicKey: "nHlSdNaHTrzGYLWC0",
+      // publicKey: "nHlSdNaHTrzGYLWC0",
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       // Do not allow headless browsers
       blockHeadless: true,
     });
 
     await emailjs
       .sendForm(
-        "service_3aqzjic",
-        "template_v3wqmyc",
+        // "service_3aqzjic",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        // "template_v3wqmyc",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         // formProps,
         formRef.current)
       .then(
         (result) => {
           console.log(result.text);
           formRef.current?.reset();
-          alert("ok");
+          alert("email was sent successfully");
         },
         (error) => {
           console.log(error.text);
+          alert(`email not sent - ${error.text}`);
         }
       );
 

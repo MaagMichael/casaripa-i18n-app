@@ -65,7 +65,12 @@
   },
   "ReservePage": {
     "title": "Reservieren Seite",
-    "about": "Gehe zur Home Seite"
+    "activity1": "Suite Nord (2-4 Personen)",
+    "description1": "Geräumige Wohnung (ca. 70 m²) im Erdgeschoss der Casa Ripa. Die Wohnung verfügt über ein offenes Wohnzimmer (mit einer bequemen Doppelbett Schlafcouch), Küche, Schlafzimmer mit Doppelbett und Bad.\nDie Küche ist mit einem großen Kühlschrank, einem Gasherd mit 4 Brennern, einer Kaffeemaschine, einem Wasserkocher und einem kleinen Backofen ausgestattet.\nDirekter Zugang zum Garten mit einer großen, teilweise überdachten Terrasse mit Sonnenliegen, Tisch und Stühlen.",
+    "activity2": "Suite Süd - Gästehaus (2 Personen)",
+    "description2": "Ein freistehendes Ferienhaus (ca. 40 qm) für zwei Personen. Helles Wohnzimmer (mit einer bequemen Schlafcouch), gut ausgestattete Küche (Kühlschrank, Gasherd 4 Brenner, amerikanische Kaffeemaschine, Wasserkocher). \nSchlafzimmer mit Doppelbett (1,60x2,00 m) und eigenem Bad.\nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen.",
+    "activity3": "Penthouse (2-8 Personen)",
+    "description3": "Sehr geräumige Wohnung mit über 120qm, welche sich über 2 Stockwerke erstreckt. Im 1. OG des Haupthauses finden sie ein großes Wohnzimmer, einen großzügigen Essbereich und eine sehr gut ausgestattete Küche (Gasherd mit Backofen, Kühl-/Gefrierschrank, Geschirrspülmaschine, Kitchen Aid, Nespresso-Maschine usw.). \nÜber das beeindruckende Treppenhaus erreichen sie im 2. Stock die drei Schlafräume und das große Bad. Eines der Schlafzimmer (das Kinderzimmer) ist mit zwei Ausziehbetten ausgestattet welche sich in zwei 160x200cm große Betten verwandeln lassen. \nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen."
   },
   "Footer": {
     "title": "Finde mehr heraus",

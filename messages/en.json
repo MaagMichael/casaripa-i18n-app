@@ -51,7 +51,13 @@
   "ContactPage": {
     "title": "Contact Page",
     "send": "Send",
-    "rooms": {"type1":"Suite North", "type2":"Suite South (Cottage)","type3":"Penthouse", "type4":"Entire property","type5":"Other topic"} 
+    "rooms": {
+      "type1": "Suite North",
+      "type2": "Suite South (Cottage)",
+      "type3": "Penthouse",
+      "type4": "Entire property",
+      "type5": "Other topic"
+    }
   },
   "FAQPage": {
     "title": "FAQ Page",
@@ -59,7 +65,12 @@
   },
   "ReservePage": {
     "title": "Reserve Page",
-    "about": "back to Home Page"
+    "activity1": "Suite North (2-4 people)",
+    "description1": "Spacious apartment (approx. 70 m²) on the first floor of Casa Ripa. The apartment has an open-plan living room (with a comfortable double sofa bed), kitchen, bedroom with double bed and bathroom.\nThe kitchen is equipped with a large fridge, a gas stove with 4 burners, a coffee machine, a kettle and a small oven.\nDirect access to the garden with a large, partially covered terrace with sun loungers, table and chairs.",
+    "activity2": "Suite South (Cottage) (2 people)",
+    "description2": "A detached vacation home (approx. 40 sqm) for two people. Bright living room (with a comfortable sofa bed), well-equipped kitchen (fridge, 4-burner gas hob, American coffee machine, kettle). \nBedroom with double bed (1.60x2.00 m) and private bathroom.\nPrivate terrace with sun loungers, table and chairs.",
+    "activity3": "Penthouse (2-8 people)",
+    "description3": "Very spacious apartment with over 120 square meters, which extends over 2 floors. On the 1st floor of the main house you will find a large living room, a spacious dining area and a very well-equipped kitchen (gas hob with oven, fridge/freezer, dishwasher, Kitchen Aid, Nespresso machine, etc.). \nYou reach the three bedrooms and the large bathroom on the 2nd floor via the impressive staircase. One of the bedrooms (the children's room) is equipped with two pull-out beds which can be converted into two 160x200cm beds. \nPrivate terrace with sun loungers, table and chairs."
   },
   "Footer": {
     "title": "Find out more",

@@ -1,0 +1,34 @@
+{
+  "roomsReserve": [
+    {
+      "id": 1,
+      "images": [
+        "/assets/activity/beach2.webp",
+        "/assets/activity/madonnaFrasassi.webp",
+        "/assets/activity/winery.webp"
+      ],
+      "title": "activity1",
+      "description": "description1"
+    },
+    {
+      "id": 2,
+      "images": [
+        "/assets/activity/beach2.webp",
+        "/assets/activity/madonnaFrasassi.webp",
+        "/assets/activity/winery.webp"
+      ],
+      "title": "activity2",
+      "description": "description2"
+    },
+    {
+      "id": 3,
+      "images": [
+        "/assets/activity/beach2.webp",
+        "/assets/activity/madonnaFrasassi.webp",
+        "/assets/activity/winery.webp"
+      ],
+      "title": "activity3",
+      "description": "description3"
+    }
+  ]
+}
