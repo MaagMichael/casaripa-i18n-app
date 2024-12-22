@@ -63,19 +63,6 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         }
       );
 
-    // try {
-    //   // const response = await sendEmail(formProps);
-    //   if (response.success) {
-    //     // Reset form
-    //     formRef.current?.reset();
-    //     alert("success");
-    //   } else {
-    //     alert("error");
-    //   }
-    // } catch (error) {
-    //   console.error("Error sending email:", error);
-    //   alert("error");
-    // }
   };
 
   return (
