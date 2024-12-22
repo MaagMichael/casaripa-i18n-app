@@ -1,9 +1,11 @@
+// due to useRef in ContactForm.tsx, this file is client side
 "use client";
 
 import { useRef, FormEvent } from "react";
 import Image from "next/image";
+// import { sendEmail } from "@/app/api/send-email/route";
+import emailjs from "@emailjs/browser";
 
-// import { sendEmail } from '@/app/api/send-email/route';
 interface ContactFormProps {
   send: string;
   rooms: {
@@ -33,20 +35,43 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
     const formProps = Object.fromEntries(formData);
     console.log("formProps:", formProps);
 
-    try {
-      const response = await sendEmail(formProps);
+    emailjs.init({
+      publicKey: "nHlSdNaHTrzGYLWC0",
+      // Do not allow headless browsers
+      blockHeadless: true,
+    });
 
-      if (response.success) {
-        // Reset form
-        formRef.current?.reset();
-        alert("success");
-      } else {
-        alert("error");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-      alert("error");
-    }
+    await emailjs
+      .sendForm(
+        "service_3aqzjic",
+        "template_v3wqmyc",
+        // formProps,
+        formRef.current)
+      .then(
+        (result) => {
+          console.log(result.text);
+          formRef.current?.reset();
+          alert("ok");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    // try {
+    //   // const response = await sendEmail(formProps);
+
+    //   if (response.success) {
+    //     // Reset form
+    //     formRef.current?.reset();
+    //     alert("success");
+    //   } else {
+    //     alert("error");
+    //   }
+    // } catch (error) {
+    //   console.error("Error sending email:", error);
+    //   alert("error");
+    // }
   };
 
   return (
@@ -65,12 +90,12 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         className="space-y-4 max-w-md mx-auto"
       >
         <div>
-          <label htmlFor="room" className="block mb-2">
+          <label htmlFor="room_selected" className="block mb-2">
             Select Room *
           </label>
           <select
-            id="room"
-            name="room"
+            id="room_selected"
+            name="room_selected"
             required
             className="w-full p-2 border rounded"
           >
@@ -84,51 +109,51 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         </div>
 
         <div>
-          <label htmlFor="name" className="block mb-2">
+          <label htmlFor="user_name" className="block mb-2">
             Name *
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="user_name"
+            name="user_name"
             required
             placeholder="Name ..."
             className="w-full p-2 border rounded"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block mb-2">
+          <label htmlFor="user_email" className="block mb-2">
             Email *
           </label>
           <input
             type="email"
-            id="email"
-            name="email"
+            id="user_email"
+            name="user_email"
             required
             placeholder="Email ..."
             className="w-full p-2 border rounded"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block mb-2">
+          <label htmlFor="user_phone" className="block mb-2">
             Phone
           </label>
           <input
             type="phone"
-            id="phone"
-            name="phone"
+            id="user_phone"
+            name="user_phone"
             //   required
             placeholder="Phone ..."
             className="w-full p-2 border rounded"
           />
         </div>
         <div>
-          <label htmlFor="message" className="block mb-2">
+          <label htmlFor="user_message" className="block mb-2">
             Text *
           </label>
           <textarea
-            id="message"
-            name="message"
+            id="user_message"
+            name="user_message"
             rows={4}
             required
             placeholder="Text ..."
