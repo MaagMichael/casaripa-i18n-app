@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server"; // server side with async an
 import roomsReserve from "@/data/rooms.json";
 import Image from "next/image";
 import TruncateText from "../components/TruncateText";
+import RoomCard from "../components/RoomCard";
 
 interface RoomsReserve {
   id: number;
@@ -24,26 +25,18 @@ export default async function Reserve() {
           // {{const images = roomsReserve.roomsReserve.image}}
           <div
             key={item.id}
-            className="flex flex-col md:flex-row md:min-h-[40vh] justify-between bg-primary_light rounded-lg"
+            className="flex flex-col md:flex-row  justify-between bg-primary_light rounded-lg"
           >
             {/* Image placement based on ID */}
             {item.id % 2 === 0 ? (
               // Even ID: Image on the left
               <>
                 {/* Image box slider*/}
-                <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
-                  {item.images.map((image:string,index:number) => (
-                    <Image
-                      src={image}
-                      alt={item.id+index.toString()}
-                      width={1200}
-                      height={900}
-                      className="h-full w-full object-cover rounded-b-lg md:rounded-l-lg md:rounded-br-none"
-                    />
-                  ))}
+                <div className="w-full h-full md:w-1/2 flex items-center justify-center order-2 md:order-1">
+                  <RoomCard data={item.images} />
                 </div>
                 {/* Text box */}
-                <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
+                <div className="md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <TruncateText
                     text={t(item.description)}
@@ -55,7 +48,7 @@ export default async function Reserve() {
               // Odd ID: Image on the right
               <>
                 {/* Text box */}
-                <div className="md:w-1/2 lg:w-2/3 p-4 flex flex-col justify-center md:order-1 ">
+                <div className="md:w-1/2 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <TruncateText
                     text={t(item.description)}
@@ -63,14 +56,8 @@ export default async function Reserve() {
                   />
                 </div>
                 {/* Image box slider*/}
-                <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center md:order-2">
-                  {/* <Image
-                    src={item.image}
-                    alt={t(item.title)}
-                    width={1200}
-                    height={900}
-                    className="h-full w-full object-cover rounded-b-lg md:rounded-r-lg md:rounded-bl-none"
-                  /> */}
+                <div className=" md:w-1/2 flex items-center justify-center md:order-2">
+                  <RoomCard data={item.images} />
                 </div>
               </>
             )}
