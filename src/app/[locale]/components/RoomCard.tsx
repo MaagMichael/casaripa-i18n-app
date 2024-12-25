@@ -22,7 +22,7 @@ export default function RoomCard({ data }: RoomCardProps) {
   };
 
   return (
-    <div className="p-4 rounded-lg relative max-h-[40vh]">
+    <div className="p-4 rounded-lg relative max-h-[45vh]">
       <Image
         src={currentRoom}
         alt={currentRoom}

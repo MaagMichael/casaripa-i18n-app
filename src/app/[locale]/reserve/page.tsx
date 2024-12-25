@@ -18,7 +18,7 @@ export default async function Reserve() {
 
   return (
     <div className="p-4 bg-primary text-secondary">
-      <h1 className="">{t("title")}</h1>
+      {/* <h1 className="">{t("title")}</h1> */}
 
       <div className="space-y-4">
         {roomsReserve.roomsReserve.map((item: RoomsReserve) => (
@@ -32,7 +32,7 @@ export default async function Reserve() {
               // Even ID: Image on the left
               <>
                 {/* Image box slider*/}
-                <div className="w-full h-full md:w-1/2 flex items-center justify-center order-2 md:order-1">
+                <div className="w-full h-full md:w-1/2 flex  order-2 md:order-1">
                   <RoomCard data={item.images} />
                 </div>
                 {/* Text box */}
@@ -56,7 +56,7 @@ export default async function Reserve() {
                   />
                 </div>
                 {/* Image box slider*/}
-                <div className=" md:w-1/2 flex items-center justify-center md:order-2">
+                <div className=" md:w-1/2 flex  md:order-2">
                   <RoomCard data={item.images} />
                 </div>
               </>

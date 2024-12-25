@@ -3,9 +3,11 @@
     {
       "id": 1,
       "images": [
-        "/assets/activity/beach2.webp",
-        "/assets/activity/madonnaFrasassi.webp",
-        "/assets/activity/winery.webp"
+        "/assets/rooms/room_north01.webp",
+        "/assets/rooms/room_north02.webp",
+        "/assets/rooms/room_north03.webp",
+        "/assets/rooms/room_north04.webp",
+        "/assets/rooms/room_north05.webp"
       ],
       "title": "activity1",
       "description": "description1"
