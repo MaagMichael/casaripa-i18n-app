@@ -22,7 +22,6 @@ export default async function Reserve() {
 
       <div className="space-y-4">
         {roomsReserve.roomsReserve.map((item: RoomsReserve) => (
-          // {{const images = roomsReserve.roomsReserve.image}}
           <div
             key={item.id}
             className="flex flex-col md:flex-row  justify-between bg-primary_light rounded-lg"
@@ -38,6 +37,7 @@ export default async function Reserve() {
                 {/* Text box */}
                 <div className="md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
+                  <br />
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}
@@ -50,6 +50,7 @@ export default async function Reserve() {
                 {/* Text box */}
                 <div className="md:w-1/2 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
+                  <br />
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}

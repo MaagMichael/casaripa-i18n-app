@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface RoomCardProps {
@@ -11,6 +12,16 @@ export default function RoomCard({ data }: RoomCardProps) {
   const [currentRoomIndex, setCurrentRoomIndex] = useState(0);
   const currentRoom = data[currentRoomIndex];
   // console.log("currentRoom", currentRoom);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentRoomIndex(
+  //       (prevIndex) => (prevIndex + 1) % data.length
+  //     );
+  //   }, 7000); // Change image every 5 seconds
+
+  //   return () => clearInterval(interval);
+  // }, []);
 
   // decrease Index
   const nextSlide = () => {
