@@ -58,7 +58,7 @@ export default function RoomCard({ data }: RoomCardProps) {
       </button>
 
       {/* Optional: Add navigation dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-primary_light p-1 rounded-lg">
         {data.map((_, index) => (
           <button
             key={index}
