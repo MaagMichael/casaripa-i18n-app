@@ -4,6 +4,7 @@ import roomsReserve from "@/data/rooms.json";
 import Image from "next/image";
 import TruncateText from "../components/TruncateText";
 import RoomCard from "../components/RoomCard";
+import GoogleCalendar from "../components/GoogleCalendar";
 
 interface RoomsReserve {
   id: number;
@@ -65,25 +66,7 @@ export default async function Reserve() {
           </div>
         ))}
       </div>
-
-      <div className="">
-        <Image
-          className="max-w-md mx-auto"
-          src="/dummycalendar.png"
-          alt="/dummycalendar.png"
-          width={4032}
-          height={3042}
-        />
-      </div>
-
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;src=Y2FzYXJpcGEuY3VwcmFAZ21haWwuY29t&amp;color=%23F09300&amp;title=Casa%20Ripa%20Available%20Bookings"
-        // style="border:solid 1px #777"
-        width="400"
-        height="350"
-        // frameborder="0"
-        scrolling="no"
-      ></iframe>
+      <GoogleCalendar />
     </div>
   );
 }

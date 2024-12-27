@@ -80,14 +80,6 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
 
   return (
     <>
-      <Image
-        className="max-w-md mx-auto"
-        src="/dummycalendar.png"
-        alt="/dummycalendar.png"
-        width={4032}
-        height={3042}
-      />
-
       <form
         ref={formRef}
         onSubmit={handleSubmit}
