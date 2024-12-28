@@ -1,10 +1,12 @@
 // import { useTranslations } from "next-intl"; //client side
 import { getTranslations } from "next-intl/server"; // server side with async and await
 import roomsReserve from "@/data/rooms.json";
-import Image from "next/image";
 import TruncateText from "../components/TruncateText";
 import RoomCard from "../components/RoomCard";
 import GoogleCalendar from "../components/GoogleCalendar";
+
+import Link from "next/link";
+import ButtonContact from "../components/ButtonContact";
 
 interface RoomsReserve {
   id: number;
@@ -36,26 +38,28 @@ export default async function Reserve() {
                   <RoomCard data={item.images} />
                 </div>
                 {/* Text box */}
-                <div className="md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
+                <div className="space-y-4 md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
-                  <br />
+                  
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}
                   />
+                  <ButtonContact />
                 </div>
               </>
             ) : (
               // Odd ID: Image on the right
               <>
                 {/* Text box */}
-                <div className="md:w-1/2 p-4 flex flex-col justify-center md:order-1 ">
+                <div className="space-y-4 md:w-1/2 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <br />
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}
                   />
+                  <ButtonContact />
                 </div>
                 {/* Image box slider*/}
                 <div className=" md:w-1/2 flex  md:order-2">
@@ -65,7 +69,29 @@ export default async function Reserve() {
             )}
           </div>
         ))}
+
+        {/* price information and conditions */}
+        <div className="flex flex-col lg:flex-row  justify-between bg-primary_light rounded-lg">
+          <div className="p-4 lg:w-1/2">
+            <h1 className="text-left font-bold whitespace-pre-line">
+              {t("price_title")}
+            </h1>
+            <h1 className="text-left whitespace-pre-line">{t("price_text")}</h1>
+          </div>
+          <div className="p-16 lg:p-0">
+            <hr />
+          </div>
+          <div className="p-4 lg:w-1/2">
+            <h1 className="text-left font-bold whitespace-pre-line">
+              {t("condition_title")}
+            </h1>
+            <h1 className="text-left whitespace-pre-line">
+              {t("condition_text")}
+            </h1>
+          </div>
+        </div>
       </div>
+      
       <GoogleCalendar />
     </div>
   );
