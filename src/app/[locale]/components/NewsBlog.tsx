@@ -1,6 +1,5 @@
 // import { useTranslations } from "next-intl"; //client side
 import { getTranslations } from "next-intl/server"; // server side with async and await
-import TruncateText from "./TruncateText";
 
 export default async function NewsBlog() {
 

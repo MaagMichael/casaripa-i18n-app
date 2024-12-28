@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
-import { useTranslations } from "next-intl"; //client side
+// import { useTranslations } from "next-intl"; //client side
 // import { getTranslations } from "next-intl/server"; // server side with async and await
-// import { Link } from "@/i18n/routing";
 
 import faqAnswers from "@/data/faq.json";
 
@@ -14,7 +13,7 @@ interface FAQAnswers {
 // export default async function FAQ() {
 export default function FAQ() {
   // const t = await getTranslations("FAQPage");
-  const t = useTranslations("FAQPage");
+  // const t = useTranslations("FAQPage");
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 

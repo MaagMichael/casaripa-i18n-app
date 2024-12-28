@@ -5,7 +5,6 @@ import TruncateText from "../components/TruncateText";
 import RoomCard from "../components/RoomCard";
 import GoogleCalendar from "../components/GoogleCalendar";
 
-import Link from "next/link";
 import ButtonContact from "../components/ButtonContact";
 
 interface RoomsReserve {
