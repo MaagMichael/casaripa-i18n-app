@@ -10,7 +10,7 @@ export default function () {
         // height="350"
         // frameborder="0"
         // scrolling="no"
-        className="rounded-md min-w-[300px] h-[300px] sm:w-[400px] sm:h-[350px] md:w-[600px] md:h-[450px] lg:w-[800px] lg:h-[550px]"
+        className="rounded-md min-w-[400px] h-[400px] sm:w-[400px] sm:h-[350px] md:w-[600px] md:h-[450px] lg:w-[800px] lg:h-[550px]"
       ></iframe>
     </div>
   );

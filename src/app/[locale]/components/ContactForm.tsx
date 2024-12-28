@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef, FormEvent } from "react";
-import Image from "next/image";
+
 // import { sendEmail } from "@/app/api/send-email/route";
 import emailjs from "@emailjs/browser";
 
@@ -33,11 +33,9 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
     const formData = new FormData(formRef.current);
     // console.log("formData:", formData);
     const formProps = Object.fromEntries(formData);
-    console.log("formProps:", formProps);
-
+    // console.log("formProps:", formProps);
 
     emailjs.init({
-      // publicKey: "nHlSdNaHTrzGYLWC0",
       publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       // Do not allow headless browsers
       blockHeadless: true,
@@ -45,37 +43,24 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
 
     await emailjs
       .sendForm(
-        // "service_3aqzjic",
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        // "template_v3wqmyc",
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         // formProps,
-        formRef.current)
+        formRef.current
+      )
       .then(
         (result) => {
           console.log(result.text);
           formRef.current?.reset();
-          alert("email was sent successfully");
+          alert(
+            `Verification email was sent successfully to your email ${formProps.user_email}. Please check your email account, as well spam folder.`
+          );
         },
         (error) => {
           console.log(error.text);
-          alert(`email not sent - ${error.text}`);
+          alert(`email failed to sent - ${error.text}`);
         }
       );
-
-    // try {
-    //   // const response = await sendEmail(formProps);
-    //   if (response.success) {
-    //     // Reset form
-    //     formRef.current?.reset();
-    //     alert("success");
-    //   } else {
-    //     alert("error");
-    //   }
-    // } catch (error) {
-    //   console.error("Error sending email:", error);
-    //   alert("error");
-    // }
   };
 
   return (
@@ -138,7 +123,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             type="phone"
             id="user_phone"
             name="user_phone"
-            //   required
+            // required
             placeholder="Phone ..."
             className="w-full p-2 border rounded"
           />
@@ -156,6 +141,8 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             className="w-full p-2 border rounded"
           />
         </div>
+
+        <p>* required / notwendig</p>
         {/* from date */}
         {/* to date */}
         {/* room */}
