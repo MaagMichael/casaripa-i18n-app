@@ -27,18 +27,18 @@ export default async function Reserve() {
         {roomsReserve.roomsReserve.map((item: RoomsReserve) => (
           <div
             key={item.id}
-            className="flex flex-col md:flex-row  justify-between bg-primary_light rounded-lg"
+            className="flex flex-col md:flex-row  md:justify-between bg-primary_light rounded-lg"
           >
             {/* Image placement based on ID */}
             {item.id % 2 === 0 ? (
               // Even ID: Image on the left
               <>
                 {/* Image box slider*/}
-                <div className="w-full h-full md:w-1/2 flex  order-2 md:order-1">
+                <div className="w-full h-full md:w-1/2 xl:w-1/3 flex justify-center md:justify-start items-center  order-2 md:order-1">
                   <RoomCard data={item.images} />
                 </div>
                 {/* Text box */}
-                <div className="space-y-4 md:w-1/2 p-4 flex flex-col justify-center order-1 md:order-2">
+                <div className="space-y-4 md:w-1/2 xl:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   
                   <TruncateText
@@ -52,7 +52,7 @@ export default async function Reserve() {
               // Odd ID: Image on the right
               <>
                 {/* Text box */}
-                <div className="space-y-4 md:w-1/2 p-4 flex flex-col justify-center md:order-1 ">
+                <div className="space-y-4 md:w-1/2 xl:w-2/3 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
                   <br />
                   <TruncateText
@@ -62,7 +62,7 @@ export default async function Reserve() {
                   <ButtonContact />
                 </div>
                 {/* Image box slider*/}
-                <div className=" md:w-1/2 flex  md:order-2">
+                <div className=" md:w-1/2 xl:w-1/3 flex justify-center md:justify-end items-center md:order-2">
                   <RoomCard data={item.images} />
                 </div>
               </>

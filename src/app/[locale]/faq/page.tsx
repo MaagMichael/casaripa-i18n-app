@@ -24,7 +24,7 @@ export default function FAQ() {
 
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
-      <h1 className="">{t("title")}</h1>
+      {/* <h1 className="">{t("title")}</h1> */}
 
       <div className="w-full space-y-4">
         {faqAnswers.FAQAnswers.map((item: FAQAnswers, index) => (

@@ -33,13 +33,14 @@ export default function RoomCard({ data }: RoomCardProps) {
   };
 
   return (
-    <div className="p-4 rounded-lg relative max-h-[45vh]">
+    <div className="p-2 rounded-lg relative max-h-[50vh]">
       <Image
         src={currentRoom}
         alt={currentRoom}
         width={1200}
         height={900}
-        className="h-full w-full object-cover rounded-lg max-h-[40vh]"
+        priority
+        className="h-full w-full object-cover rounded-lg max-h-[45vh]"
       />
 
       {/* Navigation arrows */}
