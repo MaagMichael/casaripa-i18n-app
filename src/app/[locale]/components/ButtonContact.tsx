@@ -12,7 +12,7 @@ export default function ButtonContact() {
 
   return (
     <Link href={`/${params.locale}/contact`}>
-      <button className="bg-green text-white  py-2 px-4 rounded hover:bg-primary duration-500">
+      <button className="bg-green text-white  p-2 rounded hover:bg-primary duration-500">
         {t("request")}
       </button>
     </Link>
