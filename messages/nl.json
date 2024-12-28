@@ -12,52 +12,52 @@
   "HomePage": {
     "title": "Hallo wereld!",
     "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
-    "news_title": "New from 2025",
-    "news_text": "5x10m infinity pool\nAir conditioning in all bedrooms\nOutdoor kitchen\nBetween June and August we only rent out the entire property (individual apartments available at short notice)\nSuite South (guest house) also available in winter"
+    "news_title": "Nieuw vanaf 2025",
+    "news_text": "Overloopzwembad van 5x10 m. \nAirconditioning in alle slaapkamers. \nBuitenkeuken. \nTussen juni en augustus verhuren we alleen het hele pand (individuele appartementen op korte termijn beschikbaar). \nSuite Zuid (gastenverblijf) ook beschikbaar in de winter."
   },
   "AboutPage": {
     "title": "Over ons",
     "text-order": {
-      "subtext01": "We - a family of five - feel so comfortable there because it is a quiet, peaceful place. Whether with family or friends, the house offers enough space to enjoy time away from the stress of everyday life. Thanks to the completely independent 3 terraces, you can spend your vacation together without having to sacrifice privacy.",
-      "subtext02": "Casa Ripa offers the following amenities: \n - Air-conditioned bedrooms (AC) \n - Bed linen and towels \n - WiFi \n - TV in each unit \n - Well-equipped kitchens \n - Welcome package \n - On request: Intermediate cleaning",
-      "subtext03": "We offer the following suites: \n * Suite North: A spacious suite on the first floor.\n * Suite South: A detached cottage (guest house).\n * Penthouse: A maisonette suite with three bedrooms which extends over 2 floors.",
-      "subtext04": "You are also welcome to rent the entire property exclusively for yourself."
+      "subtext01": "Wij - een gezin van vijf - voelen ons er zo op ons gemak omdat het een rustige, vredige plek is. Of je nu met je gezin of met vrienden bent, het huis biedt genoeg ruimte om te genieten van de tijd weg van de stress van alledag. Dankzij de 3 volledig onafhankelijke terrassen kun je je vakantie samen doorbrengen zonder aan privacy in te boeten.",
+      "subtext02": "Casa Ripa biedt de volgende voorzieningen: \n - Slaapkamers met airconditioning (AC) \n - Beddengoed en handdoeken \n - WiFi \n - TV in elke eenheid \n - Goed uitgeruste keukens \n - Welkomstpakket \n - Op aanvraag: Tussentijdse schoonmaak",
+      "subtext03": "We bieden de volgende suites: \nSuite Noord: Een ruime suite op de eerste verdieping.\n * Suite South: Een vrijstaand huisje (gastenverblijf).\n * Penthouse: Een maisonnette suite met drie slaapkamers die zich uitstrekt over 2 verdiepingen.",
+      "subtext04": "Je bent ook welkom om het hele pand exclusief voor jezelf te huren."
     }
   },
   "ActivityPage": {
-    "title": "Activities for you ...",
-    "activity1": "Beaches and Swimming",
-    "description1": "The Adriatic coast is approx. 35 km away and there are several beaches with parasols and sun loungers. To the south, just outside Ancona, is the Monte Conero National Park. This park is close to one of the most beautiful coasts of the Adriatic. Over 20 km you will find bays with pebble beaches such as Porto Novo, Sirolo and Numana, where you can swim, sunbathe and taste the delicious fresh seafood. Senigallia, north of Ancona, is known for its long sandy beaches. \n About 10 km from Cupramontana is Lake Castreccioni, also known as Lake Cingoli. Here you can swim, rent a pedal boat or a canoe. In Apiro, a village about 8 km from Cupramontana, you will find the Eldorado water park. Only open in summer, but there is plenty of entertainment with music and dancing every day and the park has several water slides, including the highest in Europe.",
-    "activity2": "Sightseeing - Eremo dei Frati Bianchi",
-    "description2": "Some historical sites are worth a visit, for example the former monastery Eremo dei Frati Bianchi (white brothers) from the 12th century, the church of San Giacomo della Romita built before the 13th century, which was rebuilt in its current form in the 18th century. The restored Abbey of Beato Angelo was built in the 12th century. \nAnother historic villages in the area are Staffolo and Cingoli. Cingoli is also known as the 'Balcony of the Marche' due to its panoramic view over the Marche region to the coast. In Jesi, a medieval walled town just 15 km away, you can go shopping and visit the world-famous Pergolesi Theater. Here you can enjoy opera, ballet and classical music in an Italian atmosphere.",
-    "activity3": "Sightseeing - Valadier-Tempel & Madonna von Frasassi",
-    "description3": "Near the Frasassi caves, there is a 700-metre footpath along a well-maintained road to the Temple of Valadier and the shrine of the Madonna of Frasassi. \nThe octagonal church with a dome dates back to 1828 and was commissioned by Giuseppe Valadier on behalf of Pope Leone XII. who himself came from a small town near the caves. In the cave next to it is the Church of Our Lady of Frasassi, which was built centuries ago under the overhanging rock.",
-    "activity4": "Sightseeing - Loreto",
-    "description4": "The village and pilgrimage site of Loreto is known for its pilgrimage church Basilica della Casa Santa, where, according to legend, Mary's house was relocated. Loreto is about an hour's drive from Cupramontana. \nWithin an hour's drive, you can reach the cities of Spoleto, Gubbio and Perugia directly opposite the Apennines. Not forgetting the famous religious city of Assisi. Walks through these towns are certainly worth the effort.",
-    "activity5": "Nature and hiking - Caves of Frasassi",
-    "description5": "Only 15 minutes away by car is the regional park 'Gola della Rossa and Frasassi'. This is the green heart of Le Marche and the largest nature reserve in this region. Here you can explore the Frasassi Caves, a remarkable karst cave system considered by many to be the most beautiful stalactite caves in Europe. Accompanied by a guide (in various languages), you can visit these magnificent caves. \n There are also several hiking trails in the regional park that take you along the park's sights.",
-    "activity6": "Nature and hiking - National Park Monti Sibillini",
-    "description6": "The Monti Sibillini National Park, part of the Apenines, lies around 50 km to the south. Nature, history and culture make this park a unique area. Species such as the wolf, golden eagle, peregrine falcon and other indigenous species live here. In combination with historic villages and abbeys that lie at the foot of the mountains, time seems to have stood still. \n For those feeling more energetic, there are many hiking and cycling trails and a little further south there are also skiing opportunities.",
-    "activity7": "Weingüter",
+    "title": "Activiteiten voor jou ...",
+    "activity1": "Stranden en zwemmen",
+    "description1": "De Adriatische kust ligt op ongeveer 35 km afstand en er zijn verschillende stranden met parasols en ligstoelen. In het zuiden, net buiten Ancona, ligt het Nationaal Park Monte Conero. Dit park ligt vlakbij een van de mooiste kusten van de Adriatische Zee. Over een afstand van 20 km vind je baaien met kiezelstranden zoals Porto Novo, Sirolo en Numana, waar je kunt zwemmen, zonnebaden en de heerlijke verse zeevruchten kunt proeven. Senigallia, ten noorden van Ancona, staat bekend om zijn lange zandstranden. \nOngeveer 10 km van Cupramontana ligt het meer van Castreccioni, ook bekend als het meer van Cingoli. Hier kun je zwemmen, waterfietsen of kanoën. In Apiro, een dorpje op ongeveer 8 km van Cupramontana, ligt het waterpark Eldorado. Alleen geopend in de zomer, maar er is volop entertainment met elke dag muziek en dans en het park heeft verschillende waterglijbanen, waaronder de hoogste van Europa.",
+    "activity2": "Bezienswaardigheden - Eremo dei Frati Bianchi",
+    "description2": "Enkele historische plekken zijn een bezoek waard, bijvoorbeeld het voormalige klooster Eremo dei Frati Bianchi (witte broeders) uit de 12e eeuw, de kerk van San Giacomo della Romita gebouwd voor de 13e eeuw, die in zijn huidige vorm werd herbouwd in de 18e eeuw. De gerestaureerde abdij van Beato Angelo werd gebouwd in de 12e eeuw. \nAndere historische dorpen in de omgeving zijn Staffolo en Cingoli. Cingoli wordt ook wel het 'Balkon van de Marken' genoemd vanwege het panoramische uitzicht over de regio Marken tot aan de kust. In Jesi, een middeleeuws ommuurd stadje op slechts 15 km afstand, kun je winkelen en het wereldberoemde Pergolesi Theater bezoeken. Hier kun je genieten van opera, ballet en klassieke muziek in een Italiaanse sfeer.",
+    "activity3": "Bezienswaardigheden - Valadier-Tempel & Madonna van Frasassi",
+    "description3": "Vlakbij de grotten van Frasassi loopt een 700 meter lang voetpad langs een goed onderhouden weg naar de Tempel van Valadier en het heiligdom van de Madonna van Frasassi. \nDe achthoekige kerk met koepel dateert uit 1828 en werd gebouwd in opdracht van Giuseppe Valadier namens paus Leone XII, die zelf uit een klein stadje in de buurt van de grotten kwam. In de grot ernaast staat de kerk van Onze Lieve Vrouw van Frasassi, die eeuwen geleden werd gebouwd onder de overhangende rots.",
+    "activity4": "Bezienswaardigheden - Loreto",
+    "description4": "Het dorp en bedevaartsoord Loreto staat bekend om zijn bedevaartskerk Basilica della Casa Santa, waar volgens de legende het huis van Maria werd verplaatst. Loreto ligt op ongeveer een uur rijden van Cupramontana. \nBinnen een uur rijden bereik je de steden Spoleto, Gubbio en Perugia, direct tegenover de Apennijnen. En niet te vergeten de beroemde religieuze stad Assisi. Wandelingen door deze steden zijn zeker de moeite waard.",
+    "activity5": "Natuur en wandelen - Grotten van Frasassi",
+    "description5": "Op slechts 15 minuten rijden ligt het regionale park 'Gola della Rossa en Frasassi'. Dit is het groene hart van Le Marche en het grootste natuurreservaat in deze regio. Hier kun je de grotten van Frasassi verkennen, een opmerkelijk karstgrottenstelsel dat door velen wordt beschouwd als de mooiste druipsteengrotten van Europa. Onder begeleiding van een gids (in verschillende talen) kun je deze prachtige grotten bezoeken. \nEr zijn ook verschillende wandelroutes in het regionale park die je langs de bezienswaardigheden van het park voeren.",
+    "activity6": "Natuur en wandelen - Nationaal Park Monti Sibillini",
+    "description6": "Het Nationaal Park Monti Sibillini, onderdeel van de Apenijnen, ligt ongeveer 50 km naar het zuiden. Natuur, geschiedenis en cultuur maken dit park tot een uniek gebied. Soorten als de wolf, de steenarend, de slechtvalk en andere inheemse soorten leven hier. In combinatie met historische dorpjes en abdijen die aan de voet van de bergen liggen, lijkt de tijd te hebben stilgestaan. \nVoor de sportievelingen zijn er veel wandel- en fietspaden en iets zuidelijker zijn er ook skimogelijkheden.",
+    "activity7": "Wijnhuizen",
     "description7": "Text",
-    "activity8": "In der Nähe von Cupramontana",
+    "activity8": "Omgeving Cupramontana",
     "description8": "Text",
-    "activity9": "Restaurants und Einkaufsmöglichkeiten",
+    "activity9": "Restaurants en winkelmogelijkheden",
     "description9": "Text"
   },
   "GalleryPage": {
     "title": "Galerij Pagina",
-    "subtitle": "Our best pictures"
+    "subtitle": "Onze beste foto's"
   },
   "ContactPage": {
     "title": "Contact",
-    "send": "Send",
+    "send": "Versturen",
     "rooms": {
-      "type1": "Suite North",
+      "type1": "Suite Noord",
       "type2": "Suite South (Cottage)",
       "type3": "Penthouse",
-      "type4": "Entire property",
-      "type5": "Other topic"
+      "type4": "Gehele eigendom",
+      "type5": "Ander onderwerp"
     }
   },
   "FAQPage": {
@@ -66,17 +66,17 @@
   },
   "ReservePage": {
     "title": "Reserveren Pagina",
-    "request": "Inquiry",
-    "activity1": "Suite North (2-4 people)",
-    "description1": "Spacious apartment (approx. 70 m²) on the first floor of Casa Ripa. The apartment has an open-plan living room (with a comfortable double sofa bed), kitchen, bedroom with double bed and bathroom.\nThe kitchen is equipped with a large fridge, a gas stove with 4 burners, a coffee machine, a kettle and a small oven.\nDirect access to the garden with a large, partially covered terrace with sun loungers, table and chairs.",
-    "activity2": "Suite South (Cottage) (2 people)",
-    "description2": "A detached vacation home (approx. 40 sqm) for two people. Bright living room (with a comfortable sofa bed), well-equipped kitchen (fridge, 4-burner gas hob, American coffee machine, kettle). \nBedroom with double bed (1.60x2.00 m) and private bathroom.\nPrivate terrace with sun loungers, table and chairs.",
-    "activity3": "Penthouse (2-8 people)",
-    "description3": "Very spacious apartment with over 120 square meters, which extends over 2 floors. On the 1st floor of the main house you will find a large living room, a spacious dining area and a very well-equipped kitchen (gas hob with oven, fridge/freezer, dishwasher, Kitchen Aid, Nespresso machine, etc.). \nYou reach the three bedrooms and the large bathroom on the 2nd floor via the impressive staircase. One of the bedrooms (the children's room) is equipped with two pull-out beds which can be converted into two 160x200cm beds. \nPrivate terrace with sun loungers, table and chairs.",
-    "price_title": "Price information\n",
-    "price_text": "Between June and August we only rent out the entire property.\nSingle apartments can be booked at short notice depending on availability.\n\nThe prices quoted are per week (7 nights *) for two people **. \n\nSuite North - € 750 (LS**) and € 850 (HS**)\nSuite South (guest house) - € 650 (LS**) and € 750 (HS**)\nPenthouse - on request from € 1,100\nCasa Ripa Estate - on request from € 2. 300 (6 persons)\n\nHS: High season, from 15.06. (June) to 31.08. (August)\nLS: Low season, rest of the year except HS\n* Minimum stay in low season: 3 nights. Minimum stay in high season: 1 week.\n** Additional person / bed: 15 € per night",
-    "condition_title": "Conditions of use",
-    "condition_text": "- Upon confirmation of your booking, a 30% deposit is required, which is non-refundable. Final payment at least two weeks before arrival\n- Arrival from 17:00\n- Departure 10:00\n- If you cancel more than 3 months before the arrival date, you will receive a full refund of the deposit. If you cancel less than 3 months before the arrival date, you will receive the deposit back if we can rent the apartment to another tenant.\n- We ask you not to smoke in the apartments and in the guest house"
+    "request": "Aanvraag",
+    "activity1": "Suite Noord (2-4 personen)",
+    "description1": "Ruim appartement (ca. 70 m²) op de eerste verdieping van Casa Ripa. Het appartement heeft een open woonkamer (met een comfortabele tweepersoonsslaapbank), keuken, slaapkamer met tweepersoonsbed en badkamer.\n De keuken is uitgerust met een grote koelkast, een gasfornuis met 4 pitten, een koffiezetapparaat, een waterkoker en een kleine oven.\n Directe toegang tot de tuin met een groot, gedeeltelijk overdekt terras met ligstoelen, tafel en stoelen.",
+    "activity2": "Suite South (Cottage) (2 personen)",
+    "description2": "Een vrijstaand vakantiehuis (ca. 40 m²) voor twee personen. Lichte woonkamer (met een comfortabele slaapbank), goed uitgeruste keuken (koelkast, 4-pits gaskookplaat, Amerikaans koffiezetapparaat, waterkoker). \n Slaapkamer met tweepersoonsbed (1.60x2.00 m) en eigen badkamer. \n Eigen terras met ligstoelen, tafel en stoelen.",
+    "activity3": "Penthouse (2-8 personen)",
+    "description3": "Zeer ruim appartement met meer dan 120 vierkante meter, dat zich uitstrekt over 2 verdiepingen. Op de 1e verdieping van het hoofdgebouw vind je een grote woonkamer, een ruime eethoek en een zeer goed uitgeruste keuken (gaskookplaat met oven, koelkast/vriezer, vaatwasser, Kitchen Aid, Nespresso-apparaat, enz.) \n Via de indrukwekkende trap bereik je de drie slaapkamers en de grote badkamer op de 2e verdieping. Een van de slaapkamers (de kinderkamer) is uitgerust met twee uitschuifbare bedden die kunnen worden veranderd in twee bedden van 160x200 cm. \n Eigen terras met ligstoelen, tafel en stoelen.",
+    "price_title": "Prijs informatie",
+    "price_text": "Tussen juni en augustus verhuren we alleen het hele pand.Ëénpersoonsappartementen kunnen op korte termijn geboekt worden, afhankelijk van beschikbaarheid.\n\n De genoemde prijzen zijn per week (7 nachten *) voor twee personen **.\n\n Suite Noord - € 750 (LS**) en € 850 (HS**)\n Suite Zuid (gastenverblijf) - € 650 (LS**) en € 750 (HS**)\n Penthouse - op aanvraag vanaf € 1.100\n Casa Ripa Estate - op aanvraag vanaf € 2. 300 (6 personen)\n\n HS: Hoogseizoen, van 15.06. (juni) tot 31.08. (augustus)\n LS: Laagseizoen, rest van het jaar behalve HS\n*Minimaal verblijf in het laagseizoen: 3 nachten. Minimum verblijf in het hoogseizoen: 1 week. \n** Extra persoon / bed: 15 € per nacht.",
+    "condition_title": "Gebruiksvoorwaarden",
+    "condition_text": "- Bij bevestiging van je boeking wordt een aanbetaling van 30% gevraagd, die niet gerestitueerd kan worden. Laatste betaling uiterlijk twee weken voor aankomst. \n- Aankomst vanaf 17:00 uur. \n- Vertrek 10:00 uur. \n- Als je meer dan 3 maanden voor de aankomstdatum annuleert, ontvang je de aanbetaling volledig terug. Als je minder dan 3 maanden voor de aankomstdatum annuleert, krijg je de aanbetaling terug als we het appartement aan een andere huurder kunnen verhuren.\n - We vragen je niet te roken in de appartementen en in het gastenverblijf."
   },
   "Footer": {
     "title": "Meer informatie",
@@ -88,17 +88,17 @@
   },
   "WelcomePage": {
     "title": "Welkom bij Casa Ripa",
-    "subtitle": "Holiday Home @ Cupramontana, Le Marche, Italy.",
-    "text": "In the heart of the Marche region (Le Marche), our lovingly renovated manor house dating back to 1850 is located directly on the hill of Cupramontana. It is surrounded by a well-tended 5,000 square meter garden with olive trees, figs and many other fruits and herbs.\n We have made a point of preserving old materials as far as possible, but without sacrificing modern amenities - come in and feel at home. Enjoy the breathtaking panoramic view of the surrounding countryside. The newly designed outdoor area with infinity pool (5x10m), a covered lounge area, outdoor shower, table football and plenty of sun loungers round off the offer.\n Here you can relax and unwind.\n\n The Marche region (Le Marche) is a beautiful hilly and mountainous region that is still relatively undiscovered by tourists. Nevertheless, the property is only 30 minutes from Ancona airport. Here you can spend your vacation stress-free and enjoy everything the region has to offer, from the wonderful food and the famous Verdicchio wine to the warmth and friendliness of the people, the culture, the nature and the fabulous 'blue flag' beaches along the Adriatic coast.\n We hope to welcome you to this paradise."
+    "subtitle": "Vakantiehuis @ Cupramontana, Le Marche, Italië.",
+    "text": "In het hart van de regio Marche (Le Marche) ligt ons liefdevol gerenoveerde landhuis uit 1850 direct op de heuvel van Cupramontana. Het is omgeven door een goed onderhouden tuin van 5.000 vierkante meter met olijfbomen, vijgen en vele andere vruchten en kruiden. We hebben er alles aan gedaan om oude materialen zoveel mogelijk te behouden, maar zonder in te boeten aan moderne voorzieningen - kom binnen en voel je thuis. Geniet van het adembenemende panoramische uitzicht op het omliggende platteland. De nieuw ontworpen buitenruimte met overloopzwembad (5x10m), een overdekte loungehoek, buitendouche, tafelvoetbal en voldoende ligstoelen ronden het aanbod af. Hier kun je ontspannen en tot rust komen. De regio Marche (Le Marche) is een prachtige heuvelachtige en bergachtige regio die nog relatief onontdekt is door toeristen. Toch ligt de accommodatie op slechts 30 minuten van het vliegveld van Ancona. Hier kun je je vakantie stressvrij doorbrengen en genieten van alles wat de regio te bieden heeft, van het heerlijke eten en de beroemde Verdicchio wijn tot de warmte en vriendelijkheid van de mensen, de cultuur, de natuur en de fantastische 'blauwe vlag' stranden langs de Adriatische kust.\n We hopen je te mogen verwelkomen in dit paradijs."
   },
   "ActivityExtract": {
     "title": "Geniet van ons paradijs",
-    "categories1": "Beach",
-    "categories2": "Places to visit",
-    "categories3": "Nature and Activities",
-    "categories4": "Winery",
-    "categories5": "Near by Cupramontana",
-    "categories6": "Restaurants and Shops"
+    "categories1": "Stranden",
+    "categories2": "Plaatsen om te bezoeken",
+    "categories3": "Natuur en activiteiten",
+    "categories4": "Wijnhuizen",
+    "categories5": "Omgeving Cupramontana",
+    "categories6": "Restaurants en winkelmogelijkheden"
   },
   "Review": {
     "title": "Beoordelingen van gasten"

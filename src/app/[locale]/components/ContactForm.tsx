@@ -142,7 +142,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
           />
         </div>
 
-        <p>* required / notwendig</p>
+        <p>* required / notwendig / noodzakelijk</p>
         {/* from date */}
         {/* to date */}
         {/* room */}
