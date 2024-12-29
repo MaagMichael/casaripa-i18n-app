@@ -61,7 +61,6 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
           alert(`email failed to sent - ${error.text}`);
         }
       );
-
   };
 
   return (
