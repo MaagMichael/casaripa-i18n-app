@@ -33,10 +33,8 @@ export default async function Reserve() {
               // Even ID: Image on the left
               <>
                 {/* Image box slider*/}
-
                 <div className="w-full h-full md:w-1/2 xl:w-1/3 flex justify-center md:justify-start items-center  order-2 md:order-1">
                   <RoomCard data={item.images} />
-
                 </div>
                 {/* Text box */}
                 <div className="space-y-4 md:w-1/2 xl:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
