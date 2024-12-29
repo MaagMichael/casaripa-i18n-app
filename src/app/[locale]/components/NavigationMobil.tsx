@@ -38,7 +38,7 @@ function NavigationMobil({ data }: NavMobilProps) {
       )}
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-primary w-full h-full overflow-hidden flex flex-col items-center">
+        <div className="fixed inset-0 z-50 bg-primary py-4 w-full h-full overflow-hidden flex flex-col items-center">
           <button
             onClick={toggleMenu}
             className="absolute top-8 right-8 w-8 h-8 flex items-center justify-center"
