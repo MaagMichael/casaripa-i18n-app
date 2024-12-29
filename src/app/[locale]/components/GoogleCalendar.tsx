@@ -10,7 +10,7 @@ export default function GoogleCalendar() {
         // height="350"
         // frameborder="0"
         // scrolling="no"
-        className="mx-auto mt-4 rounded-md min-w-[400px] h-[400px] sm:w-[500px] sm:h-[400px] md:w-[600px] md:h-[450px] lg:w-[800px] lg:h-[550px]"
+        className="mx-auto mt-4 rounded-md min-w-[345px] h-[400px] sm:w-[500px] sm:h-[400px] md:w-[600px] md:h-[450px] lg:w-[800px] lg:h-[550px]"
       ></iframe>
     </div>
   );

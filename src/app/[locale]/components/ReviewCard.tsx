@@ -28,7 +28,7 @@ export default function ReviewCard({ data, title }: ReviewCardProps) {
     <div
       key={currentReview.id}
       // with picture then h-[60vh]
-      className="w-2/3 h-[48vh] mx-auto rounded-lg bg-secondary p-4 my-2 relative"
+      className="sm:w-2/3 w-full h-[48vh] mx-auto rounded-lg bg-secondary p-4 my-2 relative"
     >
       <div className="relative flex items-center">
         {/* picture container */}
