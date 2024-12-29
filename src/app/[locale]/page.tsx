@@ -7,6 +7,7 @@ import HeroImage from "./components/HeroImage";
 import ActivityExtract from "./components/ActivityExtract";
 import Review from "./components/Review";
 import GoogleMap from "./components/GoogleMap";
+import NewsBlog from "./components/NewsBlog";
 
 export default async function HomePage() {
   return (
@@ -19,6 +20,8 @@ export default async function HomePage() {
 
 
       <Welcome />
+
+      <NewsBlog />
 
       <ActivityExtract />
 

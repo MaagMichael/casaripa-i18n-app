@@ -2,6 +2,7 @@
 import { getTranslations } from "next-intl/server"; // server side with async and await
 
 import ContactForm from "../components/ContactForm";
+import GoogleCalendar from "../components/GoogleCalendar";
 
 export default async function Contact() {
   const t = await getTranslations("ContactPage");
@@ -17,7 +18,7 @@ export default async function Contact() {
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
       {/* <h1 className="">{t("title")}</h1> */}
-      
+      <GoogleCalendar />
       <ContactForm send={t("send")} rooms={rooms}/> 
     </div>
   );

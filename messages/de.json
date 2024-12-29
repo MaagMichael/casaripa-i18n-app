@@ -12,7 +12,8 @@
   "HomePage": {
     "title": "Hello Welt!",
     "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
-    "about": "Gehe zur Über Uns Seite"
+    "news_title": "Neu ab 2025",
+    "news_text": "5x10m Infinity Pool\nKlimaanlage in allen Schlafzimmern\nAußenküche\nZwischen Juni und August vermieten wir nur das komplette Anwesen (einzelne Appartements kurzfristig möglich)\nSuite Süd (Gästehaus) auch im Winter verfügbar"
   },
   "AboutPage": {
     "title": "Über uns",
@@ -49,7 +50,7 @@
     "subtitle": "Unsere schönsten Bilder"
   },
   "ContactPage": {
-    "title": "Kontakt Seite",
+    "title": "Kontakt",
     "send": "Senden",
     "rooms": {
       "type1": "Suite Nord",
@@ -65,12 +66,17 @@
   },
   "ReservePage": {
     "title": "Reservieren Seite",
+    "request": "Anfrage",
     "activity1": "Suite Nord (2-4 Personen)",
     "description1": "Geräumige Wohnung (ca. 70 m²) im Erdgeschoss der Casa Ripa. Die Wohnung verfügt über ein offenes Wohnzimmer (mit einer bequemen Doppelbett Schlafcouch), Küche, Schlafzimmer mit Doppelbett und Bad.\nDie Küche ist mit einem großen Kühlschrank, einem Gasherd mit 4 Brennern, einer Kaffeemaschine, einem Wasserkocher und einem kleinen Backofen ausgestattet.\nDirekter Zugang zum Garten mit einer großen, teilweise überdachten Terrasse mit Sonnenliegen, Tisch und Stühlen.",
     "activity2": "Suite Süd - Gästehaus (2 Personen)",
     "description2": "Ein freistehendes Ferienhaus (ca. 40 qm) für zwei Personen. Helles Wohnzimmer (mit einer bequemen Schlafcouch), gut ausgestattete Küche (Kühlschrank, Gasherd 4 Brenner, amerikanische Kaffeemaschine, Wasserkocher). \nSchlafzimmer mit Doppelbett (1,60x2,00 m) und eigenem Bad.\nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen.",
     "activity3": "Penthouse (2-8 Personen)",
-    "description3": "Sehr geräumige Wohnung mit über 120qm, welche sich über 2 Stockwerke erstreckt. Im 1. OG des Haupthauses finden sie ein großes Wohnzimmer, einen großzügigen Essbereich und eine sehr gut ausgestattete Küche (Gasherd mit Backofen, Kühl-/Gefrierschrank, Geschirrspülmaschine, Kitchen Aid, Nespresso-Maschine usw.). \nÜber das beeindruckende Treppenhaus erreichen sie im 2. Stock die drei Schlafräume und das große Bad. Eines der Schlafzimmer (das Kinderzimmer) ist mit zwei Ausziehbetten ausgestattet welche sich in zwei 160x200cm große Betten verwandeln lassen. \nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen."
+    "description3": "Sehr geräumige Wohnung mit über 120qm, welche sich über 2 Stockwerke erstreckt. Im 1. OG des Haupthauses finden sie ein großes Wohnzimmer, einen großzügigen Essbereich und eine sehr gut ausgestattete Küche (Gasherd mit Backofen, Kühl-/Gefrierschrank, Geschirrspülmaschine, Kitchen Aid, Nespresso-Maschine usw.). \nÜber das beeindruckende Treppenhaus erreichen sie im 2. Stock die drei Schlafräume und das große Bad. Eines der Schlafzimmer (das Kinderzimmer) ist mit zwei Ausziehbetten ausgestattet welche sich in zwei 160x200cm große Betten verwandeln lassen. \nPrivate Terrasse mit Sonnenliegen, Tisch und Stühlen.",
+    "price_title": "Preisinformationen",
+    "price_text": "Zwischen Juni und August vermieten wir nur das gesamte Anwesen.\nEinzelne Wohnungen können je nach Verfügbarkeit kurzfristig gebucht werden.\n\nDie angegebenen Preise gelten pro Woche (7 Nächte *) für zwei Personen **.\n\nSuite Nord - € 750 (LS**) und € 850 (HS**)\nSuite Süd (Gästehaus) - € 650 (LS**) und € 750 (HS**)\nPenthouse - auf Anfrage ab € 1.100\nAnwesen Casa Ripa - auf Anfrage ab € 2.300 (6 Personen)\n\nHS: Hochsaison, vom 15.06. (Juni) bis zum 31.08. (August)\nLS: Nebensaison, Rest des Jahres außer HS\n* Mindestaufenthalt in der Nebensaison: 3 Nächte. Mindestaufenthalt in der Hochsaison: 1 Woche.\n** Zusätzliche Person / Bett: 15 € pro Nacht",
+    "condition_title": "Buchungsbedingungen",
+    "condition_text": "- Nach Bestätigung Ihrer Buchung ist eine Anzahlung von 30% zu leisten, die nicht erstattbar ist. Restzahlung mindestens zwei Wochen vor Anreise\n- Anreise ab 17.00 Uhr\n- Abreise 10:00 Uhr\n- Wenn Sie mehr als 3 Monate vor dem Ankunftsdatum stornieren, erhalten Sie eine vollständige Rückerstattung der Anzahlung. Wenn Sie weniger als 3 Monate vor dem Ankunftsdatum stornieren, erhalten Sie die Kaution zurück, wenn wir die Wohnung an einen anderen Mieter vermieten können.\n- Wir bitten Sie, in den Appartements und im Gästehaus nicht zu rauchen"
   },
   "Footer": {
     "title": "Finde mehr heraus",

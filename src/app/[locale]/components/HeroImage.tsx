@@ -40,7 +40,7 @@ export default function HeroImage() {
       />
       
       {/* Optional: Add navigation dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-primary_light p-1 rounded-lg">
         {heroImages.HeroImage.map((_, index) => (
           <button
             key={index}

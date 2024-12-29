@@ -49,7 +49,7 @@ export default async function Navigation() {
 
         {/* Navigation Menu tablet/desktop*/}
         {/* toggle by tailwind */}
-        <div className="hidden xl:flex">
+        <div className="hidden lg:flex">
           {menuData.MenuItems.map((item, index) => (
             <Link
               key={index}
@@ -65,7 +65,7 @@ export default async function Navigation() {
         <div className="flex items-center space-x-4 mx-2 md:space-x-12">
           {/* Reserve button extra */}
           <Link href="/reserve">
-            <button className="bg-green text-white  py-2 px-6 rounded hover:bg-primary_light duration-500">
+            <button className="bg-green text-white  p-2 rounded hover:bg-primary_light duration-500">
               {t("reserve")}
             </button>
           </Link>
@@ -75,7 +75,7 @@ export default async function Navigation() {
 
           {/* Navigation Menu mobile as client component */}
           {/* toggle by tailwind */}
-          <div className="flex xl:hidden text-secondary">
+          <div className="flex lg:hidden text-secondary">
             <NavigationMobil
               data={menuData.MenuItems.map((item) => ({
                 label: t(item.label),

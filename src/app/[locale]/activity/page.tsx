@@ -63,7 +63,7 @@ export default async function Activity() {
                   />
                 </div>
                 {/* Image box */}
-                <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center md:order-2">
+                <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center mx-auto md:order-2">
                   <Image
                     src={item.image}
                     alt={t(item.title)}

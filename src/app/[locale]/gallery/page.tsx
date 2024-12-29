@@ -23,7 +23,7 @@ export default function Gallery() {
 
   return (
     <div className="bg-primary text-secondary p-4 space-y-4">
-      <h1 className="text-xl text-center">{t("title")}</h1>
+      {/* <h1 className="text-xl text-center">{t("title")}</h1> */}
       <p className="text-center">{t("subtitle")}</p>
 
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
