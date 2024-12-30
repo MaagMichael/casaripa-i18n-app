@@ -1,3 +1,5 @@
+// https://www.ali-dev.com/blog/next-js-email-sending-with-app-router-and-emailjs
+
 // due to useRef in ContactForm.tsx, this file is client side
 "use client";
 
@@ -18,22 +20,16 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ send, rooms }: ContactFormProps) {
-  // console.log(send);
-  // console.log(rooms);
-
+  
   const formRef = useRef<HTMLFormElement>(null);
-
+  
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    console.log(formRef.current);
 
     if (!formRef.current) {
       return;
     }
-
-    const formData = new FormData(formRef.current);
-    // console.log("formData:", formData);
-    const formProps = Object.fromEntries(formData);
-    // console.log("formProps:", formProps);
 
     emailjs.init({
       publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
@@ -45,16 +41,16 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
       .sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        // formProps,
         formRef.current
       )
       .then(
         (result) => {
           console.log(result.text);
-          formRef.current?.reset();
           alert(
-            `Verification email was sent successfully to your email ${formProps.user_email}. Please check your email account, as well spam folder.`
+            `Verification email was sent successfully to your email ${formRef.current?.user_email.value}. Please check your email account, as well spam folder.`
           );
+          // Reset the form after successful submission
+          formRef.current?.reset();
         },
         (error) => {
           console.log(error.text);
