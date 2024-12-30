@@ -54,7 +54,7 @@ export default async function Navigation() {
             <Link
               key={index}
               href={item.route}
-              className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary_light"
+              className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500"
             >
               {/* item.label from menu.json is as well the key for the translation */}
               {t(item.label)}
@@ -65,7 +65,7 @@ export default async function Navigation() {
         <div className="flex items-center space-x-4  md:space-x-12">
           {/* Reserve button extra */}
           <Link href="/reserve">
-            <button className="bg-green text-white  p-2 rounded hover:bg-primary_light duration-500">
+            <button className="bg-green text-white  p-2 rounded hover:bg-primary duration-500">
               {t("reserve")}
             </button>
           </Link>

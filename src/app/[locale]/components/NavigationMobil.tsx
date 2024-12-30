@@ -31,9 +31,9 @@ function NavigationMobil({ data }: NavMobilProps) {
           onClick={toggleMenu}
           className="relative w-8 h-8 flex flex-col justify-between items-center group focus:outline-none"
         >
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
+          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
+          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
+          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
         </button>
       )}
 
