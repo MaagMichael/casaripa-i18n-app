@@ -35,7 +35,7 @@ export default async function Navigation() {
 
   return (
     <>
-      <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10 pr-4">
+      <div className="bg-primary_light flex justify-between items-center w-full sticky top-0 z-10 pr-4">
         {/* Logo always visible on left side */}
         <Link href="/" className="max-w-20 sm:max-w-28">
           <Image
@@ -62,7 +62,7 @@ export default async function Navigation() {
           ))}
         </div>
 
-        <div className="flex items-center space-x-4 mr-2 md:space-x-12">
+        <div className="flex items-center space-x-4  md:space-x-12">
           {/* Reserve button extra */}
           <Link href="/reserve">
             <button className="bg-green text-white  p-2 rounded hover:bg-primary_light duration-500">

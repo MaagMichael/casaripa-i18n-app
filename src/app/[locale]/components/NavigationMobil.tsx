@@ -29,7 +29,7 @@ function NavigationMobil({ data }: NavMobilProps) {
       {!isOpen && (
         <button
           onClick={toggleMenu}
-          className="relative w-10 h-8 flex flex-col justify-between items-center group focus:outline-none"
+          className="relative w-8 h-8 flex flex-col justify-between items-center group focus:outline-none"
         >
           <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
           <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary_light"></span>
@@ -63,7 +63,7 @@ function NavigationMobil({ data }: NavMobilProps) {
               <Link
                 key={index}
                 href={`/${params.locale}${item.route}`}
-                className="flex flex-col text-secondary  font-bold text-xl px-4 py-2 rounded hover:bg-primary_light"
+                className="flex flex-col text-secondary  font-bold text-xl p-4"
               >
                 {item.label}
               </Link>

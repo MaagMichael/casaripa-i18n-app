@@ -2,7 +2,7 @@
 
 export default function GoogleCalendar() {
   return (
-    <div>
+    <div className="overflow-x-auto">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;src=Y2FzYXJpcGEuY3VwcmFAZ21haWwuY29t&amp;color=%23F09300&amp;title=Casa%20Ripa%20Available%20Bookings"
         // style="border:solid 1px #777"

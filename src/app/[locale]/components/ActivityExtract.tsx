@@ -17,7 +17,7 @@ export default async function ActivityExtract() {
     <div className="p-4 bg-primary text-secondary">
       <h1 className="text-xl">{t("title")}</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 my-4">
         {activityImage.activityImage.map((item: ActivityImage) => (
           <div key={item.id} className="flex flex-col">
             <Link href="/activity">
