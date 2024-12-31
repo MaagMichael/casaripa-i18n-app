@@ -1,0 +1,26 @@
+dark light themes with tailwind
+
+Slider pictures on doubleclick open in modal to click through
+
+SEO in NextJS
+
+Impressum as pdf for download
+DSVGO as pdf for download
+
+DSVGO button on G-Calendar like on G-Maps
+
+G-Calendar not as iframe, use date-fns and fetch data
+
+G-calendar on doubleclick open in modal
+
+use toastify for notification message (e.g. email sending)
+
+emailJS as server actions
+
+improve fading of hero images, smooth fading
+
+footer update on social media
+
+improve slider control button left,right at rooms pictures
+
+read I18n language text from a database instead from json files
