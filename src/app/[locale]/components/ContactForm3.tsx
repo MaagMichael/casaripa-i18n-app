@@ -1,7 +1,7 @@
 import styles from "../components/Contact.module.css";
 
 export default function ContactPage() {
-  // start: sendEmail in SendEmail.ts and import here
+  // start: sendEmail in SendEmail.ts under /lib and import here
   const sendEmail = async (fromData: FormData) => {
     "use server";
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
     }
   };
 
-  //   end: sendEmail in SendEmail.ts and import here
+  //   end: sendEmail in SendEmail.ts under /lib and import here
 
   return (
     <form action={sendEmail} className={styles.form}>
