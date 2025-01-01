@@ -25,10 +25,10 @@ export default function HeroImage() {
   const currentImage = heroImages.HeroImage[currentImageIndex];
 
   return (
-    <div className="w-full h-[40vh] md:h-[60vh] lg:h-[80vh] relative">
+    <div className="w-full h-[40vh] md:h-[60vh] lg:h-[80vh] relative bg-primary_light">
       
       <Image
-        className="animate-fadeIn bg-primary"
+        className="animate-fadeIn"
         key={currentImageIndex}
         src={currentImage.url}
         alt={currentImage.label}

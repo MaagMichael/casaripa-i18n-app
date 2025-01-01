@@ -17,8 +17,6 @@ use toastify for notification message (e.g. email sending)
 
 emailJS as server actions
 
-improve fading of hero images, smooth fading
-
 footer update on social media
 
 improve slider control button left,right at rooms pictures
