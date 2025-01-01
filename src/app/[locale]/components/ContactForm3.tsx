@@ -35,8 +35,11 @@ export default function ContactPage() {
       if (!res.ok) {
         throw new Error("Failed to send email");
       }
+      else {
+        console.log("Email sent successfully");
+      }
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Something went wrong! Email not sent:", error);
     }
   };
 
