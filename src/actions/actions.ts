@@ -21,7 +21,7 @@ export async function sendEmail(previousState, fromData: FormData) {
     }
 
     try {
-      await fetch("https://apis.emailjs.com/api/v1.0/email/send", {
+      await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         headers: {
           "Content-Type": "application/json",
         },
