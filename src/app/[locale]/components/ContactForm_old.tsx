@@ -1,5 +1,12 @@
 // https://www.ali-dev.com/blog/next-js-email-sending-with-app-router-and-emailjs
-// In the EmailJS dashboard, go to Account > Security and check 'Allow EmailJS API for non-browser applications.'
+
+// due to useRef in ContactForm.tsx, this file is client side
+"use client";
+
+import { useRef, FormEvent } from "react";
+
+// import { sendEmail } from "@/app/api/send-email/route";
+import emailjs from "@emailjs/browser";
 
 interface ContactFormProps {
   send: string;
@@ -14,60 +21,49 @@ interface ContactFormProps {
 
 export default function ContactForm({ send, rooms }: ContactFormProps) {
   
-  const sendEmail = async (fromData: FormData) => {
-    "use server";
+  const formRef = useRef<HTMLFormElement>(null);
+  
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(formRef.current);
 
-    // console.log(fromData);
-
-    const room_selected = fromData.get("room_selected");
-    const user_name = fromData.get("user_name");
-    const user_email = fromData.get("user_email");
-    const user_phone = fromData.get("user_phone");
-    const user_message = fromData.get("user_message");
-
-    if (
-      !room_selected ||
-      !user_name ||
-      !user_email ||
-      !user_phone ||
-      !user_message
-    ) {
-      console.log("Please fill out all fields");
+    if (!formRef.current) {
+      return;
     }
 
-    try {
-      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        headers: {
-          "Content-Type": "application/json",
+    emailjs.init({
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      // Do not allow headless browsers
+      blockHeadless: true,
+    });
+    
+    await emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(
+            `Verification email was sent successfully to your email ${formRef.current?.user_email.value}. Please check your email account, as well spam folder.`
+          );
+          // Reset the form after successful submission
+          formRef.current?.reset();
         },
-        method: "POST",
-        body: JSON.stringify({
-          service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-          template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-          user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-          accessToken: process.env.NEXT_PUBLIC_EMAILJS_ACCESS_TOKEN!,
-          template_params: {
-            room_selected,
-            user_name,
-            user_email,
-            user_phone,
-            user_message,
-          },
-        }),
-      });
-      console.log(res);
-
-      if (!res.ok) {
-        throw new Error("Failed to send email", { cause: res.status });
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-    }
+        (error) => {
+          console.log(error.text);
+          alert(`email failed to sent - ${error.text}`);
+        }
+      );
   };
 
   return (
     <>
-      <form action={sendEmail}
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
         className="space-y-4 max-w-md mx-auto"
       >
         <div>
