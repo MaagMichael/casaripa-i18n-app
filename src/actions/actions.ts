@@ -1,6 +1,5 @@
 "use server";
 
-
 export async function sendEmail(previousState, fromData: FormData) {
 
     // console.log(fromData);
@@ -17,11 +16,12 @@ export async function sendEmail(previousState, fromData: FormData) {
       !user_email ||
       !user_message
     ) {
-      console.log("Please fill out all fields");
+      return "Please fill out all required fields";
+      // console.log("Please fill out all required fields");
     }
 
     try {
-      await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -40,8 +40,10 @@ export async function sendEmail(previousState, fromData: FormData) {
           },
         }),
       });
-      
+      // console.log(res);
+
     } catch (error) {
       return "Error sending email. Please contact by phone.";
     }
+
   };
