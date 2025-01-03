@@ -52,7 +52,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_name"
             name="user_name"
             required
-            placeholder="Name ..."
+            placeholder="Your Name ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -65,7 +65,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_email"
             name="user_email"
             required
-            placeholder="Email ..."
+            placeholder="Your Email ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -78,7 +78,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_phone"
             name="user_phone"
             // required
-            placeholder="Phone ..."
+            placeholder="Your Phone ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -91,7 +91,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             name="user_message"
             rows={4}
             required
-            placeholder="Text ..."
+            placeholder="Your message ..."
             className="w-full p-2 border rounded"
           />
         </div>
