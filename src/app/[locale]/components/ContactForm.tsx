@@ -7,8 +7,6 @@
 import { sendEmail } from "@/actions/actions";
 import { useActionState } from "react";
 
-import {useState, useEffect } from "react";
-
 interface ContactFormProps {
   send: string;
   rooms: {
@@ -21,21 +19,8 @@ interface ContactFormProps {
 }
 // get translated rooms data from server component /contact/page.tsx
 export default function ContactForm({ send, rooms }: ContactFormProps) {
-  const [error, action, isPending] = useActionState(sendEmail, null);
+  const [state, action, isPending] = useActionState(sendEmail, null);
 
-  const [errorflag, setErrorflag] = useState(false);
-
-  // Reset error after 5 seconds
-  useEffect(() => {
-    if (error) {
-      const timer = setTimeout(() => {
-        setErrorflag(true);
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-    setErrorflag(false);
-  }, [error,action]);
-  
   return (
     <>
       <form action={action} className="space-y-4 max-w-md mx-auto">
@@ -117,6 +102,9 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         {/* room */}
 
         <button
+        onClick={() => {
+          alert('Email will be sent out, you should receive a copy to your own email.');
+        }}
           disabled={isPending}
           type="submit"
           className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
@@ -125,8 +113,8 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         </button>
 
         {isPending && <p className="text-green">Sending email...</p>}
-        {error && <p className="text-red-500">{error}</p>}
-        {!isPending && !error && <p className="text-green">E-mail sent out, you should receive a copy to your own email.</p>}
+        {state && <p className="text-red-500">{state}</p>}
+        {/* {!isPending && !state && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
         
       </form>
     </>

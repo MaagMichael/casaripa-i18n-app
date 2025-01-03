@@ -21,7 +21,7 @@ export async function sendEmail(previousState, fromData: FormData) {
     }
 
     try {
-      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+      await fetch("https://api.emailjs.com/api/v1.0/email/send", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -40,9 +40,9 @@ export async function sendEmail(previousState, fromData: FormData) {
           },
         }),
       });
-      // console.log(res);
+      
 
-    } catch (error) {
+    } catch (state) {
       return "Error sending email. Please contact by phone.";
     }
 
