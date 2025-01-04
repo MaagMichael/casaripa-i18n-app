@@ -10,6 +10,7 @@ import menuData from "@/data/menu.json";
 import Switcher from "./Switcher";
 import ButtonToTop from "./ButtonToTop";
 import NavigationMobil from "./NavigationMobil";
+import NavLink from "./NavLink";
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
 // from the JSON file. When you import a JSON file in TypeScript, it automatically creates an
@@ -51,14 +52,18 @@ export default async function Navigation() {
         {/* toggle by tailwind */}
         <div className="hidden lg:flex">
           {menuData.MenuItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.route}
-              className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500"
-            >
-              {/* item.label from menu.json is as well the key for the translation */}
-              {t(item.label)}
-            </Link>
+            <>
+              <Link
+                key={index}
+                href={item.route}
+                className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500"
+              >
+                {/* item.label from menu.json is as well the key for the translation */}
+                {/* {t(item.label)} */}
+              </Link>
+
+              <NavLink key={index} label={t(item.label)} route={item.route}  />
+            </>
           ))}
         </div>
 

@@ -15,7 +15,7 @@ G-calendar on doubleclick open in modal
 
 use toastify for notification message (e.g. email sending)
 
-install localy Google fonts
+install locally Google fonts
 
 footer update on social media
 
