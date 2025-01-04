@@ -1,6 +1,6 @@
 letters CASA RIPA over each hero image ?
 
-footer update on social media
+footer update on social media , https://www.instagram.com/casaripa.cupra/ , https://www.facebook.com/pg/Casa-Ripa-Holiday-Home-110086234177655
 
 dark light themes with tailwind
 
@@ -9,6 +9,8 @@ Slider pictures (rooms and gallery) on doubleclick open in modal to click throug
 SEO in NextJS
 
 Impressum as pdf for download (check videos for NextJS)
+Casa Ripa huur Vakantiehuisje en Appartement, Appartement huren Marche, Ferienwohnung, Holiday home, Holiday Rental, Apartment, Hart van Le Marche, Italië, Verdicchio wijn, Cupramontana  
+​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003
 DSVGO as pdf for download
 
 DSVGO button on G-Calendar like on G-Maps
