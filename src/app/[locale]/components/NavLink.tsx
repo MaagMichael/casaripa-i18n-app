@@ -14,12 +14,6 @@ function NavLink(data: NavLinkProps) {
   const params = useParams();
   const pathname = usePathname();
 
-  console.log("pathname", pathname);
-  //   console.log(params);
-  //   console.log("data.route",data.route);
-  const active = "/" + params.locale + data.route;
-  console.log("active", active);
-
   return (
     <Link
       href={`/${params.locale}${data.route}`}
