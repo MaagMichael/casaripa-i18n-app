@@ -38,6 +38,13 @@ export default function HeroImage() {
         style={{ objectFit: "cover", transition: "opacity 0.5s ease-in-out" }}
         priority
       />
+
+      {/* centered text on images*/}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-white text-4xl md:text-6xl font-bold z-5 text-center">
+          CASA RIPA
+        </h1>
+      </div>
       
       {/* Optional: Add navigation dots */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 bg-primary_light p-1 rounded-lg">

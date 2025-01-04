@@ -1,7 +1,3 @@
-letters CASA RIPA over each hero image ?
-
-footer update on social media , https://www.instagram.com/casaripa.cupra/ , https://www.facebook.com/pg/Casa-Ripa-Holiday-Home-110086234177655
-
 dark light themes with tailwind
 
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
@@ -23,12 +19,17 @@ use toastify for notification message (e.g. email sending)
 
 install locally Google fonts
 
-improve slider control button left,right at rooms pictures
-
 read I18n language text from a database instead from json files
 
 
 DONE:
+letters CASA RIPA over each hero image ?
+
 emailJS as server actions - (open user feedback if successfully sent)
 
 active link (proposal)
+
+footer update on social media , https://www.instagram.com/casaripa.cupra/ , https://www.facebook.com/pg/Casa-Ripa-Holiday-Home-110086234177655
+https://www.svgrepo.com/svg/512120/facebook-176
+
+improve slider control button left,right at rooms pictures

@@ -46,16 +46,28 @@ export default function RoomCard({ data }: RoomCardProps) {
       {/* Navigation arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary_light text-secondary py-2 px-1 rounded-lg"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary_light text-secondary py-2  rounded-lg"
       >
-        &lt;
+        {/* &lt; */}
+        <Image
+          src="/assets/left-arrow.svg"
+          alt="Facebook"
+          width={24}
+          height={24}
+        />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary_light text-secondary py-2 px-1 rounded-lg"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary_light text-secondary py-2 rounded-lg"
       >
-        &gt;
+        {/* &gt; */}
+        <Image
+          src="/assets/right-arrow.svg"
+          alt="Facebook"
+          width={24}
+          height={24}
+        />
       </button>
 
       {/* Optional: Add navigation dots */}
