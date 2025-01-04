@@ -1,6 +1,10 @@
+letters CASA RIPA over each hero image ?
+
+footer update on social media
+
 dark light themes with tailwind
 
-Slider pictures on doubleclick open in modal to click through
+Slider pictures (rooms and gallery) on doubleclick open in modal to click through
 
 SEO in NextJS
 
@@ -16,8 +20,6 @@ G-calendar on doubleclick open in modal
 use toastify for notification message (e.g. email sending)
 
 install locally Google fonts
-
-footer update on social media
 
 improve slider control button left,right at rooms pictures
 
