@@ -4,7 +4,7 @@ Slider pictures on doubleclick open in modal to click through
 
 SEO in NextJS
 
-Impressum as pdf for download
+Impressum as pdf for download (check videos for NextJS)
 DSVGO as pdf for download
 
 DSVGO button on G-Calendar like on G-Maps
@@ -23,5 +23,8 @@ improve slider control button left,right at rooms pictures
 
 read I18n language text from a database instead from json files
 
+
 DONE:
 emailJS as server actions - (open user feedback if successfully sent)
+
+active link (proposal)
