@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
     output: 'standalone',
     // output: 'export',
     // distDir: 'dist',
+
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'maps.google.com',
+          },
+        ],
+      },
 };
 
 export default withNextIntl(nextConfig);

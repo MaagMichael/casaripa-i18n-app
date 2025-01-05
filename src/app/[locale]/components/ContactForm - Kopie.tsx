@@ -1,11 +1,5 @@
 // https://www.ali-dev.com/blog/next-js-email-sending-with-app-router-and-emailjs
 // In the EmailJS dashboard, go to Account > Security and check 'Allow EmailJS API for non-browser applications.'
-"use client";
-
-// get server actions defined for this page
-// https://www.youtube.com/watch?v=GgyP0_b-WPY
-import { sendEmail } from "@/actions/actions";
-import { useActionState } from "react";
 
 interface ContactFormProps {
   send: string;
@@ -17,14 +11,65 @@ interface ContactFormProps {
     type5: string;
   };
 }
-// get translated rooms data from server component /contact/page.tsx
-export default function ContactForm({ send, rooms }: ContactFormProps) {
 
-  const [state, action, isPending] = useActionState(sendEmail, null);
+export default function ContactForm({ send, rooms }: ContactFormProps) {
+  
+  const sendEmail = async (fromData: FormData) => {
+    "use server";
+
+    // console.log(fromData);
+
+    const room_selected = fromData.get("room_selected");
+    const user_name = fromData.get("user_name");
+    const user_email = fromData.get("user_email");
+    const user_phone = fromData.get("user_phone");
+    const user_message = fromData.get("user_message");
+
+    if (
+      !room_selected ||
+      !user_name ||
+      !user_email ||
+      !user_phone ||
+      !user_message
+    ) {
+      console.log("Please fill out all fields");
+    }
+
+    try {
+      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({
+          service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+          accessToken: process.env.NEXT_PUBLIC_EMAILJS_ACCESS_TOKEN!,
+          template_params: {
+            room_selected,
+            user_name,
+            user_email,
+            user_phone,
+            user_message,
+          },
+        }),
+      });
+      console.log(res);
+
+      if (!res.ok) {
+        throw new Error("Failed to send email", { cause: res.status });
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
 
   return (
     <>
-      <form action={action} className="space-y-4 max-w-md mx-auto">
+      <form action={sendEmail}
+        className="space-y-4 max-w-md mx-auto"
+      >
         <div>
           <label htmlFor="room_selected" className="block mb-2">
             Select Room *
@@ -53,7 +98,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_name"
             name="user_name"
             required
-            placeholder="Your Name ..."
+            placeholder="Name ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -66,7 +111,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_email"
             name="user_email"
             required
-            placeholder="Your Email ..."
+            placeholder="Email ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -79,7 +124,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_phone"
             name="user_phone"
             // required
-            placeholder="Your Phone ..."
+            placeholder="Phone ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -92,7 +137,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             name="user_message"
             rows={4}
             required
-            placeholder="Your message ..."
+            placeholder="Text ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -100,23 +145,14 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         <p>* required / notwendig / noodzakelijk</p>
         {/* from date */}
         {/* to date */}
-        
+        {/* room */}
+
         <button
-        onClick={() => {
-          alert('Email will be sent out, you should receive a copy to your own email.');
-        }}
-          disabled={isPending}
           type="submit"
           className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
         >
           {send}
         </button>
-
-        {isPending && <p className="text-green">Sending email...</p>}
-        {state && <p className="text-red-500">{state}</p>}
-        {/* {!isPending && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
-        {/* {state === undefined ? <p className="text-red-500">{state}</p> : <p className="text-green">Done !</p>} */}
-
       </form>
     </>
   );

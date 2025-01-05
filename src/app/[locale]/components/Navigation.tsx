@@ -10,6 +10,7 @@ import menuData from "@/data/menu.json";
 import Switcher from "./Switcher";
 import ButtonToTop from "./ButtonToTop";
 import NavigationMobil from "./NavigationMobil";
+import NavLink from "./NavLink";
 
 // In this case, TypeScript is able to infer the type of menuData automatically through type inference
 // from the JSON file. When you import a JSON file in TypeScript, it automatically creates an
@@ -35,7 +36,7 @@ export default async function Navigation() {
 
   return (
     <>
-      <div className="bg-primary flex justify-between items-center w-full sticky top-0 z-10 pr-4">
+      <div className="bg-primary_light flex justify-between items-center w-full sticky top-0 z-10 pr-4">
         {/* Logo always visible on left side */}
         <Link href="/" className="max-w-20 sm:max-w-28">
           <Image
@@ -51,21 +52,25 @@ export default async function Navigation() {
         {/* toggle by tailwind */}
         <div className="hidden lg:flex">
           {menuData.MenuItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.route}
-              className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary_light"
-            >
-              {/* item.label from menu.json is as well the key for the translation */}
-              {t(item.label)}
-            </Link>
+            <>
+              <Link
+                key={index}
+                href={item.route}
+                className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500"
+              >
+                {/* item.label from menu.json is as well the key for the translation */}
+                {/* {t(item.label)} */}
+              </Link>
+
+              <NavLink key={index} label={t(item.label)} route={item.route}  />
+            </>
           ))}
         </div>
 
-        <div className="flex items-center space-x-4 mr-2 md:space-x-12">
+        <div className="flex items-center space-x-4  md:space-x-12">
           {/* Reserve button extra */}
           <Link href="/reserve">
-            <button className="bg-green text-white  p-2 rounded hover:bg-primary_light duration-500">
+            <button className="bg-green text-white  p-2 rounded hover:bg-primary duration-500">
               {t("reserve")}
             </button>
           </Link>

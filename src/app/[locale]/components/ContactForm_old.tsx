@@ -1,11 +1,12 @@
 // https://www.ali-dev.com/blog/next-js-email-sending-with-app-router-and-emailjs
-// In the EmailJS dashboard, go to Account > Security and check 'Allow EmailJS API for non-browser applications.'
+
+// due to useRef in ContactForm.tsx, this file is client side
 "use client";
 
-// get server actions defined for this page
-// https://www.youtube.com/watch?v=GgyP0_b-WPY
-import { sendEmail } from "@/actions/actions";
-import { useActionState } from "react";
+import { useRef, FormEvent } from "react";
+
+// import { sendEmail } from "@/app/api/send-email/route";
+import emailjs from "@emailjs/browser";
 
 interface ContactFormProps {
   send: string;
@@ -17,14 +18,54 @@ interface ContactFormProps {
     type5: string;
   };
 }
-// get translated rooms data from server component /contact/page.tsx
-export default function ContactForm({ send, rooms }: ContactFormProps) {
 
-  const [state, action, isPending] = useActionState(sendEmail, null);
+export default function ContactForm({ send, rooms }: ContactFormProps) {
+  
+  const formRef = useRef<HTMLFormElement>(null);
+  
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(formRef.current);
+
+    if (!formRef.current) {
+      return;
+    }
+
+    emailjs.init({
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      // Do not allow headless browsers
+      blockHeadless: true,
+    });
+    
+    await emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert(
+            `Verification email was sent successfully to your email ${formRef.current?.user_email.value}. Please check your email account, as well spam folder.`
+          );
+          // Reset the form after successful submission
+          formRef.current?.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert(`email failed to sent - ${error.text}`);
+        }
+      );
+  };
 
   return (
     <>
-      <form action={action} className="space-y-4 max-w-md mx-auto">
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="space-y-4 max-w-md mx-auto"
+      >
         <div>
           <label htmlFor="room_selected" className="block mb-2">
             Select Room *
@@ -53,7 +94,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_name"
             name="user_name"
             required
-            placeholder="Your Name ..."
+            placeholder="Name ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -66,7 +107,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_email"
             name="user_email"
             required
-            placeholder="Your Email ..."
+            placeholder="Email ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -79,7 +120,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             id="user_phone"
             name="user_phone"
             // required
-            placeholder="Your Phone ..."
+            placeholder="Phone ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -92,7 +133,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
             name="user_message"
             rows={4}
             required
-            placeholder="Your message ..."
+            placeholder="Text ..."
             className="w-full p-2 border rounded"
           />
         </div>
@@ -100,23 +141,14 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         <p>* required / notwendig / noodzakelijk</p>
         {/* from date */}
         {/* to date */}
-        
+        {/* room */}
+
         <button
-        onClick={() => {
-          alert('Email will be sent out, you should receive a copy to your own email.');
-        }}
-          disabled={isPending}
           type="submit"
           className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
         >
           {send}
         </button>
-
-        {isPending && <p className="text-green">Sending email...</p>}
-        {state && <p className="text-red-500">{state}</p>}
-        {/* {!isPending && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
-        {/* {state === undefined ? <p className="text-red-500">{state}</p> : <p className="text-green">Done !</p>} */}
-
       </form>
     </>
   );
