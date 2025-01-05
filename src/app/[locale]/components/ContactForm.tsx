@@ -19,6 +19,7 @@ interface ContactFormProps {
 }
 // get translated rooms data from server component /contact/page.tsx
 export default function ContactForm({ send, rooms }: ContactFormProps) {
+
   const [state, action, isPending] = useActionState(sendEmail, null);
 
   return (
@@ -99,8 +100,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         <p>* required / notwendig / noodzakelijk</p>
         {/* from date */}
         {/* to date */}
-        {/* room */}
-
+        
         <button
         onClick={() => {
           alert('Email will be sent out, you should receive a copy to your own email.');
@@ -114,8 +114,9 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
 
         {isPending && <p className="text-green">Sending email...</p>}
         {state && <p className="text-red-500">{state}</p>}
-        {/* {!isPending && !state && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
-        
+        {/* {!isPending && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
+        {/* {state === undefined ? <p className="text-red-500">{state}</p> : <p className="text-green">Done !</p>} */}
+
       </form>
     </>
   );
