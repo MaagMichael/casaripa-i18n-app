@@ -25,7 +25,7 @@ read I18n language text from a database instead from json files
 DONE:
 letters CASA RIPA over each hero image ?
 
-emailJS as server actions - (open user feedback if successfully sent)
+emailJS as server actions
 
 active link (proposal)
 
