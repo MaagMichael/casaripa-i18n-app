@@ -1,10 +1,11 @@
 "use server";
 
 export async function sendEmail(
-  previousState: string | null | undefined,
+  previousState: { error: string; data: string },
   formData: FormData
-) {
-  console.log(formData);
+): Promise<{ error: string; data: string }> {
+
+  // console.log(formData);
 
   const room_selected = formData.get("room_selected") as string;
   const user_name = formData.get("user_name") as string;
@@ -13,8 +14,7 @@ export async function sendEmail(
   const user_message = formData.get("user_message") as string;
 
   if (!room_selected || !user_name || !user_email || !user_message) {
-    return "Please fill out all required fields";
-    // console.log("Please fill out all required fields");
+    return { error: "Please fill out all required fields", data: "" };
   }
 
   try {
@@ -37,7 +37,12 @@ export async function sendEmail(
         },
       }),
     });
-  } catch (state) {
-    return "Error sending email. Please contact by phone.";
+    return { error: "", data: "Email sent out successfully, you should receive a copy to your own email." };
+  } catch  {
+    return {
+      ...previousState,
+      error: "Error sending email. Please contact by phone.",
+      data: "",
+    };
   }
 }

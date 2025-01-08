@@ -3,8 +3,7 @@
 "use client";
 
 // get server actions defined for this page
-// https://www.youtube.com/watch?v=GgyP0_b-WPY
-import { sendEmail } from "@/actions/actions";
+import {sendEmail} from "@/actions/actions";
 import { useActionState } from "react";
 
 interface ContactFormProps {
@@ -20,7 +19,10 @@ interface ContactFormProps {
 // get translated rooms data from server component /contact/page.tsx
 export default function ContactForm({ send, rooms }: ContactFormProps) {
 
-  const [state, action, isPending] = useActionState(sendEmail, null);
+  const [state, action, isPending] = useActionState(sendEmail, {
+    error: "",
+    data: "",
+  });
 
   return (
     <>
@@ -102,9 +104,9 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         {/* to date */}
         
         <button
-        onClick={() => {
-          alert('Email will be sent out, you should receive a copy to your own email.');
-        }}
+        // onClick={() => {
+        //   alert('Email will be sent out, you should receive a copy to your own email.');
+        // }}
           disabled={isPending}
           type="submit"
           className="w-full p-2 bg-green hover:bg-primary_light duration-500 text-white rounded"
@@ -113,9 +115,8 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         </button>
 
         {isPending && <p className="text-green">Sending email...</p>}
-        {state && <p className="text-red-500">{state}</p>}
-        {/* {!isPending && <p className="text-green">Email sent out, you should receive a copy to your own email.</p>} */}
-        {/* {state === undefined ? <p className="text-red-500">{state}</p> : <p className="text-green">Done !</p>} */}
+        {state.error && <p className="text-red-500">{state.error}</p>}
+        {state.data && <p className="text-green">{state.data}</p>}
 
       </form>
     </>
