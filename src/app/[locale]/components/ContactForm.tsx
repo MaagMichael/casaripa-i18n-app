@@ -115,8 +115,8 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         </button>
 
         {isPending && <p className="text-green">Sending email...</p>}
-        {state.error && <p className="text-red-500">{state.error}</p>}
-        {state.data && <p className="text-green">{state.data}</p>}
+        {state?.error && <p className="text-red-500">{state?.error}</p>}
+        {state?.data && <p className="text-green">{state?.data}</p>}
 
       </form>
     </>
