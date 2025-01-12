@@ -21,7 +21,7 @@ export default async function Activity() {
   return (
     <div className="p-4 bg-primary text-secondary">
       <h1 className="text-xl text-center mb-4">{t("title")}</h1>
-
+      
       <div className="space-y-4">
         {activityBlog.activityBlog.map((item: ActivityBlog) => (
           <div

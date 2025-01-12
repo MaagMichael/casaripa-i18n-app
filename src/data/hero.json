@@ -35,6 +35,14 @@
       {
         "label": "Picture Heroimage 09",
         "url": "/assets/hero/hero09.webp"
+      },
+      {
+        "label": "Picture Heroimage 10",
+        "url": "/assets/hero/hero10.webp"
+      },
+      {
+        "label": "Picture Heroimage 11",
+        "url": "/assets/hero/hero11.webp"
       }
       
     ]

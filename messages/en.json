@@ -13,7 +13,7 @@
     "title": "Hello world!",
     "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
     "news_title": "New from 2025",
-    "news_text": "5x10m infinity pool\nAir conditioning in all bedrooms\nOutdoor kitchen\nBetween June and August we only rent out the entire property (individual apartments available at short notice)\nSuite South (guest house) also available in winter"
+    "news_text": "5m x 10m infinity pool\nOutdoor soccer table\nAir conditioning in all bedrooms\nOutdoor kitchen\nBetween June and August we only rent out the entire property (individual apartments available at short notice)\nSuite South (guest house) also available in winter"
   },
   "AboutPage": {
     "title": "About us",
@@ -39,11 +39,11 @@
     "activity6": "Nature and hiking - National Park Monti Sibillini",
     "description6": "The Monti Sibillini National Park, part of the Apenines, lies around 50 km to the south. Nature, history and culture make this park a unique area. Species such as the wolf, golden eagle, peregrine falcon and other indigenous species live here. In combination with historic villages and abbeys that lie at the foot of the mountains, time seems to have stood still. \n For those feeling more energetic, there are many hiking and cycling trails and a little further south there are also skiing opportunities.",
     "activity7": "Wineries",
-    "description7": "Text",
+    "description7": "Cupramontana has been known as the capital of Verdicchio (the local white wine) for almost 100 years. There are no more than a dozen Verdicchio wineries in the town of 5000 inhabitants. The best-known wineries include: \n- Quaresima \n- Colle Jano \n- La marca di San Michele\n- Vallerosa Bonci \n- Ca’liptra\n- La Distesa \n- Di Giulia\n- Sparapani \n- Marasca Rossi \n- Cantine Cherubini\n- Colonnara",
     "activity8": "Near Cupramontana",
-    "description8": "Text",
+    "description8": "There is a lot to discover and experience in and around Cupramontana. \nExplore the possibilities on the homepage of our tourism association Turismo Cupramontana \n(https://turismo-cupramontana.com)",
     "activity9": "Restaurants and shopping facilities",
-    "description9": "Text"
+    "description9": "- Pizzeria Sprint - open all day\n- Restaurant Orietta - regional specialities on the town square\n- Restaurant Gina - regional specialities / pizza and seafood\n- Trattoria Anita\n- Trattoria Da Fiorina"
   },
   "GalleryPage": {
     "title": "Gallery Page",

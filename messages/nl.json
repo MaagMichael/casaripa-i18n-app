@@ -13,7 +13,7 @@
     "title": "Hallo wereld!",
     "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
     "news_title": "Nieuw vanaf 2025",
-    "news_text": "Overloopzwembad van 5x10 m. \nAirconditioning in alle slaapkamers. \nBuitenkeuken. \nTussen juni en augustus verhuren we alleen het hele pand (individuele appartementen op korte termijn beschikbaar). \nSuite Zuid (gastenverblijf) ook beschikbaar in de winter."
+    "news_text": "Overloopzwembad van 5m x 10m. \nTafelvoetbalspel voor buiten\nAirconditioning in alle slaapkamers. \nBuitenkeuken. \nTussen juni en augustus verhuren we alleen het hele pand (individuele appartementen op korte termijn beschikbaar). \nSuite Zuid (gastenverblijf) ook beschikbaar in de winter."
   },
   "AboutPage": {
     "title": "Over ons",
@@ -39,11 +39,11 @@
     "activity6": "Natuur en wandelen - Nationaal Park Monti Sibillini",
     "description6": "Het Nationaal Park Monti Sibillini, onderdeel van de Apenijnen, ligt ongeveer 50 km naar het zuiden. Natuur, geschiedenis en cultuur maken dit park tot een uniek gebied. Soorten als de wolf, de steenarend, de slechtvalk en andere inheemse soorten leven hier. In combinatie met historische dorpjes en abdijen die aan de voet van de bergen liggen, lijkt de tijd te hebben stilgestaan. \nVoor de sportievelingen zijn er veel wandel- en fietspaden en iets zuidelijker zijn er ook skimogelijkheden.",
     "activity7": "Wijnhuizen",
-    "description7": "Text",
+    "description7": "Cupramontana staat al bijna 100 jaar bekend als de hoofdstad van Verdicchio (de lokale witte wijn). Er zijn niet meer dan een dozijn Verdicchio wijnmakerijen in het stadje met 5000 inwoners. De bekendste wijnhuizen zijn: \n- Quaresima \n- Colle Jano \n- La marca di San Michele\n- Vallerosa Bonci \n- Ca’liptra\n- La Distesa \n- Di Giulia\n- Sparapani \n- Marasca Rossi \n- Cantine Cherubini\n- Colonnara",
     "activity8": "Omgeving Cupramontana",
-    "description8": "Text",
+    "description8": "Er is veel te ontdekken en te beleven in en rond Cupramontana. \nVerken de mogelijkheden op de homepage van onze toeristische vereniging Turismo Cupramontana \n(https://turismo-cupramontana.com)",
     "activity9": "Restaurants en winkelmogelijkheden",
-    "description9": "Text"
+    "description9": "- Pizzeria Sprint - de hele dag geopend \n- Restaurant Orietta - regionale specialiteiten op het stadsplein \n- Restaurant Gina - regionale specialiteiten / pizza en zeevruchten \n- Trattoria Anita \n- Trattoria Da Fiorina"
   },
   "GalleryPage": {
     "title": "Galerij Pagina",

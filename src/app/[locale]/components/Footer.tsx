@@ -30,6 +30,7 @@ export default async function Footer() {
           <p>85399 Hallbergmoos</p>
           <p>casaripa.cupra(at)gmail.com</p>
           <p>(0049) 179 294 64 32</p>
+          <p className="font-bold">CIN IT042016C2FG8XNF78 | CIR 042016-AFF-00003</p>
         </div>
 
         <div className="flex flex-col space-y-4 p-4">
