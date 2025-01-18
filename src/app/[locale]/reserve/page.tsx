@@ -19,7 +19,7 @@ export default async function Reserve() {
   const MaxChar = 400;
 
   return (
-    <div className="p-4 bg-primary text-secondary">
+    <div className="p-4 bg-primary text-secondary md:text-lg">
       {/* <h1 className="">{t("title")}</h1> */}
 
       <div className="space-y-4">
@@ -33,13 +33,13 @@ export default async function Reserve() {
               // Even ID: Image on the left
               <>
                 {/* Image box slider*/}
-                <div className="w-full h-full md:w-1/2 xl:w-1/3 flex justify-center md:justify-start items-center  order-2 md:order-1">
+                <div className="md:w-1/2 xl:w-1/3 flex justify-center md:justify-end items-center  order-2 md:order-1">
                   <RoomCard data={item.images} />
                 </div>
                 {/* Text box */}
                 <div className="space-y-4 md:w-1/2 xl:w-2/3 p-4 flex flex-col justify-center order-1 md:order-2">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
-                  
+
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}
@@ -53,7 +53,7 @@ export default async function Reserve() {
                 {/* Text box */}
                 <div className="space-y-4 md:w-1/2 xl:w-2/3 p-4 flex flex-col justify-center md:order-1 ">
                   <h1 className="text-xl font-bold">{t(item.title)}</h1>
-                  <br />
+
                   <TruncateText
                     text={t(item.description)}
                     maxLength={MaxChar}
@@ -90,7 +90,7 @@ export default async function Reserve() {
           </div>
         </div>
       </div>
-      
+
       <GoogleCalendar />
     </div>
   );

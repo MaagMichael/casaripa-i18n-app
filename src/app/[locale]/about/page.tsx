@@ -7,13 +7,13 @@ import GoogleMap from "../components/GoogleMap";
 export default async function About() {
   const t = await getTranslations("AboutPage");
   return (
-    <div className="bg-primary text-secondary p-4 space-y-4">
+    <div className="bg-primary text-secondary md:text-lg p-4 space-y-4">
       <h1 className="text-xl text-center">{t("title")}</h1>
 
       <p className="text-justify">{t("text-order.subtext01")}</p>
       {/* <p className="text-justify whitespace-pre-line">{t("text2")}</p> */}
 
-      <div className="flex flex-col md:flex-row md:max-h-[64vh] justify-between bg-primary_light rounded-lg">
+      <div className="flex flex-col md:flex-row md:max-h-[72vh] justify-between bg-primary_light rounded-lg">
         {/* Image box */}
         <div className="relative md:w-1/2 lg:w-1/3 flex items-center justify-center order-2 md:order-1">
           <Image

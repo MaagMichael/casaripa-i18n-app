@@ -25,7 +25,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
   });
 
   return (
-    <>
+    <div className="md:text-lg">
       <form action={action} className="space-y-4 max-w-md mx-auto">
         <div>
           <label htmlFor="room_selected" className="block mb-2">
@@ -119,6 +119,6 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         {state?.data && <p className="text-green">{state?.data}</p>}
 
       </form>
-    </>
+    </div>
   );
 }

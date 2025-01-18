@@ -7,7 +7,7 @@ export default async function Footer() {
   const t = await getTranslations("Footer");
 
   return (
-    <div className="bg-primary_light text-secondary py-4">
+    <div className="bg-primary_light text-secondary md:text-lg py-4">
       {/* <h1 className="text-center">{t("title")}</h1> */}
 
       <div className="flex flex-col md:flex-row justify-around ">
