@@ -8,7 +8,8 @@ type NestedObject = {
 };
 
 export default function AdminDB() {
-  const [translations, setTranslations] =useState<typeof deTranslations>(deTranslations);
+  const [translations, setTranslations] =
+    useState<typeof deTranslations>(deTranslations);
   console.log(translations);
 
   const [editingKey, setEditingKey] = useState<string>("");
@@ -55,7 +56,7 @@ export default function AdminDB() {
   };
 
   const flatTranslations = flattenObject(translations);
-//   console.log(flatTranslations);
+  //   console.log(flatTranslations);
 
   return (
     <div className="p-4">
@@ -65,10 +66,15 @@ export default function AdminDB() {
         {Object.entries(flatTranslations).map(([key, value]) => (
           <div key={key} className="border p-4 rounded-lg whitespace-pre-line">
             <div className="flex justify-between items-start">
+
               <div className="flex-1">
-                <p className="font-semibold text-sm text-gray-600">{key}</p>
+                {/* key of object */}
+                <p className="text-md text-green font-bold">{key}</p>
+                {/* value of object */}
                 <p className="mt-1">{value}</p>
               </div>
+
+              {/* edit button */}
               <button
                 onClick={() => handleEdit(key, value)}
                 className="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -86,23 +92,23 @@ export default function AdminDB() {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-lg w-4/5 ">
             <h2 className="text-xl font-bold mb-4">Edit Translation</h2>
-            <p className="text-sm text-gray-600 mb-2">{editingKey}</p>
+            <p className="text-md text-green font-bold mb-2">{editingKey}</p>
 
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block mb-2">Edit Text:</label>
-                {/* <textarea
+                <textarea
                   value={editingValue}
                   onChange={(e) => setEditingValue(e.target.value)}
-                  className="w-full h-32 p-2 border rounded font-mono whitespace-pre break-all"
-                /> */}
-                <textarea
+                  className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap"
+                />
+                {/* <textarea
                   value={editingValue.replace(/\n/g, "↵\n")}
                   onChange={(e) =>
                     setEditingValue(e.target.value.replace(/↵\n/g, "\n"))
                   }
                   className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap [&>*]:text-red-500"
-                />
+                /> */}
               </div>
               <div>
                 <label className="block mb-2">Preview on website:</label>
