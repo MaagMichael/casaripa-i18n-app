@@ -69,9 +69,9 @@ export default function AdminDB() {
 
               <div className="flex-1">
                 {/* key of object */}
-                <p className="text-md text-green font-bold">{key}</p>
+                <p className="text-md text-green font-bold">Key - {key}</p>
                 {/* value of object */}
-                <p className="mt-1">{value}</p>
+                <p className="mt-1">{value.replace(/\n/g, "↵\n")}</p>
               </div>
 
               {/* edit button */}

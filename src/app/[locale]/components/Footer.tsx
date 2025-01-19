@@ -18,7 +18,7 @@ export default async function Footer() {
           <Link href="/about">{t("route")}</Link>
           <Link href="/faq">{t("faq")}</Link>
           <Link href="/gallery">{t("gallery")}</Link>
-          <Link href="/">Admin</Link>
+          <Link href="/login">Admin</Link>
         </div>
 
         <div className="flex flex-col space-y-4 p-4">
