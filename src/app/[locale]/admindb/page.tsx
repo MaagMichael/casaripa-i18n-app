@@ -100,7 +100,7 @@ export default function AdminDB() {
                 <textarea
                   value={editingValue}
                   onChange={(e) => setEditingValue(e.target.value)}
-                  className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap"
+                  className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap overflow-y-auto"
                 />
                 {/* <textarea
                   value={editingValue.replace(/\n/g, "↵\n")}
@@ -112,7 +112,7 @@ export default function AdminDB() {
               </div>
               <div>
                 <label className="block mb-2">Preview on website:</label>
-                <div className="w-full  p-2 border rounded bg-gray-50 whitespace-pre-line">
+                <div className="w-full h-96 p-2 border rounded bg-gray-50 whitespace-pre-line overflow-y-auto">
                   {editingValue}
                 </div>
               </div>
