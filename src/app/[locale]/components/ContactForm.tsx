@@ -25,7 +25,7 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
   });
 
   return (
-    <>
+    <div className="md:text-lg">
       <form action={action} className="space-y-4 max-w-md mx-auto">
         <div>
           <label htmlFor="room_selected" className="block mb-2">
@@ -115,10 +115,10 @@ export default function ContactForm({ send, rooms }: ContactFormProps) {
         </button>
 
         {isPending && <p className="text-green">Sending email...</p>}
-        {state.error && <p className="text-red-500">{state.error}</p>}
-        {state.data && <p className="text-green">{state.data}</p>}
+        {state?.error && <p className="text-red-500">{state?.error}</p>}
+        {state?.data && <p className="text-green">{state?.data}</p>}
 
       </form>
-    </>
+    </div>
   );
 }

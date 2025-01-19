@@ -13,7 +13,7 @@
     "title": "Hallo wereld!",
     "subtitle": { "sub1": "sub 1", "sub2": "sub 2" },
     "news_title": "Nieuw vanaf 2025",
-    "news_text": "Overloopzwembad van 5x10 m. \nAirconditioning in alle slaapkamers. \nBuitenkeuken. \nTussen juni en augustus verhuren we alleen het hele pand (individuele appartementen op korte termijn beschikbaar). \nSuite Zuid (gastenverblijf) ook beschikbaar in de winter."
+    "news_text": "Overloopzwembad van 5m x 10m. \nTafelvoetbalspel voor buiten\nAirconditioning in alle slaapkamers. \nBuitenkeuken. \nTussen juni en augustus verhuren we alleen het hele pand (individuele appartementen op korte termijn beschikbaar). \nSuite Zuid (gastenverblijf) ook beschikbaar in de winter."
   },
   "AboutPage": {
     "title": "Over ons",
@@ -39,11 +39,11 @@
     "activity6": "Natuur en wandelen - Nationaal Park Monti Sibillini",
     "description6": "Het Nationaal Park Monti Sibillini, onderdeel van de Apenijnen, ligt ongeveer 50 km naar het zuiden. Natuur, geschiedenis en cultuur maken dit park tot een uniek gebied. Soorten als de wolf, de steenarend, de slechtvalk en andere inheemse soorten leven hier. In combinatie met historische dorpjes en abdijen die aan de voet van de bergen liggen, lijkt de tijd te hebben stilgestaan. \nVoor de sportievelingen zijn er veel wandel- en fietspaden en iets zuidelijker zijn er ook skimogelijkheden.",
     "activity7": "Wijnhuizen",
-    "description7": "Text",
+    "description7": "Cupramontana staat al bijna 100 jaar bekend als de hoofdstad van Verdicchio (de lokale witte wijn). Er zijn niet meer dan een dozijn Verdicchio wijnmakerijen in het stadje met 5000 inwoners. De bekendste wijnhuizen zijn: \n- Quaresima \n- Colle Jano \n- La marca di San Michele\n- Vallerosa Bonci \n- Ca’liptra\n- La Distesa \n- Di Giulia\n- Sparapani \n- Marasca Rossi \n- Cantine Cherubini\n- Colonnara",
     "activity8": "Omgeving Cupramontana",
-    "description8": "Text",
+    "description8": "Er is veel te ontdekken en te beleven in en rond Cupramontana. \nVerken de mogelijkheden op de homepage van onze toeristische vereniging Turismo Cupramontana \n(https://turismo-cupramontana.com)",
     "activity9": "Restaurants en winkelmogelijkheden",
-    "description9": "Text"
+    "description9": "- Pizzeria Sprint - de hele dag geopend \n- Restaurant Orietta - regionale specialiteiten op het stadsplein \n- Restaurant Gina - regionale specialiteiten / pizza en zeevruchten \n- Trattoria Anita \n- Trattoria Da Fiorina"
   },
   "GalleryPage": {
     "title": "Galerij Pagina",
@@ -53,8 +53,8 @@
     "title": "Contact",
     "send": "Versturen",
     "rooms": {
-      "type1": "Suite Noord",
-      "type2": "Suite South (Cottage)",
+      "type1": "Suite South (Cottage)",
+      "type2": "Suite Noord",
       "type3": "Penthouse",
       "type4": "Gehele eigendom",
       "type5": "Ander onderwerp"
@@ -67,12 +67,14 @@
   "ReservePage": {
     "title": "Reserveren Pagina",
     "request": "Aanvraag",
-    "activity1": "Suite Noord (2-4 personen)",
-    "description1": "Ruim appartement (ca. 70 m²) op de eerste verdieping van Casa Ripa. Het appartement heeft een open woonkamer (met een comfortabele tweepersoonsslaapbank), keuken, slaapkamer met tweepersoonsbed en badkamer.\n De keuken is uitgerust met een grote koelkast, een gasfornuis met 4 pitten, een koffiezetapparaat, een waterkoker en een kleine oven.\n Directe toegang tot de tuin met een groot, gedeeltelijk overdekt terras met ligstoelen, tafel en stoelen.",
-    "activity2": "Suite South (Cottage) (2 personen)",
-    "description2": "Een vrijstaand vakantiehuis (ca. 40 m²) voor twee personen. Lichte woonkamer (met een comfortabele slaapbank), goed uitgeruste keuken (koelkast, 4-pits gaskookplaat, Amerikaans koffiezetapparaat, waterkoker). \n Slaapkamer met tweepersoonsbed (1.60x2.00 m) en eigen badkamer. \n Eigen terras met ligstoelen, tafel en stoelen.",
-    "activity3": "Penthouse (2-8 personen)",
+    "activity1": "Suite South (Cottage) (2 personen) \n vanaf € 650 /Week",
+    "description1": "Een vrijstaand vakantiehuis (ca. 40 m²) voor twee personen. Lichte woonkamer (met een comfortabele slaapbank), goed uitgeruste keuken (koelkast, 4-pits gaskookplaat, Amerikaans koffiezetapparaat, waterkoker). \n Slaapkamer met tweepersoonsbed (1.60x2.00 m) en eigen badkamer. \n Eigen terras met ligstoelen, tafel en stoelen.",
+    "activity2": "Suite Noord (2-4 personen) \n vanaf € 750 /Week",
+    "description2": "Ruim appartement (ca. 70 m²) op de eerste verdieping van Casa Ripa. Het appartement heeft een open woonkamer (met een comfortabele tweepersoonsslaapbank), keuken, slaapkamer met tweepersoonsbed en badkamer.\n De keuken is uitgerust met een grote koelkast, een gasfornuis met 4 pitten, een koffiezetapparaat, een waterkoker en een kleine oven.\n Directe toegang tot de tuin met een groot, gedeeltelijk overdekt terras met ligstoelen, tafel en stoelen.",
+    "activity3": "Penthouse (2-8 personen) \n vanaf € 1.100 /Week",
     "description3": "Zeer ruim appartement met meer dan 120 vierkante meter, dat zich uitstrekt over 2 verdiepingen. Op de 1e verdieping van het hoofdgebouw vind je een grote woonkamer, een ruime eethoek en een zeer goed uitgeruste keuken (gaskookplaat met oven, koelkast/vriezer, vaatwasser, Kitchen Aid, Nespresso-apparaat, enz.) \n Via de indrukwekkende trap bereik je de drie slaapkamers en de grote badkamer op de 2e verdieping. Een van de slaapkamers (de kinderkamer) is uitgerust met twee uitschuifbare bedden die kunnen worden veranderd in twee bedden van 160x200 cm. \n Eigen terras met ligstoelen, tafel en stoelen.",
+    "activity4": "Ganzes Anwesen \n vanaf € 2.300 /Week",
+    "description4": "Ganzes Anwesen ",
     "price_title": "Prijs informatie",
     "price_text": "Tussen juni en augustus verhuren we alleen het hele pand.Ëénpersoonsappartementen kunnen op korte termijn geboekt worden, afhankelijk van beschikbaarheid.\n\n De genoemde prijzen zijn per week (7 nachten *) voor twee personen **.\n\n Suite Noord - € 750 (LS**) en € 850 (HS**)\n Suite Zuid (gastenverblijf) - € 650 (LS**) en € 750 (HS**)\n Penthouse - op aanvraag vanaf € 1.100\n Casa Ripa Estate - op aanvraag vanaf € 2. 300 (6 personen)\n\n HS: Hoogseizoen, van 15.06. (juni) tot 31.08. (augustus)\n LS: Laagseizoen, rest van het jaar behalve HS\n*Minimaal verblijf in het laagseizoen: 3 nachten. Minimum verblijf in het hoogseizoen: 1 week. \n** Extra persoon / bed: 15 € per nacht.",
     "condition_title": "Gebruiksvoorwaarden",

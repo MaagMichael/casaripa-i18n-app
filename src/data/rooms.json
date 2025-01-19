@@ -3,12 +3,11 @@
     {
       "id": 1,
       "images": [
-        "/assets/rooms/room_north01.webp",
-        "/assets/rooms/room_north02.webp",
-        "/assets/rooms/room_north03.webp",
-        "/assets/rooms/room_north04.webp",
-        "/assets/rooms/room_north05.webp",
-        "/assets/rooms/room_north06.webp"
+        "/assets/rooms/room_south01.webp",
+        "/assets/rooms/room_south02.webp",
+        "/assets/rooms/room_south03.webp",
+        "/assets/rooms/room_south04.webp",
+        "/assets/rooms/room_south05.webp"
       ],
       "title": "activity1",
       "description": "description1"
@@ -16,11 +15,12 @@
     {
       "id": 2,
       "images": [
-        "/assets/rooms/room_south01.webp",
-        "/assets/rooms/room_south02.webp",
-        "/assets/rooms/room_south03.webp",
-        "/assets/rooms/room_south04.webp",
-        "/assets/rooms/room_south05.webp"
+        "/assets/rooms/room_north01.webp",
+        "/assets/rooms/room_north02.webp",
+        "/assets/rooms/room_north03.webp",
+        "/assets/rooms/room_north04.webp",
+        "/assets/rooms/room_north05.webp",
+        "/assets/rooms/room_north06.webp"        
       ],
       "title": "activity2",
       "description": "description2"
@@ -37,6 +37,16 @@
       ],
       "title": "activity3",
       "description": "description3"
+    },
+    {
+      "id": 4,
+      "images": [
+        "/assets/rooms/property01.webp",
+        "/assets/rooms/property02.webp",
+        "/assets/rooms/property03.webp"         
+      ],
+      "title": "activity4",
+      "description": "description4"
     }
   ]
 }

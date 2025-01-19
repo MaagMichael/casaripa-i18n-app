@@ -6,7 +6,7 @@ SEO in NextJS
 
 Impressum as pdf for download (check videos for NextJS)
 Casa Ripa huur Vakantiehuisje en Appartement, Appartement huren Marche, Ferienwohnung, Holiday home, Holiday Rental, Apartment, Hart van Le Marche, Italië, Verdicchio wijn, Cupramontana  
-​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003
+
 DSVGO as pdf for download
 
 DSVGO button on G-Calendar like on G-Maps
@@ -21,9 +21,11 @@ install locally Google fonts
 
 read I18n language text from a database instead from json files
 
+admin for updating text and images (read/write json files?)
+
 
 DONE:
-letters CASA RIPA over each hero image ?
+letters CASA RIPA over each hero image
 
 emailJS as server actions
 
@@ -33,3 +35,5 @@ footer update on social media , https://www.instagram.com/casaripa.cupra/ , http
 https://www.svgrepo.com/svg/512120/facebook-176
 
 improve slider control button left,right at rooms pictures
+
+​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003

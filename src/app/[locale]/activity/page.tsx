@@ -19,9 +19,9 @@ export default async function Activity() {
   const MaxChar = 400;
 
   return (
-    <div className="p-4 bg-primary text-secondary">
+    <div className="p-4 bg-primary text-secondary md:text-lg">
       <h1 className="text-xl text-center mb-4">{t("title")}</h1>
-
+      
       <div className="space-y-4">
         {activityBlog.activityBlog.map((item: ActivityBlog) => (
           <div

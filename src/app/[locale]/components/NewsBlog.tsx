@@ -8,10 +8,10 @@ export default async function NewsBlog() {
   
 
   return (
-    <div className="p-4 bg-primary text-secondary text-center">
+    <div className="p-4 bg-primary text-secondary md:text-lg text-center">
       <h1 className="text-red-500 text-xl font-bold">{t("news_title")}</h1>
 
-      <h1 className=" text-lg whitespace-pre-line ">{t("news_text")}</h1>
+      <h1 className="whitespace-pre-line ">{t("news_text")}</h1>
 
       {/* <TruncateText
         text={t("text")}

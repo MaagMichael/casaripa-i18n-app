@@ -14,7 +14,7 @@ export default async function ActivityExtract() {
   const t = await getTranslations("ActivityExtract");
 
   return (
-    <div className="p-4 bg-primary text-secondary">
+    <div className="p-4 bg-primary text-secondary md:text-lg">
       <h1 className="text-xl">{t("title")}</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 my-4">

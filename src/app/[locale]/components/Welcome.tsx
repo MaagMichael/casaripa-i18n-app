@@ -9,7 +9,7 @@ export default async function About() {
   const MaxChar = 300;
 
   return (
-    <div className="bg-primary text-secondary p-4 space-y-4">
+    <div className="bg-primary text-secondary md:text-lg p-4 space-y-4">
       <h1 className="text-xl">{t("title")}</h1>
 
       <h1 className="">{t("subtitle")}</h1>
