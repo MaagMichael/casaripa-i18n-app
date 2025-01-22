@@ -65,6 +65,7 @@ export default async function Navigation() {
               <NavLink key={index} label={t(item.label)} route={item.route}  />
             </>
           ))}
+          <ButtonToTop />
         </div>
 
         <div className="flex items-center space-x-4  md:space-x-12">
@@ -91,8 +92,6 @@ export default async function Navigation() {
         </div>
       </div>
 
-      {/* gototop button */}
-      <ButtonToTop />
     </>
   );
 }

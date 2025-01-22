@@ -1,4 +1,5 @@
 "use client";
+import ButtonToTop from "./ButtonToTop";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -25,20 +26,23 @@ function NavigationMobil({ data }: NavMobilProps) {
   };
 
   return (
-    <div >
+    <div>
       {!isOpen && (
-        <button
-          onClick={toggleMenu}
-          className="relative w-8 h-8 flex flex-col justify-between items-center group focus:outline-none"
-        >
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
-          <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
-        </button>
+        <>
+          <button
+            onClick={toggleMenu}
+            className="relative w-8 h-8 flex flex-col justify-between items-center group focus:outline-none"
+          >
+            <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
+            <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
+            <span className="h-1 w-full bg-secondary rounded transform transition duration-300 ease-in-out group-hover:bg-primary"></span>
+          </button>
+          <ButtonToTop />
+        </>
       )}
 
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-primary py-4 w-full h-full overflow-hidden flex flex-col items-center">
+        <div className="fixed inset-0 z-50 bg-primary py-4 w-full h-full overflow-y-scroll flex flex-col items-center">
           <button
             onClick={toggleMenu}
             className="absolute top-8 right-8 w-8 h-8 flex items-center justify-center"
@@ -54,7 +58,6 @@ function NavigationMobil({ data }: NavMobilProps) {
               height={109}
               alt="Picture of the author"
               priority
-              
             />
           </Link>
 
