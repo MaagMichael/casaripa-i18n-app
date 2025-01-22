@@ -19,11 +19,6 @@ function NavLink(data: NavLinkProps) {
       href={`/${params.locale}${data.route}`}
       className="text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500"
       // check for active link
-    //   className={`text-secondary  font-bold text-xl px-4 md:px-2 py-2 rounded hover:bg-primary duration-500 ${
-    //     pathname === `/${params.locale}${data.route}`
-    //       ? "border-b-2 border-green"
-    //       : "no-underline"
-    //   }`}
     >
         <div className={`${pathname === `/${params.locale}${data.route}`
           ? "border-b-2 border-green"

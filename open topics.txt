@@ -12,6 +12,8 @@ Thema direkt angezeigt wird ?
 
 ################################## open topics ##################################
 
+dbadmin (manipulate json files) including login and write json file to server
+
 dark light themes with tailwind
 
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
