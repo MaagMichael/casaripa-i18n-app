@@ -1,3 +1,17 @@
+DSVGO, Impressum: Kannst mir gerne ne Standard Impressum und DSGVO verpassen …..egal wie pdf oder was am einfachsten ist.
+
+Hero: Auf dem Google Laufwerk habe ich bei Hero Image noch mehr Bilder hochgeladen gehabt , unter anderem vom Haus 
+außen und auch Innenbilder.
+
+Gallery: Außerdem habe ich bei den Galleriebildern Bilder ergänzt.
+
+Activity: wenn man auf das Bild drückt kommt man ja auf Aktivitäten, 
+aber muss sich immer von oben nach unten durch scrollen um zum Thema zu kommen -> geht es dass das angeklickte 
+Thema direkt angezeigt wird ?
+
+
+################################## open topics ##################################
+
 dark light themes with tailwind
 
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
