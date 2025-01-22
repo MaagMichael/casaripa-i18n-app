@@ -3,7 +3,13 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
+// useParams gives you access to dynamic route parameters from the URL. like /en
+import { useParams } from "next/navigation";
+
 export default function LoginPage() {
+
+  const params = useParams();
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const router = useRouter()
@@ -18,7 +24,7 @@ export default function LoginPage() {
     })
 
     if (response.ok) {
-      router.push('/admindb')
+      router.push(`/${params.locale}/admindb`)
     } else {
       console.log(response)
       alert('Invalid credentials')
