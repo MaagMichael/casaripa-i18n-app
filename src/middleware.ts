@@ -1,5 +1,5 @@
 // The middleware will always execute before any API
-//  routes by design in Next.js. 
+//  routes by design in Next.js.
 //  The execution order is:
 
 // Middleware
@@ -17,48 +17,58 @@
 //   matcher: ["/", "/(en|de|nl)/:path*"],
 // };
 
-
 // ############## Version with i18n middleware and additional e.g. admin auth middleware
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-import createIntlMiddleware from 'next-intl/middleware'
-import { routing } from './i18n/routing'
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import createIntlMiddleware from "next-intl/middleware";
+import { routing } from "./i18n/routing";
 
-const intlMiddleware = createIntlMiddleware(routing)
+const intlMiddleware = createIntlMiddleware(routing);
 
 export function middleware(request: NextRequest) {
-  const isAdminRoute = request.nextUrl.pathname.includes('/admindb')
-  
+  // CHECK 1: Check if the request is for the login route
+  const isLoginRoute = request.nextUrl.pathname.includes("/login");
+
+  // Check if admin-auth cookie is present and valid
+  const authCookie = request.cookies.get("admin-auth");
+
+  if (isLoginRoute && authCookie?.value === "true") {
+    // Redirect to admindb if already authenticated
+    const adminUrl = new URL("/admindb", request.url);
+    return NextResponse.redirect(adminUrl);
+  }
+
+  // CHECK 2: Check if the request is for the admin route
+  const isAdminRoute = request.nextUrl.pathname.includes("/admindb");
+
+  // Check if the admin-auth cookie is present and has the expected value
   if (isAdminRoute) {
-    const authCookie = request.cookies.get('admin-auth')
-    
-    if (!authCookie || authCookie.value !== 'true') {
-      // ### BUG ### - add params to redirect to login page !
-      const loginUrl = new URL('/login', request.url)
-      return NextResponse.redirect(loginUrl)
+    const authCookie = request.cookies.get("admin-auth");
+
+    if (!authCookie || authCookie.value !== "true") {
+      // Redirect to the login page if authentication fails
+      const loginUrl = new URL("/login", request.url);
+      return NextResponse.redirect(loginUrl);
     }
   }
 
-  return intlMiddleware(request)
+  return intlMiddleware(request);
 }
 
 export const config = {
-  matcher: ['/', '/(en|de|nl)/:path*', '/admindb']
-}
+  // Updates the matcher configuration to include the admin route
+  matcher: ["/", "/(en|de|nl)/:path*", "/admindb", "/login"],
+};
+// The matcher in middleware.ts defines which routes the middleware should run on. 
+// It acts as a filter to specify exactly where your middleware logic gets applied. 
+// Let's break down what each pattern matches:
 
-// This middleware:
-
-// Checks if the requested route includes '/admindb'
-// Verifies the presence and value of the 'admin-auth' cookie
-// Redirects to the login page if authentication fails
-// Preserves the internationalization functionality for other routes
-// Updates the matcher configuration to include the admin route
-// The middleware works in conjunction with your existing auth route handler 
-// to create a secure admin section while maintaining the i18n functionality.
-
-
-
-
+// "/" - Matches the root/home page
+// "/(en|de|nl)/:path*" - Matches any route that:
+// Starts with /en, /de, or /nl (your language paths)
+// Followed by any additional path segments (:path*)
+// "/admindb" - Matches the admin dashboard route
+// "/login" - Matches the login page
 
 // #########################  Difference of createMiddleware and createIntlMiddleware
 
