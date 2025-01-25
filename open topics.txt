@@ -5,9 +5,7 @@ außen und auch Innenbilder.
 
 Gallery: Außerdem habe ich bei den Galleriebildern Bilder ergänzt.
 
-Activity: wenn man auf das Bild drückt kommt man ja auf Aktivitäten, 
-aber muss sich immer von oben nach unten durch scrollen um zum Thema zu kommen -> geht es dass das angeklickte 
-Thema direkt angezeigt wird ?
+
 
 
 ################################## open topics ##################################
@@ -39,6 +37,12 @@ read I18n language text from a database instead from json files
 
 admin for updating text and images (read/write json files?)
 
+include CMS for text and image administration, headless or self-hosted:
+https://strapi.io/
+https://www.sanity.io/
+https://firebaseopensource.com/projects/camberi/firecms/
+https://payloadcms.com/
+
 
 DONE:
 letters CASA RIPA over each hero image
@@ -53,3 +57,5 @@ https://www.svgrepo.com/svg/512120/facebook-176
 improve slider control button left,right at rooms pictures
 
 ​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003
+
+Click on landing page on a activity picture leads to activity page and jumps to specific hash id related to picture

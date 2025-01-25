@@ -3,32 +3,38 @@
     {
       "id": 1,
       "image": "/assets/activity/beach.webp",
-      "description": "categories1"
+      "description": "categories1",
+      "link": "/activity#beach"
     },
     {
       "id": 2,
       "image": "/assets/activity/visit.webp",
-      "description": "categories2"
+      "description": "categories2",
+      "link": "/activity#visit"
     },
     {
       "id": 3,
       "image": "/assets/activity/nature.webp",
-      "description": "categories3"
+      "description": "categories3",
+      "link": "/activity#nature"
     },
     {
       "id": 4,
       "image": "/assets/activity/winery.webp",
-      "description": "categories4"
+      "description": "categories4",
+      "link": "/activity#winery"
     },
     {
       "id": 5,
       "image": "/assets/activity/nearby.webp",
-      "description": "categories5"
+      "description": "categories5",
+      "link": "/activity#nearby"
     },
     {
       "id": 6,
       "image": "/assets/activity/restaurant.webp",
-      "description": "categories6"
+      "description": "categories6",
+      "link": "/activity#restaurant"
     }
   ]
 }

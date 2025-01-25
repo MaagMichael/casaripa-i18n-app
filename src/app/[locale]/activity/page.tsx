@@ -11,6 +11,7 @@ interface ActivityBlog {
   image: string;
   title: string;
   description: string;
+  jumpid: string;
 }
 
 export default async function Activity() {
@@ -21,12 +22,14 @@ export default async function Activity() {
   return (
     <div className="p-4 bg-primary text-secondary md:text-lg">
       <h1 className="text-xl text-center mb-4">{t("title")}</h1>
-      
+
       <div className="space-y-4">
         {activityBlog.activityBlog.map((item: ActivityBlog) => (
           <div
+            // jump to section
+            id={item.jumpid}
             key={item.id}
-            className="flex flex-col md:flex-row md:min-h-[40vh] justify-between bg-primary_light rounded-lg"
+            className="flex flex-col md:flex-row md:min-h-[40vh] justify-between bg-primary_light rounded-lg scroll-mt-24"
           >
             {/* Image placement based on ID */}
             {item.id % 2 === 0 ? (
