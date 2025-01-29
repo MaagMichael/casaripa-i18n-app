@@ -1,4 +1,4 @@
-DSVGO, Impressum: Kannst mir gerne ne Standard Impressum und DSGVO verpassen …..egal wie pdf oder was am einfachsten ist.
+
 
 Hero: Auf dem Google Laufwerk habe ich bei Hero Image noch mehr Bilder hochgeladen gehabt , unter anderem vom Haus 
 außen und auch Innenbilder.
@@ -6,10 +6,9 @@ außen und auch Innenbilder.
 Gallery: Außerdem habe ich bei den Galleriebildern Bilder ergänzt.
 
 
+################################## open topics, next features ##################################
 
-
-################################## open topics ##################################
-
+admin for updating text and images (read/write json files?)
 dbadmin (manipulate json files) including login and write json file to server
 
 dark light themes with tailwind
@@ -17,11 +16,6 @@ dark light themes with tailwind
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
 
 SEO in NextJS
-
-Impressum as pdf for download (check videos for NextJS)
-Casa Ripa huur Vakantiehuisje en Appartement, Appartement huren Marche, Ferienwohnung, Holiday home, Holiday Rental, Apartment, Hart van Le Marche, Italië, Verdicchio wijn, Cupramontana  
-
-DSVGO as pdf for download
 
 DSVGO button on G-Calendar like on G-Maps
 
@@ -35,8 +29,6 @@ install locally Google fonts
 
 read I18n language text from a database instead from json files
 
-admin for updating text and images (read/write json files?)
-
 include CMS for text and image administration, headless or self-hosted:
 https://strapi.io/
 https://www.sanity.io/
@@ -44,7 +36,7 @@ https://firebaseopensource.com/projects/camberi/firecms/
 https://payloadcms.com/
 
 
-DONE:
+################################## DONE ##################################
 letters CASA RIPA over each hero image
 
 emailJS as server actions
@@ -56,6 +48,13 @@ https://www.svgrepo.com/svg/512120/facebook-176
 
 improve slider control button left,right at rooms pictures
 
+Click on landing page on a activity picture leads to activity page and jumps to specific hash id related to picture
+
+Impressum and DSVGO
+https://www.e-recht24.de/impressum/13076-impressum-vorlage.html
+https://www.e-recht24.de/muster-datenschutzerklaerung.html
+https://datenschutz-generator.de/ 
+https://easyrechtssicher.de/impressum-generator-kostenlos/
 ​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003
 
-Click on landing page on a activity picture leads to activity page and jumps to specific hash id related to picture
+DSVGO as pdf for download

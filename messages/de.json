@@ -86,7 +86,9 @@
     "route": "Der Weg zu uns",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "impressum": "Impressum",
+    "dataprivacy": "Datenschutz"
   },
   "WelcomePage": {
     "title": "Willkommen auf dem Anwesen Casa Ripa",

@@ -86,7 +86,9 @@
     "route": "Route to us",
     "gallery": "Gallery",
     "contact": "Contact",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "impressum": "Impressum",
+    "dataprivacy": "Data privacy"
   },
   "WelcomePage": {
     "title": "Welcome to Casa Ripa",
