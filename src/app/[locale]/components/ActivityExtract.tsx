@@ -1,13 +1,15 @@
 // import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server"; // server side with async and await
 import activityImage from "@/data/activityextract.json";
-import { Link } from "@/i18n/routing";
+
 import Image from "next/image";
+import JumpLink from "./JumpLink";
 
 interface ActivityImage {
   id: number;
   image: string;
   description: string;
+  link: string;
 }
 
 export default async function ActivityExtract() {
@@ -20,7 +22,8 @@ export default async function ActivityExtract() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 my-4">
         {activityImage.activityImage.map((item: ActivityImage) => (
           <div key={item.id} className="flex flex-col">
-            <Link href="/activity">
+            {/* component JumpLink for link to activity page and hash id, children = Image component*/}
+            <JumpLink route={item.link}>
               <Image
                 src={item.image}
                 alt={t(item.description)}
@@ -28,7 +31,8 @@ export default async function ActivityExtract() {
                 height={900}
                 className="rounded-lg object-cover"
               />
-            </Link>
+            </JumpLink>
+
             <p className="mt-2">{t(item.description)}</p>
           </div>
         ))}

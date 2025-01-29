@@ -8,8 +8,7 @@ type NestedObject = {
 };
 
 export default function AdminDB() {
-  const [translations, setTranslations] =
-    useState<typeof deTranslations>(deTranslations);
+  const [translations, setTranslations] = useState<typeof deTranslations>(deTranslations);
   console.log(translations);
 
   const [editingKey, setEditingKey] = useState<string>("");
@@ -58,20 +57,49 @@ export default function AdminDB() {
   const flatTranslations = flattenObject(translations);
   //   console.log(flatTranslations);
 
+  const handleSaveToFile = async () => {
+    try {
+      const response = await fetch("/api/savefile", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(translations),
+      });
+
+      if (response.ok) {
+        alert("Translations saved to backup file successfully!");
+      } else {
+        throw new Error("Failed to save translations");
+      }
+    } catch (error) {
+      console.error("Error saving translations:", error);
+      alert("Failed to save translations to file");
+    }
+  };
+
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Translation Editor</h1>
+      <div className="flex justify-between items-center sticky top-20 bg-white z-10">
+        <h1 className="text-2xl font-bold mb-4">Translation Editor</h1>
+
+        <button
+          onClick={handleSaveToFile}
+          className="ml-4 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          Save to Backup File
+        </button>
+      </div>
 
       <div className="grid grid-cols-1 gap-4">
         {Object.entries(flatTranslations).map(([key, value]) => (
           <div key={key} className="border p-4 rounded-lg whitespace-pre-line">
             <div className="flex justify-between items-start">
-
               <div className="flex-1">
                 {/* key of object */}
-                <p className="text-md text-green font-bold">{key}</p>
+                <p className="text-md text-green font-bold">Key - {key}</p>
                 {/* value of object */}
-                <p className="mt-1">{value}</p>
+                <p className="mt-1">{value.replace(/\n/g, "↵\n")}</p>
               </div>
 
               {/* edit button */}
@@ -100,7 +128,7 @@ export default function AdminDB() {
                 <textarea
                   value={editingValue}
                   onChange={(e) => setEditingValue(e.target.value)}
-                  className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap"
+                  className="w-full h-96 p-4 border rounded font-mono whitespace-pre-wrap overflow-y-auto"
                 />
                 {/* <textarea
                   value={editingValue.replace(/\n/g, "↵\n")}
@@ -112,7 +140,7 @@ export default function AdminDB() {
               </div>
               <div>
                 <label className="block mb-2">Preview on website:</label>
-                <div className="w-full  p-2 border rounded bg-gray-50 whitespace-pre-line">
+                <div className="w-full h-96 p-2 border rounded bg-gray-50 whitespace-pre-line overflow-y-auto">
                   {editingValue}
                 </div>
               </div>
