@@ -17,7 +17,7 @@ function Impressum() {
           </div>
           <p>Vertreten durch:</p>
           <div>
-            <p>Alexander Mohamed xxx</p>
+            <p>Alexander Mohamed</p>
           </div>
           <p>Kontakt:</p>
           <div>
@@ -27,21 +27,12 @@ function Impressum() {
           </div>
           <p>Registereintrag:</p>
           <div>
-            <p>Sitz der Gesellschaft: München (Deutschland)</p>
-            <p>
-              Eintragung im Registergericht: Amtsgericht xxxx, Registernummer:
-              HRB xxxx
-            </p>
-            <p>Umsatzsteuer-ID: xxx</p>
-            <p>
-              Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
-              xxxxxx
-            </p>
+            <p>Italien:</p>
             <p>CIN IT042016C2FG8XNF78 | CIR 042016-AFF-00003</p>
           </div>
           <div>
             <p>Inhaltlich Verantwortlicher gem. § 18 Abs. 2 MStV:</p>
-            <p>Alexander Mohamed xxx</p>
+            <p>Alexander Mohamed</p>
             <p>(Kontakt s.o.)</p>
           </div>
         </div>

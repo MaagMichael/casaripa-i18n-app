@@ -1,12 +1,10 @@
 
-
-Hero: Auf dem Google Laufwerk habe ich bei Hero Image noch mehr Bilder hochgeladen gehabt , unter anderem vom Haus 
-außen und auch Innenbilder.
-
-Gallery: Außerdem habe ich bei den Galleriebildern Bilder ergänzt.
-
-
 ################################## open topics, next features ##################################
+SEO in NextJS
+
+FAQ in german and netherlands
+
+email form in german and netherlands
 
 admin for updating text and images (read/write json files?)
 dbadmin (manipulate json files) including login and write json file to server
@@ -15,8 +13,6 @@ dark light themes with tailwind
 
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
 
-SEO in NextJS
-
 DSVGO button on G-Calendar like on G-Maps
 
 G-Calendar not as iframe, use date-fns and fetch data
@@ -24,8 +20,6 @@ G-Calendar not as iframe, use date-fns and fetch data
 G-calendar on doubleclick open in modal
 
 use toastify for notification message (e.g. email sending)
-
-install locally Google fonts
 
 read I18n language text from a database instead from json files
 
@@ -58,3 +52,5 @@ https://easyrechtssicher.de/impressum-generator-kostenlos/
 ​CIN: IT042016C2FG8XNF78, CIR: 042016-AFF-00003
 
 DSVGO as pdf for download
+
+install locally Google fonts under public/fonts
