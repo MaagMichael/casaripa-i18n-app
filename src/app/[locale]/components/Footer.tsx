@@ -19,13 +19,8 @@ export default async function Footer() {
           <Link href="/faq">{t("faq")}</Link>
           <Link href="/gallery">{t("gallery")}</Link>
           <Link href="/impressum">{t("impressum")}</Link>
-          <a
-            href="/assets/datenschutzerklaerung_www_casaripa_com_de.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t("dataprivacy")}
-          </a>
+          <Link href="/dsvgo">{t("dataprivacy")}</Link>
+          
           <Link href="/login">Admin</Link>
         </div>
 
