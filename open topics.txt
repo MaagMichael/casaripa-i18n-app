@@ -1,6 +1,6 @@
 
 ################################## open topics, next features ##################################
-SEO in NextJS
+SEO in NextJS, robots.txt
 
 FAQ in german and netherlands
 
