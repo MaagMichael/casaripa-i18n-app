@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Dongle&family=Satisfy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Dongle&family=Satisfy&display=swap'); */
  
 @tailwind base;
 @tailwind components;
@@ -21,4 +21,21 @@ body {
     --color-orange: 213, 156, 42; /* orange ca. #d9a740 */
     /* ... */
   }
+}
+
+/* aref-ruqaa-ink-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Aref Ruqaa Ink';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/aref-ruqaa-ink-v10-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* aref-ruqaa-ink-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Aref Ruqaa Ink';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/aref-ruqaa-ink-v10-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
