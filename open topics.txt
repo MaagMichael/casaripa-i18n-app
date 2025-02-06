@@ -1,3 +1,19 @@
+Nutzung von Google Calendar
+Wir nutzen den Dienst Google Calendar der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“), zur Verwaltung von Terminen.
+Zweck der Verarbeitung
+Die Nutzung von Google Calendar erfolgt zur effizienten Terminplanung und Organisation von Unterrichtseinheiten, Meetings oder anderen Terminen.
+Rechtsgrundlage
+Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern die Terminvereinbarung zur Erfüllung eines Vertragsverhältnisses erforderlich ist. In anderen Fällen erfolgt die Verarbeitung auf Basis unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO an einer effizienten Organisation und Verwaltung von Terminen.
+Datenübermittlung in Drittländer
+Google speichert und verarbeitet Daten möglicherweise auch in den USA. Google ist jedoch durch den EU-U.S. Data Privacy Framework zertifiziert, sodass ein angemessenes Datenschutzniveau sichergestellt ist. Weitere Informationen zur Datenverarbeitung durch Google findest du in der Datenschutzerklärung von Google: https://policies.google.com/privacy.
+Speicherdauer
+Die Daten bleiben so lange im Google Calendar gespeichert, wie es zur Erfüllung des Zwecks erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
+Widerspruchsrecht
+Du kannst der Verarbeitung deiner Daten widersprechen, sofern die Verarbeitung nicht zur Vertragserfüllung notwendig ist. In diesem Fall kann die Nutzung von Google Calendar für dich jedoch eingeschränkt oder nicht möglich sein.
+Weitere Informationen
+Wenn du nicht möchtest, dass deine Daten von Google verarbeitet werden, kannst du uns alternativ über andere Kommunikationswege kontaktieren (z. B. per E-Mail oder Telefon).
+
+DSVGO neu machen als pdf
 
 ################################## open topics, next features ##################################
 SEO in NextJS, robots.txt
