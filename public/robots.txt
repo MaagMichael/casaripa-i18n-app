@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Allow: /*
+Allow: /en/*
+Allow: /de/*
+Allow: /nl/*
+
+# Sitemaps
+Sitemap: https://casaripa.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Common directories to disallow
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /404
+Disallow: /500

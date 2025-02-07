@@ -1,6 +1,6 @@
 
 ################################## open topics, next features ##################################
-SEO in NextJS
+SEO key words in NextJS,
 
 FAQ in german and netherlands
 
@@ -54,3 +54,6 @@ https://easyrechtssicher.de/impressum-generator-kostenlos/
 DSVGO as pdf for download
 
 install locally Google fonts under public/fonts
+
+ robots.txt and sitemap.xml
+
