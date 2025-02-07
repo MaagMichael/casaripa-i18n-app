@@ -3,14 +3,20 @@ import React from "react";
 function DSVGO() {
   return (
     <div className="flex flex-col items-center bg-primary text-secondary md:text-lg p-4 space-y-4">
-      <a
-        href="/assets/datenschutzerklaerung_casaripa_com_de.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Datenschutzerklärung als PDF
-      </a>
-      <h1>Datenschutz&shy;erkl&auml;rung</h1>
+      <p>
+        Download here:{" "}
+        <span>
+          <a
+            href="/assets/datenschutzerklaerung_casaripa_com_de.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green"
+          >
+            Datenschutzerkl&auml;rung als PDF
+          </a>
+        </span>
+      </p>
+      <h1>Datenschutz&shy;erkl&auml;rung Ferienhaus Casa Ripa Feb. 2025</h1>
       <h2>1. Datenschutz auf einen Blick</h2>
       <h3>Allgemeine Hinweise</h3>{" "}
       <p>
