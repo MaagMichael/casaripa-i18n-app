@@ -1,6 +1,6 @@
 
 ################################## open topics, next features ##################################
-SEO in NextJS,
+SEO key words in NextJS,
 
 FAQ in german and netherlands
 
