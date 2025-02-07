@@ -1,56 +1,11 @@
-// import { MetadataRoute } from 'next'
-
-// const locales = ['en', 'es', 'fr'] // Your supported locales
-// const baseUrl = 'https://www.example.com'
-
-// export default function sitemap(): MetadataRoute.Sitemap {
-//   // Generate sitemap entries for each locale
-//   const localizedRoutes = locales.flatMap(locale => [
-//     {
-//       url: `${baseUrl}/${locale}`,
-//       lastModified: new Date(),
-//       changeFrequency: 'yearly',
-//       priority: 1,
-//     },
-//     {
-//       url: `${baseUrl}/${locale}/about`,
-//       lastModified: new Date(),
-//       changeFrequency: 'monthly',
-//       priority: 0.8,
-//     },
-//     {
-//       url: `${baseUrl}/${locale}/contact`,
-//       lastModified: new Date(),
-//       changeFrequency: 'weekly',
-//       priority: 0.5,
-//     }
-//   ])
-
-//   // Optional: Add alternate language links for each route
-//   const alternateLinks = localizedRoutes.flatMap(route => 
-//     locales.map(locale => ({
-//       url: route.url.replace(`/${locale}`, `/${locale}`),
-//       lastModified: route.lastModified,
-//       alternateRefs: locales.map(altLocale => ({
-//         href: route.url.replace(`/${locale}`, `/${altLocale}`),
-//         hreflang: altLocale
-//       }))
-//     }))
-//   )
-
-//   return [
-//     ...localizedRoutes,
-//     ...alternateLinks
-//   ]
-// }
-// Placement in project structure: 
+// Placement in project structure with i18n: 
 // app/
 //  ├── [lang]/
 //  │ ├── about/
 //  │ ├── contact/
 //  │ └── page.tsx
+//  | └── layout.tsx
 //  ├── sitemap.ts // Place at the root of the app directory
-//  └── layout.tsx
 
 import { MetadataRoute } from 'next'
 
@@ -58,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://casaripa.com'
   const baseUrl = 'https://casaripa.com'
 
-  // Define supported languages
+  // Define supported languages in i18n
   const languages = ['en', 'de' , 'nl']
   
   // Base routes that are common across languages
@@ -80,6 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/${lang}${route}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
+      // hogher propiority for the home page route
       priority: route === '' ? 1 : 0.8,
     }))
   )
@@ -88,16 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 }
 
 // npm run build
-
-// Copy
-
-// Execute
-
 // npm run start
-
-// Copy
-
-// Execute
 
 // The sitemap will be available at:
 
