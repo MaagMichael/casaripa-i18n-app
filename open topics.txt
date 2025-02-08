@@ -12,8 +12,6 @@ dark light themes with tailwind
 
 Slider pictures (rooms and gallery) on doubleclick open in modal to click through
 
-DSVGO button on G-Calendar like on G-Maps
-
 G-Calendar not as iframe, use date-fns and fetch data
 
 G-calendar on doubleclick open in modal
