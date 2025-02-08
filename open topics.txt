@@ -1,6 +1,5 @@
 
 ################################## open topics, next features ##################################
-SEO key words in NextJS,
 
 FAQ in german and netherlands
 
@@ -56,4 +55,5 @@ DSVGO as pdf for download
 install locally Google fonts under public/fonts
 
  robots.txt and sitemap.xml
+ SEO key words metadata in NextJS, favicon
 
